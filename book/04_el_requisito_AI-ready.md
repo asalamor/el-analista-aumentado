@@ -34,6 +34,7 @@ Eso es lo que hace la plantilla de cinco bloques.
 
 La plantilla tiene cinco bloques. Cada bloque tiene una responsabilidad distinta y es procesado de forma diferente por el pipeline. Entender la responsabilidad de cada bloque es más importante que memorizar sus campos: es lo que permite adaptar la plantilla al contexto específico de tu organización sin romper la lógica que hace funcionar el sistema.
 
+<!--
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │              PLANTILLA AI-READY — CINCO BLOQUES             │
@@ -71,6 +72,9 @@ La plantilla tiene cinco bloques. Cada bloque tiene una responsabilidad distinta
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+-->
+
+![Plantilla AI-Ready - Cinco bloques](./images/04_01_plantilla_AI-ready.png)
 
 ---
 
