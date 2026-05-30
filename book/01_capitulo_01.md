@@ -65,7 +65,7 @@ Cuando los equipos hacen este ejercicio por primera vez, el resultado suele ser 
 En Meridian, Carlos hizo este ejercicio en octubre. El resultado fue el siguiente:
 
 | Categoría de actividad | Horas semanales | % del total |
-|---|---|---|
+|---|---:|---:|
 | Reuniones de captura de requisitos con negocio | 6 h | 15 % |
 | Análisis, síntesis y toma de decisiones funcionales | 5 h | 12,5 % |
 | Facilitación de refinamientos y resolución de dudas | 4 h | 10 % |
