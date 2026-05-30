@@ -364,7 +364,7 @@ Hay tres opciones con diferentes trade-offs:
 
 ### Decisión 4: ¿Cómo se adaptan los campos al contexto específico del proyecto?
 
-Algunos proyectos necesitan campos adicionales. Los más frecuentes son:
+Algunos proyectos necesitan campos adicionales que la plantilla base no contempla. Los más frecuentes son:
 
 ```yaml
 # Para proyectos regulados (banca, salud, seguros):
