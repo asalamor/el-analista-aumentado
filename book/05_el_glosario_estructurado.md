@@ -14,13 +14,13 @@ Ese glosario es el tema de este capítulo.
 
 ---
 
-**En este capítulo aprenderás a:**
+*En este capítulo aprenderás a:*
 
-- Entender por qué el glosario es el componente más subestimado del modelo y el que más impacto tiene en la calidad del output del pipeline.
-- Diseñar la estructura de un glosario AI-ready con actores, entidades, acciones, eventos y reglas globales.
-- Construir el glosario desde cero usando los documentos existentes de tu organización, sin partir de una hoja en blanco.
-- Inyectar el glosario como contexto en el pipeline de forma eficiente, sin desperdiciar tokens.
-- Gobernar el glosario para que no se degrade con el tiempo.
+- *Entender por qué el glosario es el componente más subestimado del modelo y el que más impacto tiene en la calidad del output del pipeline.*
+- *Diseñar la estructura de un glosario AI-ready con actores, entidades, acciones, eventos y reglas globales.*
+- *Construir el glosario desde cero usando los documentos existentes de tu organización, sin partir de una hoja en blanco.*
+- *Inyectar el glosario como contexto en el pipeline de forma eficiente, sin desperdiciar tokens.*
+- *Gobernar el glosario para que no se degrade con el tiempo.*
 
 ---
 
