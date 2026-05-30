@@ -165,7 +165,7 @@ En dos horas y media, Carlos solía producir esto para un solo requisito si todo
 
 ¿El coste en tiempo para Carlos? Cuarenta minutos para escribir el requisito estructurado más diez minutos para revisar y aprobar el output del pipeline. Cincuenta minutos en total, frente a las dos horas y media que le costaba antes, y con test cases incluidos, que antes no hacía.
 
-Esto no es una promesa de marketing. Es el output real del sistema que construiremos juntos a lo largo del libro, sobre el requisito real que usaremos como ejemplo en todos los capítulos.<br>
+Esto no es una promesa de marketing. Es el output real del sistema que construiremos juntos a lo largo del libro, sobre el requisito real que usaremos como ejemplo en todos los capítulos.<br><br>
 
 El modelo tiene doce componentes que se construyen en capas:
 
