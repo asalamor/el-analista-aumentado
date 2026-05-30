@@ -16,6 +16,8 @@ Son las cuatro de la tarde del último viernes del sprint. El equipo de Meridian
 
 De las doce historias comprometidas, nueve están en estado Done. Las otras tres tienen una historia detrás, que es siempre la misma historia con nombres distintos.
 
+![Retrospectiva](./images/01_01_retrospectiva.png)
+
 La historia US-041 —el formulario de alta de proveedores— llegó al sprint con tres criterios de aceptación. En el día cuatro del sprint, durante una sesión de testing, María García descubrió que el criterio "el sistema valida el CIF del proveedor" no especificaba qué debía ocurrir cuando el CIF era formalmente válido pero pertenecía a una empresa dada de baja en el registro mercantil. El equipo convocó una reunión de urgencia con Ana López, que resolvió el caso en veinte minutos, pero el desarrollo ya llevaba dos días implementando un comportamiento que resultó ser incorrecto. La historia se cerró con un día de retraso.
 
 La historia US-043 —la exportación de facturas a CSV— tuvo un problema diferente. El requisito decía que el sistema debía exportar "las facturas del período seleccionado". Nadie había especificado si eso incluía las facturas en estado rechazado. El desarrollador asumió que no. El usuario de negocio asumió que sí. El malentendido se descubrió en la demo del sprint. La historia volvió al backlog para el siguiente sprint.
