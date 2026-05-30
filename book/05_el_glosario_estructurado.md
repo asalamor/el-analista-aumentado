@@ -109,6 +109,8 @@ Estas reglas se inyectan en todos los prompts del pipeline, siempre. No requiere
 >
 > La forma más efectiva de identificarlas es preguntar en el taller: «¿Hay algo que sea cierto para absolutamente todo lo que hace el sistema, independientemente del módulo?». Las respuestas suelen revelar exactamente las reglas que nadie había documentado nunca.
 
+![Anatomía del glosario AI-ready](./images/05_01_anatomia_de_un_glosario_AI-ready.png)
+
 ---
 
 ## El glosario de Meridian: un ejemplo real
