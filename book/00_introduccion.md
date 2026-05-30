@@ -53,7 +53,7 @@ El punto de partida de este libro no es la IA. Es el requisito.
 Este libro describe un modelo operativo completo para transformar el proceso de análisis funcional en organizaciones que trabajan con metodologías Agile. Un modelo que introduce inteligencia artificial desde las etapas más tempranas del proceso —la captura de requisitos con el usuario de negocio— y que automatiza los pasos mecánicos del camino desde el requisito aprobado hasta los artefactos en Jira y los test cases en la herramienta de QA.
 
 El flujo completo tiene este aspecto:
-
+<!--
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                     EL FLUJO DEL MODELO OPERATIVO                       │
@@ -97,6 +97,7 @@ El flujo completo tiene este aspecto:
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
+-->
 ![El flujo del modelo operativo](./images/00_01_flujo_operativo.png)
 
 El modelo tiene doce componentes que se construyen en capas:
