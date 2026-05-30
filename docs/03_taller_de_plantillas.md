@@ -1,5 +1,9 @@
 # Punto 1 — Taller de plantillas
 
+El taller de plantillas es el trabajo más fundacional de todo el modelo: si la plantilla está bien diseñada, todo lo que viene después funciona. Si está mal diseñada, los prompts de generación y validación luchan contra la estructura en lugar de apoyarse en ella.
+
+Lo estructuro como un taller real, con las decisiones que hay que tomar en orden y los criterios para tomarlas.
+
 ## Qué es y qué no es este taller
 
 El objetivo no es diseñar un formulario bonito. Es diseñar el **contrato de datos** entre el analista funcional, la IA y las herramientas (Jira, Xray, Confluence). Cada campo que entra en la plantilla tiene un coste de mantenimiento. Cada campo que falta tiene un coste en calidad de los artefactos generados.
