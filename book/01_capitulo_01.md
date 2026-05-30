@@ -153,7 +153,7 @@ El resultado es que Agile aceleró el ciclo de desarrollo sin necesariamente mej
 
 La velocidad del ciclo Agile no es el problema. Es, paradójicamente, parte de lo que hace que el problema de análisis sea más urgente. Cuando el ciclo de desarrollo dura seis meses, una ambigüedad en el análisis puede detectarse y corregirse antes de que llegue a producción. Cuando el ciclo dura dos semanas, esa misma ambigüedad puede estar en producción antes de que nadie la haya identificado formalmente como un problema.
 
-| <small>Modelo en cascada</small> | Modelo Agile | Con el sistema de este libro |
+| Modelo en cascada | Modelo Agile | Con el sistema de este libro |
 |---|---|---|
 | Análisis completo antes de desarrollar (meses) | Análisis en refinamiento (horas) | Análisis estructurado con validación automática (minutos) |
 | Requisitos detallados pero tardíos | Requisitos rápidos pero incompletos | Requisitos rápidos y estructurados |
