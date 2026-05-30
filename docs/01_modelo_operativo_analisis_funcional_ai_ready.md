@@ -24,6 +24,8 @@ La arquitectura recomendada tiene cinco capas:
 | **Apéndices** | Matriz de trazabilidad · Glosario estructurado · Diagramas de proceso |
 | **Capa de exportación** | Word (lectura humana) · Markdown · YAML/JSON (IA y automatización) · Jira API |
 
+![Estructura del documento funcional AI-Ready](assets/estructura_documento_ai_ready.svg)
+
 ---
 
 ## 3. Información obligatoria en cada requisito
