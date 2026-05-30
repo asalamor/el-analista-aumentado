@@ -1,5 +1,7 @@
 # Punto 2 — Glosario estructurado
 
+El glosario es la pieza más subestimada de todo el modelo y, paradójicamente, la que más impacto tiene en la calidad de los artefactos generados. Una IA trabajando con un glosario bien construido produce historias coherentes entre sí. Sin glosario, produce historias técnicamente correctas, pero terminológicamente inconsistentes, que el equipo no reconoce como suyas.
+
 ## Por qué el glosario es diferente en un contexto AI-ready
 
 En un proyecto tradicional, el glosario es un documento de referencia que la gente consulta cuando tiene dudas. Útil, pero pasivo.
