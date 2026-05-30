@@ -54,6 +54,7 @@ Este libro describe un modelo operativo completo para transformar el proceso de 
 
 El flujo completo tiene este aspecto:
 
+```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                     EL FLUJO DEL MODELO OPERATIVO                       │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -95,6 +96,7 @@ El flujo completo tiene este aspecto:
 │                              REQ → US → TC → Commit                     │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
+```
 
 El modelo tiene doce componentes que se construyen en capas:
 
