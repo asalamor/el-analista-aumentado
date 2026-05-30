@@ -288,6 +288,7 @@ Ese es el viaje completo de REQ-023. Nueve pasos, cincuenta minutos del analista
 
 El modelo operativo completo no se implanta de golpe. Tiene un roadmap de cuatro fases diseñado para que cada fase entregue valor antes de que empiece la siguiente, y para que el equipo pueda adoptar el sistema gradualmente sin romper el flujo de trabajo existente.
 
+<!--
 ```
 FASE 0 — FUNDACIÓN (semanas 1-6)
 ┌─────────────────────────────────────────────────────────────┐
@@ -328,6 +329,9 @@ FASE 3 — SISTEMA COMPLETO (meses 7-9)
 │ Entregable: sistema completo + gobierno + métricas de ROI   │
 └─────────────────────────────────────────────────────────────┘
 ```
+-->
+
+![Roadmap de implantación](./images/03_02_roadmap_de_implantacion.png)
 
 La Fase 0 no requiere ninguna herramienta nueva ni ninguna integración técnica. Solo requiere diseñar la plantilla adaptada al contexto de la organización y construir el glosario base. Es el trabajo de seis semanas descrito en los Capítulos 4 y 5, y es el más importante del roadmap porque define la calidad del input que procesará todo lo que viene después.
 
