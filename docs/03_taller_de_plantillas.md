@@ -404,7 +404,7 @@ El YAML es para la máquina. El usuario de negocio necesita ver esto:
 │ REQUISITO  REQ-023  │  Módulo: Gestión de Facturación       │
 │ Estado: En revisión │  Prioridad: Must Have                 │
 ├─────────────────────────────────────────────────────────────┤
-│ TÍTULO                                                       │
+│ TÍTULO                                                      │
 │ Filtrar facturas por rango de fechas                        │
 ├─────────────────────────────────────────────────────────────┤
 │ ¿QUIÉN LO NECESITA?        │ ¿POR QUÉ?                      │
@@ -418,22 +418,22 @@ El YAML es para la máquina. El usuario de negocio necesita ver esto:
 │ antigua. Si el rango supera 365 días, avisa de que no está  │
 │ permitido. Si no hay facturas, lo indica con un mensaje.    │
 ├─────────────────────────────────────────────────────────────┤
-│ ¿CUÁNDO DEBE FUNCIONAR? (Criterios de aceptación)          │
+│ ¿CUÁNDO DEBE FUNCIONAR? (Criterios de aceptación)           │
 │                                                             │
-│ ✓ Si introduzco fechas válidas y pulso Buscar,             │
-│   veo las facturas del período en menos de 2 segundos      │
+│ ✓ Si introduzco fechas válidas y pulso Buscar,              │
+│   veo las facturas del período en menos de 2 segundos       │
 │                                                             │
-│ ✓ Si el rango supera 365 días,                             │
-│   el sistema me avisa y no busca                           │
+│ ✓ Si el rango supera 365 días,                              │
+│   el sistema me avisa y no busca                            │
 │                                                             │
-│ ✓ Si no hay facturas en ese período,                       │
-│   el sistema me lo indica y me ofrece ampliar la búsqueda  │
+│ ✓ Si no hay facturas en ese período,                        │
+│   el sistema me lo indica y me ofrece ampliar la búsqueda   │
 ├─────────────────────────────────────────────────────────────┤
 │ REGLAS IMPORTANTES                                          │
-│ • Solo se ven facturas del ejercicio fiscal en curso       │
-│ • El rango máximo de búsqueda es de 365 días               │
+│ • Solo se ven facturas del ejercicio fiscal en curso        │
+│ • El rango máximo de búsqueda es de 365 días                │
 ├─────────────────────────────────────────────────────────────┤
-│ SOLICITADO POR: Ana López (Dir. Financiera) · 2025-04-10   │
+│ SOLICITADO POR: Ana López (Dir. Financiera) · 2025-04-10    │
 │ ANALISTA: Carlos Ruiz · Validado: pendiente                 │
 └─────────────────────────────────────────────────────────────┘
 ```
