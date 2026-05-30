@@ -100,6 +100,74 @@ El flujo completo tiene este aspecto:
 -->
 ![El flujo del modelo operativo](./images/00_01_flujo_operativo.png)
 
+Antes de que este diagrama parezca demasiado abstracto, déjame mostrarte lo que produce en concreto.
+
+## Lo que el pipeline genera: un anticipo
+
+Carlos Ruiz sale de la reunión con Ana López con esto en sus notas:
+
+---
+
+>"Los gestores de facturación necesitan poder buscar facturas por fechas para agilizar el trabajo del cierre mensual."
+
+---
+
+Una frase. Razonable, comprensible y completamente inutilizable para generar artefactos correctos en Jira.
+
+Siguiendo el proceso que describe este libro, Carlos transforma esa frase en un requisito estructurado durante los cuarenta minutos siguientes a la reunión. Después ejecuta un único comando:
+
+```
+bash
+python orchestrator.py --req REQ-023
+```
+
+Lo que ocurre en los próximos cincuenta y cuatro segundos es esto:
+
+```
+  [1] Carga y parseo del requisito
+      ✓ 'Filtrar facturas por rango de fechas'
+
+  [2] Validación automática de calidad
+      ✓ Score 84/100 · APROBADO
+
+  [3] Recuperando contexto del repositorio (RAG)
+      ✓ 7 requisitos relacionados recuperados
+
+  [4] Generando artefactos Jira con IA
+      ✓ Historia · 4 tareas · 3 criterios de aceptación
+
+  [5] Generando test cases
+      ✓ 9 test cases (2 positivos · 4 negativos · 3 contorno)
+
+  [8] Revisión de artefactos — pendiente de aprobación humana
+      ...
+
+  [9] Push a Jira
+      ✓ Historia FACT-47 · 4 tareas creadas
+
+  [9b] Push test cases a Xray
+      ✓ 9 test cases vinculados
+
+  ✓ COMPLETADO en 54.2 segundos
+    Historia:   FACT-47
+    Tareas:     FACT-48, FACT-49, FACT-50, FACT-51
+    Test cases: 9
+```
+
+En dos horas y media, Carlos solía producir esto para un solo requisito si todo iba bien y tenía tiempo de hacer los test cases, lo que casi nunca ocurría. En cincuenta y cuatro segundos de procesamiento más diez minutos de revisión humana, el sistema produce lo siguiente, listo para entrar al refinamiento:
+
+**Una historia de usuario** en Jira con narrativa completa, tres criterios de aceptación en formato Dado/Cuando/Entonces, flujo principal, flujos de error y Definition of Done. Estimación sugerida en story points incluida.
+
+**Cuatro tareas técnicas** descompuestas por capa —base de datos, backend, frontend y testing— con criterios técnicos verificables, estimación en horas y links de dependencia entre ellas ya creados en Jira.
+
+**Nueve test cases** en Xray: dos que verifican el flujo feliz, cuatro que verifican los flujos de error y validación, y tres que verifican los valores límite del campo de rango de fechas (exactamente 365 días, 366 días, rango de un día). Los tres últimos son los que más frecuentemente se olvidan y más frecuentemente generan bugs en producción.
+
+**Trazabilidad completa** registrada en el grafo: REQ-023 → US-047 → FACT-47 → nueve test cases. Cuando en tres meses aparezca un bug relacionado con el filtrado de facturas, cualquier miembro del equipo podrá navegar desde el bug hasta el requisito original en menos de treinta segundos.
+
+¿El coste en tiempo para Carlos? Cuarenta minutos para escribir el requisito estructurado más diez minutos para revisar y aprobar el output del pipeline. Cincuenta minutos en total, frente a las dos horas y media que le costaba antes, y con test cases incluidos, que antes no hacía.
+
+Esto no es una promesa de marketing. Es el output real del sistema que construiremos juntos a lo largo del libro, sobre el requisito real que usaremos como ejemplo en todos los capítulos.
+
 El modelo tiene doce componentes que se construyen en capas:
 
 La **base conceptual** —los capítulos 4, 5 y 6— define cómo deben escribirse los requisitos para que la IA pueda procesarlos, cómo debe estructurarse el vocabulario del proyecto para garantizar coherencia, y cómo facilitar los workshops de Event Storming que producen la materia prima del sistema.
