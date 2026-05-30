@@ -153,9 +153,7 @@ El resultado es que Agile aceleró el ciclo de desarrollo sin necesariamente mej
 
 La velocidad del ciclo Agile no es el problema. Es, paradójicamente, parte de lo que hace que el problema de análisis sea más urgente. Cuando el ciclo de desarrollo dura seis meses, una ambigüedad en el análisis puede detectarse y corregirse antes de que llegue a producción. Cuando el ciclo dura dos semanas, esa misma ambigüedad puede estar en producción antes de que nadie la haya identificado formalmente como un problema.
 
-<small>
-  
-| Modelo en cascada | Modelo Agile | Con el sistema de este libro |
+| <small>Modelo en cascada</small> | Modelo Agile | Con el sistema de este libro |
 |---|---|---|
 | Análisis completo antes de desarrollar (meses) | Análisis en refinamiento (horas) | Análisis estructurado con validación automática (minutos) |
 | Requisitos detallados pero tardíos | Requisitos rápidos pero incompletos | Requisitos rápidos y estructurados |
@@ -163,8 +161,6 @@ La velocidad del ciclo Agile no es el problema. Es, paradójicamente, parte de l
 | Feedback del usuario: al final | Feedback del usuario: frecuente | Feedback del usuario: frecuente, con mejor input |
 | Bugs de análisis: detectados tardíamente | Bugs de análisis: detectados en sprint o en producción | Bugs de análisis: detectados antes del sprint |
 
-</small>
-  
 Hay otro factor que Agile no resolvió y que es relevante para entender por qué el problema persiste: la presión de velocidad. En un equipo Scrum que trabaja con sprints de dos semanas, el Product Owner necesita el backlog refinado constantemente. El analista produce historias a una velocidad que se mide en historias por semana, y esa velocidad tiene un coste en calidad que raramente se contabiliza. Las estimaciones del sprint se hacen sobre historias que todavía tienen ambigüedades porque no había tiempo para resolverlas. El refinamiento pasa de largo sobre casos de error porque el equipo tiene que avanzar. Los test cases no se escriben antes del sprint porque el analista ya está preparando el siguiente.
 
 Este ciclo es tan habitual que la mayoría de equipos no lo percibe como un problema de proceso. Lo percibe como "la forma en que funciona el desarrollo ágil". No lo es. Es la consecuencia de no tener un sistema que apoye al analista para producir requisitos de calidad a la velocidad que el proceso Agile demanda.
