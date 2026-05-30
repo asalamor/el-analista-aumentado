@@ -108,7 +108,7 @@ Carlos Ruiz sale de la reunión con Ana López con esto en sus notas:
 
 ---
 
->"Los gestores de facturación necesitan poder buscar facturas por fechas para agilizar el trabajo del cierre mensual."
+>*"Los gestores de facturación necesitan poder buscar facturas por fechas para agilizar el trabajo del cierre mensual."*
 
 ---
 
