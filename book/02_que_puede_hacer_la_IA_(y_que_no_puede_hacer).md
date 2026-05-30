@@ -116,6 +116,8 @@ La paradoja es que el LLM puede ayudarte a escribir mejores requisitos —puede 
 >
 > La calidad del output del pipeline es directamente proporcional a la calidad del input. Esto no es una limitación técnica superable: es una consecuencia matemática de cómo funcionan los modelos de lenguaje. Invertir en la calidad del requisito no es trabajo previo al pipeline: es parte integral del pipeline.
 
+![Lo que la IA no hace bien en el análisis funcional](./images/02_02_lo_que_la_IA_no_hace_bien.png)
+
 ---
 
 ## El experimento del requisito vago
