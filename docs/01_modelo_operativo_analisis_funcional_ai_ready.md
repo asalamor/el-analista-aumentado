@@ -16,6 +16,7 @@ Un documento AI-ready no es un Word narrativo. Es un documento con **estructura 
 
 La arquitectura recomendada tiene cinco capas:
 
+<!--
 | Capa | Contenido |
 |---|---|
 | **Cabecera del documento** | ID · versión · proyecto · stakeholders · fecha · estado · glosario |
@@ -23,6 +24,7 @@ La arquitectura recomendada tiene cinco capas:
 | **Módulos de requisito (1…N)** | Requisito · Historia US · Criterios AC · Metadatos técnicos |
 | **Apéndices** | Matriz de trazabilidad · Glosario estructurado · Diagramas de proceso |
 | **Capa de exportación** | Word (lectura humana) · Markdown · YAML/JSON (IA y automatización) · Jira API |
+-->
 
 ![Estructura del documento funcional AI-Ready](assets/estructura_documento_ai_ready.svg)
 
@@ -163,6 +165,7 @@ Si el equipo está aún muy anclado en Word, se puede usar **Pandoc** para conve
 
 El flujo completo tiene seis fases, cada una con su intervención de IA correspondiente:
 
+<!--
 | Fase | Descripción | Intervención de IA |
 |---|---|---|
 | **1. Workshop** | Event Storming · Miro · notas estructuradas | Transcripción + resumen |
@@ -171,8 +174,9 @@ El flujo completo tiene seis fases, cada una con su intervención de IA correspo
 | **4. Generación automática Jira** | Épicas · Historias · Tareas técnicas · Subtareas | Pipeline LLM → Jira API (revisión humana antes de push) |
 | **5. Generación automática de pruebas** | Casos de prueba · Scripts Gherkin · Matriz trazabilidad | Generación desde criterios AC · revisión QA Lead obligatoria |
 | **6. Desarrollo + feedback loop** | Sprint activo · Cambios → actualización YAML · Re-gen artefactos | Detección de impacto de cambios · sugerencia de regresión |
+-->
 
-La regla de oro es: **la IA propone, el humano aprueba**. Ningún artefacto debe ir a Jira sin revisión humana en el MVP del proceso.
+![Proceso end-to-end recomendado](assets/proceso_end_to_end_ai_sdlc.svg)
 
 ---
 
@@ -186,6 +190,8 @@ La regla de oro es: **la IA propone, el humano aprueba**. Ningún artefacto debe
 | Generación Jira | LLM transforma YAML → Epics/Stories/Tasks/Subtasks con formato estándar de la organización | Semi-auto (aprobación humana) |
 | Generación QA | LLM genera test cases desde criterios AC en Gherkin; integración con Xray/Zephyr | Semi-auto |
 | Impacto de cambios | RAG sobre el repositorio de requisitos para detectar qué historias se ven afectadas por un cambio | Asistido |
+
+La regla de oro es: **la IA propone, el humano aprueba**. Ningún artefacto debe ir a Jira sin revisión humana en el MVP del proceso.
 
 ---
 
