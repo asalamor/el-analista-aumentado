@@ -64,6 +64,8 @@ La plantilla tiene cinco bloques. Cada bloque tiene una responsabilidad distinta
 **Responsabilidades por rol:**
 El analista rellena los bloques 1, 2 y 3. El equipo técnico completa el bloque 4 y 5 durante el refinamiento. La IA valida la completitud antes del pipeline.
 
+![Anatomía de la plantilla completa](assets/anatomia_plantilla_requisito.svg)
+
 ---
 
 ## Fase 3 — La plantilla completa comentada
