@@ -97,7 +97,7 @@ El flujo completo tiene este aspecto:
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
-![El flujo del modelo operativo](images/00_01_flujo_operativo.png)
+![El flujo del modelo operativo](./images/00_01_flujo_operativo.png)
 
 El modelo tiene doce componentes que se construyen en capas:
 
