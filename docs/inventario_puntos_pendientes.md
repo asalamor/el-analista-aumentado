@@ -31,7 +31,7 @@ Al completar el modelo operativo principal, se identificaron los siguientes punt
 - **Gestión del backlog de épicas no priorizadas** — consistencia para estimación de capacidad
 - **Proceso de cierre de sprint y actualización de trazabilidad** — historias no completadas
 
-## Gaps de gobierno
+### Gaps de gobierno
 
 - **Métricas de ROI para la dirección** — valor monetario de las métricas técnicas
 - **Política de privacidad y seguridad de datos** — qué enviar a APIs externas en proyectos regulados
