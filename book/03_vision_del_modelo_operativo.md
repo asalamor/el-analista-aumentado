@@ -28,6 +28,7 @@ Sin ese mapa, los capítulos técnicos se leen como instrucciones de montaje de 
 
 El modelo operativo tiene doce componentes organizados en tres niveles que se construyen en secuencia. Cada nivel produce los resultados que necesita el siguiente para funcionar correctamente.
 
+<!--
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                    MODELO OPERATIVO — TRES NIVELES              │
@@ -69,6 +70,9 @@ El modelo operativo tiene doce componentes organizados en tres niveles que se co
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
+-->
+
+![Modelo operativo - Tres niveles](./images/03_01_modelo_operativo.png)
 
 El nivel 1 define la materia prima: cómo debe escribirse un requisito para que el pipeline pueda procesarlo, qué vocabulario debe usarse para garantizar coherencia, y cómo capturar los requisitos directamente desde los workshops con el usuario de negocio en un formato que el sistema entiende.
 
