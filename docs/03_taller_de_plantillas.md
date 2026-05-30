@@ -338,7 +338,9 @@ Para la mayoría de organizaciones, el conjunto mínimo bloqueante es:
 
 ### Decisión 2: ¿Vocabulario controlado o texto libre?
 
-La regla: **si el campo se usa para enrutar, filtrar o generar lógica condicional en los prompts, debe ser vocabulario controlado**.
+Cada campo tiene dos opciones: texto libre o vocabulario controlado (enum). Los campos con vocabulario controlado son mucho más útiles para la IA pero más restrictivos para el analista.
+
+La regla: **si el campo se usa para enrutar, filtrar o generar lógica condicional en los prompts, debe ser vocabulario controlado**. Si solo se usa como contexto descriptivo, puede ser texto libre.
 
 | Campo | Recomendación | Motivo |
 |---|---|---|
