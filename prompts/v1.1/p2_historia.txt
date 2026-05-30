@@ -1,0 +1,74 @@
+A partir del requisito funcional estructurado que se proporciona, genera
+una Historia de Usuario Jira completa y lista para refinamiento.
+
+REQUISITO DE ENTRADA:
+{requisito_yaml}
+
+ÉPICA PADRE (ya creada en Jira):
+- ID Jira: {epic_jira_id}
+- Título: {epic_summary}
+
+HISTORIAS YA EXISTENTES EN ESTA ÉPICA (para evitar duplicidades):
+{historias_existentes_resumen}
+
+Genera el siguiente JSON:
+
+{{
+  "issue_type": "Story",
+  "summary": "Como [rol], quiero [acción concreta] para [beneficio medible]",
+  "epic_link": "{epic_jira_id}",
+  "description": {{
+    "contexto": "[Por qué existe esta historia. Problema de negocio que resuelve.]",
+    "narrativa": "Como [rol]\nquiero [acción]\npara [beneficio]",
+    "notas_importantes": ["[Restricción o aclaración relevante]"],
+    "flujo_principal": [
+      "1. [Paso 1 del flujo feliz]",
+      "2. [Paso 2]"
+    ],
+    "flujos_alternativos": [
+      {{
+        "condicion": "[Cuándo se activa]",
+        "pasos": ["1. [Paso]"]
+      }}
+    ],
+    "flujos_error": [
+      {{
+        "condicion": "[Condición de error]",
+        "comportamiento_esperado": "[Qué hace el sistema]"
+      }}
+    ]
+  }},
+  "acceptance_criteria": [
+    {{
+      "id": "AC-{req_id}-01",
+      "titulo": "[Resumen de una línea]",
+      "dado": "[Contexto previo y estado del sistema]",
+      "cuando": "[Acción concreta que ejecuta el actor]",
+      "entonces": "[Resultado observable y verificable]",
+      "tipo": "positivo"
+    }}
+  ],
+  "definition_of_done": [
+    "Todos los criterios de aceptación superan pruebas de regresión",
+    "Revisión de código aprobada por al menos un peer",
+    "Documentación técnica actualizada",
+    "[DoD específico derivado del requisito]"
+  ],
+  "priority": "[Must Have | Should Have | Could Have | Won't Have]",
+  "story_points": NÚMERO_FIBONACCI,
+  "labels": ["[etiqueta]"],
+  "components": ["[componente]"],
+  "custom_fields": {{
+    "requisito_origen": "{req_id}",
+    "modulo_funcional": "[epica_id]"
+  }},
+  "alertas_calidad": []
+}}
+
+CRITERIOS DE ESTIMACIÓN (story points — escala Fibonacci):
+1 = trivial, sin lógica de negocio
+2 = simple, un flujo, sin integraciones
+3 = moderado, 2-3 flujos o una integración simple
+5 = complejo, múltiples flujos o reglas de negocio
+8 = muy complejo, múltiples integraciones o alta incertidumbre
+13 = demasiado grande, considera partir la historia

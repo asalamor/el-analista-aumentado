@@ -1,0 +1,32 @@
+# requirements.txt
+# Dependencias del pipeline AI funcional
+# Instalar con: pip install -r requirements.txt
+
+# ── LLM ──────────────────────────────────────────────────────
+anthropic>=0.40.0          # Cliente oficial Anthropic (Claude)
+openai>=1.50.0             # Cliente OpenAI (alternativa)
+tiktoken>=0.7.0            # Conteo de tokens para gestión de contexto
+
+# ── BASE DE DATOS ─────────────────────────────────────────────
+psycopg2-binary>=2.9.9    # Conector PostgreSQL
+pgvector>=0.3.0            # Extensión pgvector para Python
+
+# ── CONFIGURACIÓN ─────────────────────────────────────────────
+python-dotenv>=1.0.0       # Carga de variables de entorno desde .env
+
+# ── PROCESAMIENTO ─────────────────────────────────────────────
+pyyaml>=6.0.1              # Parseo de YAML de requisitos
+aiohttp>=3.9.0             # HTTP asíncrono para llamadas paralelas
+requests>=2.31.0           # HTTP síncrono para Jira/Xray API
+
+# ── UTILIDADES ────────────────────────────────────────────────
+rich>=13.7.0               # Output enriquecido en consola (opcional)
+click>=8.1.7               # Alternativa a argparse para CLI (opcional)
+
+# ── DESARROLLO Y TESTING ──────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.12.0
+black>=24.0.0              # Formateador de código
+ruff>=0.3.0                # Linter
+mypy>=1.9.0                # Type checking

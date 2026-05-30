@@ -1,0 +1,223 @@
+# requisitos/EP-04/REQ-023.yaml
+# Ejemplo completo de requisito AI-ready
+# Módulo: Gestión de Facturación
+
+id: REQ-023
+titulo: "Filtrar facturas por rango de fechas"
+version: "1.0"
+estado: validado
+epica: EP-04
+modulo: "Gestión de Facturación"
+
+origen:
+  solicitante: "Ana López"
+  area: "Dirección Financiera"
+  fecha_solicitud: "2025-04-10"
+  referencia: "Acta reunión 2025-04-10 — Punto 3"
+
+fecha_creacion: "2025-04-11"
+fecha_validacion: "2025-04-14"
+analista: "Carlos Ruiz"
+
+prioridad: must-have
+
+# ─── BLOQUE 2: Contexto de negocio ───────────────────────────
+
+actor: "Gestor de facturación"
+
+actores_secundarios: []
+
+evento_disparador: >
+  El gestor de facturación accede al módulo Facturas para preparar
+  el cierre contable mensual y necesita localizar facturas de un
+  período específico.
+
+objetivo_negocio: >
+  Reducir el tiempo de localización de facturas durante el cierre mensual,
+  actualmente de 20-30 minutos de búsqueda manual, a menos de 2 minutos
+  mediante un filtro estructurado por rango de fechas.
+
+descripcion: >
+  El gestor de facturación necesita poder filtrar el listado de facturas
+  introduciendo una fecha de inicio y una fecha de fin. El sistema debe
+  devolver todas las facturas cuya fecha_factura esté dentro del rango
+  indicado, ordenadas de más reciente a más antigua, con paginación
+  y contador de resultados.
+
+reglas_negocio:
+  - "Solo se muestran facturas del ejercicio fiscal en curso (año natural)"
+  - "El rango máximo permitido es de 365 días (fecha_fin - fecha_inicio <= 365)"
+  - "Si fecha_fin se omite, el sistema usa la fecha actual como valor por defecto"
+  - "La búsqueda se realiza sobre el campo fecha_factura, no fecha_recepcion"
+
+dependencias:
+  requisitos: []
+  sistemas: []
+  decisiones: []
+
+# ─── BLOQUE 3: Comportamiento esperado ───────────────────────
+
+flujo_principal:
+  - paso: 1
+    actor: "Gestor de facturación"
+    accion: "Accede al módulo Facturas"
+    resultado: "Se carga el listado de facturas con el panel de filtros visible"
+  - paso: 2
+    actor: "Gestor de facturación"
+    accion: "Introduce fecha_inicio en el campo 'Desde'"
+    resultado: "El campo muestra la fecha formateada (DD/MM/YYYY)"
+  - paso: 3
+    actor: "Gestor de facturación"
+    accion: "Introduce fecha_fin en el campo 'Hasta'"
+    resultado: "El campo muestra la fecha formateada (DD/MM/YYYY)"
+  - paso: 4
+    actor: "Gestor de facturación"
+    accion: "Pulsa el botón 'Buscar'"
+    resultado: "Aparece un indicador de carga"
+  - paso: 5
+    actor: "sistema"
+    accion: "Ejecuta la consulta con los parámetros indicados"
+    resultado: >
+      El listado muestra las facturas del período en menos de 2 segundos,
+      ordenadas por fecha_factura descendente, con el contador de resultados
+
+flujos_alternativos:
+  - condicion: "El gestor no introduce fecha_fin"
+    pasos:
+      - paso: 1
+        actor: "sistema"
+        accion: "Usa la fecha actual como fecha_fin por defecto"
+        resultado: "La búsqueda se ejecuta con fecha_fin = hoy"
+
+excepciones:
+  - condicion: "El rango de fechas supera 365 días"
+    comportamiento: >
+      El sistema NO ejecuta la consulta. Los campos fecha_inicio y fecha_fin
+      se resaltan en rojo. Se muestra el mensaje:
+      'El rango no puede superar 365 días'
+  - condicion: "No existen facturas en el período seleccionado"
+    comportamiento: >
+      Se muestra estado vacío con el texto:
+      'No se encontraron facturas para el período seleccionado'
+      y el botón 'Ampliar búsqueda'
+  - condicion: "El servicio de base de datos no responde en 5 segundos"
+    comportamiento: >
+      Se muestra el mensaje: 'El servicio no está disponible temporalmente.
+      Inténtalo de nuevo en unos minutos.' con botón de reintento.
+
+criterios_aceptacion:
+  - id: AC-023-01
+    titulo: "Filtrado válido devuelve resultados ordenados en tiempo correcto"
+    dado: >
+      El gestor está autenticado con rol gestor_facturacion
+      y accede al módulo Facturas
+    cuando: >
+      Introduce fecha_inicio=2024-01-01 y fecha_fin=2024-03-31
+      y pulsa el botón Buscar
+    entonces: >
+      El sistema devuelve las facturas del período en menos de 2 segundos.
+      Los resultados están ordenados por fecha_factura de forma descendente.
+      Se muestra el contador 'X facturas encontradas' con valor > 0.
+    tipo: positivo
+    datos_ejemplo:
+      fecha_inicio: "2024-01-01"
+      fecha_fin: "2024-03-31"
+
+  - id: AC-023-02
+    titulo: "Rango superior a 365 días bloquea la búsqueda con mensaje"
+    dado: >
+      El gestor está en el módulo Facturas con el panel de filtros visible
+    cuando: >
+      Introduce fecha_inicio=2023-01-01 y fecha_fin=2024-01-02
+      (366 días de diferencia) y pulsa Buscar
+    entonces: >
+      El sistema NO ejecuta ninguna consulta a la base de datos.
+      Los campos fecha_inicio y fecha_fin se resaltan en rojo.
+      Se muestra el mensaje exacto: 'El rango no puede superar 365 días'.
+    tipo: negativo
+    datos_ejemplo:
+      fecha_inicio: "2023-01-01"
+      fecha_fin: "2024-01-02"
+      dias_diferencia: 366
+
+  - id: AC-023-03
+    titulo: "Búsqueda sin resultados muestra estado vacío con acción"
+    dado: >
+      El gestor está en el módulo Facturas y no existen facturas
+      con fechas entre 2000-01-01 y 2000-01-31
+    cuando: >
+      Introduce fecha_inicio=2000-01-01 y fecha_fin=2000-01-31
+      y pulsa Buscar
+    entonces: >
+      La consulta se ejecuta correctamente (sin error de sistema).
+      Se muestra el estado vacío con el texto:
+      'No se encontraron facturas para el período seleccionado'.
+      Está visible el botón 'Ampliar búsqueda'.
+    tipo: positivo
+    datos_ejemplo:
+      fecha_inicio: "2000-01-01"
+      fecha_fin: "2000-01-31"
+
+definition_of_done:
+  - "Todos los criterios de aceptación superan las pruebas de regresión"
+  - "Revisión de código aprobada por al menos un peer"
+  - "Rendimiento validado con dataset de 10.000 registros en staging"
+  - "Accesibilidad WCAG 2.1 AA verificada"
+
+# ─── BLOQUE 4: Datos ─────────────────────────────────────────
+
+datos_entrada:
+  - nombre: "fecha_inicio"
+    tipo: date
+    requerido: true
+    formato: "ISO-8601 (YYYY-MM-DD)"
+    rango:
+      min: "primer día del ejercicio fiscal en curso"
+      max: "fecha actual"
+    descripcion: "Fecha de inicio del período de búsqueda"
+  - nombre: "fecha_fin"
+    tipo: date
+    requerido: false
+    formato: "ISO-8601 (YYYY-MM-DD)"
+    valor_defecto: "fecha actual"
+    descripcion: "Fecha de fin del período. Si se omite, se usa la fecha actual."
+
+datos_salida:
+  campos:
+    - id_factura
+    - fecha_factura
+    - fecha_recepcion
+    - importe_total
+    - estado
+    - proveedor.razon_social
+    - proveedor.id_proveedor
+  formato: "JSON paginado"
+  paginacion:
+    aplica: true
+    tamanyo_pagina_defecto: 50
+    max_registros: 500
+  orden_defecto: "fecha_factura DESC"
+  tiempo_respuesta_max_ms: 2000
+
+# ─── BLOQUE 5: Metadatos técnicos ────────────────────────────
+
+componentes_afectados:
+  - "api-facturacion"
+  - "frontend-facturas"
+  - "bd-principal"
+
+restricciones_no_funcionales:
+  rendimiento: "< 2 segundos p95 con dataset de 10.000 registros"
+  seguridad: "Solo accesible con rol gestor_facturacion o responsable_financiero. Audit log obligatorio."
+  accesibilidad: "WCAG 2.1 AA"
+  volumen_datos: "Hasta 100.000 facturas por empresa en el ejercicio"
+
+notas_implementacion: >
+  Considerar índice compuesto en (fecha_factura, id_empresa) para
+  garantizar el rendimiento requerido. La paginación debe implementarse
+  en el servidor, no en el cliente.
+
+trazabilidad:
+  historias_generadas: []
+  test_cases_generados: []
+  jira_issues: []

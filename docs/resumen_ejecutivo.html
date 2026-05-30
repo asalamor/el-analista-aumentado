@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumen Ejecutivo — Modelo Operativo AI-Ready</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0f1117;--ink-soft:#3a3d4a;--ink-muted:#6b6f7d;
+  --surface:#fafaf8;--surface-alt:#f2f1ee;--surface-b:#e9e8e3;
+  --gold:#b8860b;--gold-pale:#fdf6e3;--gold-light:#f5d87a;
+  --teal:#0d6e5c;--teal-light:#e8f5f1;
+  --coral:#c0392b;--coral-light:#fdf0ef;
+  --border:#e4e2dd;--rule:#d0cec9;
+}
+html{font-size:16px}
+body{font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* PAGE WRAPPER */
+.page{max-width:860px;margin:0 auto;padding:0 48px 100px}
+
+/* COVER */
+.cover{
+  background:var(--ink);color:#fff;
+  padding:64px 64px 52px;
+  margin:0 -48px 0;
+  position:relative;overflow:hidden;
+}
+.cover::before{
+  content:'';position:absolute;
+  top:-80px;right:-80px;
+  width:420px;height:420px;border-radius:50%;
+  border:1px solid rgba(184,134,11,.15);
+}
+.cover::after{
+  content:'';position:absolute;
+  top:-20px;right:30px;
+  width:220px;height:220px;border-radius:50%;
+  border:1px solid rgba(184,134,11,.08);
+}
+.cover-eyebrow{
+  font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold-light);font-weight:500;margin-bottom:22px;
+}
+.cover-title{
+  font-family:'Playfair Display',serif;font-size:44px;font-weight:700;
+  line-height:1.16;color:#fff;max-width:640px;margin-bottom:18px;
+}
+.cover-sub{
+  font-size:15px;color:rgba(255,255,255,.55);font-weight:300;
+  max-width:580px;line-height:1.68;
+}
+.cover-meta{
+  display:flex;gap:36px;margin-top:40px;padding-top:32px;
+  border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap;
+}
+.meta-item{display:flex;flex-direction:column;gap:3px}
+.meta-item .mlabel{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+.meta-item .mval{font-size:13.5px;color:rgba(255,255,255,.82)}
+
+/* SECTION */
+.section{margin-top:68px}
+.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:10px}
+.section-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--ink);line-height:1.26;margin-bottom:22px}
+.body-text{font-size:15px;color:var(--ink-soft);line-height:1.76}
+.body-text p+p{margin-top:13px}
+
+hr.divider{border:none;border-top:1px solid var(--border);margin:60px 0}
+
+/* STAT CARDS */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.stat-card{
+  background:var(--surface-alt);border:1px solid var(--border);
+  border-radius:10px;padding:24px 20px;
+}
+.stat-card .big{
+  font-family:'Playfair Display',serif;font-size:40px;font-weight:700;
+  color:var(--ink);line-height:1;margin-bottom:4px;
+}
+.stat-card .unit{font-size:13px;color:var(--ink-muted);margin-bottom:8px}
+.stat-card .desc{font-size:13px;color:var(--ink-soft);line-height:1.55}
+
+/* FLOW */
+.flow{display:flex;align-items:stretch;gap:0;margin-top:32px;flex-wrap:wrap;row-gap:10px}
+.flow-step{
+  flex:1;min-width:96px;background:var(--ink);color:#fff;
+  border-radius:8px;padding:14px 10px;text-align:center;
+}
+.flow-step .fn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;border-radius:50%;
+  background:var(--gold);color:var(--ink);
+  font-size:11px;font-weight:500;margin-bottom:7px;
+}
+.flow-step .flabel{font-size:11.5px;color:rgba(255,255,255,.82);line-height:1.35}
+.flow-step.hi{background:var(--gold)}
+.flow-step.hi .fn{background:var(--ink);color:var(--gold)}
+.flow-step.hi .flabel{color:var(--ink)}
+.flow-arr{
+  width:24px;flex-shrink:0;display:flex;align-items:center;
+  justify-content:center;color:var(--ink-muted);font-size:16px;
+}
+
+/* COMPONENT GRID */
+.comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.comp-card{
+  border:1px solid var(--border);border-radius:10px;padding:22px 18px;
+  background:#fff;position:relative;
+}
+.comp-layer{
+  display:inline-block;font-size:10px;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:2px 9px;border-radius:20px;margin-bottom:10px;
+}
+.layer-base{background:var(--gold-pale);color:var(--gold)}
+.layer-tech{background:var(--teal-light);color:var(--teal)}
+.layer-int{background:var(--surface-b);color:var(--ink-soft)}
+.layer-gov{background:var(--coral-light);color:var(--coral)}
+.comp-num{
+  position:absolute;top:14px;right:14px;
+  font-family:'Playfair Display',serif;font-size:22px;font-weight:700;
+  color:var(--border);line-height:1;
+}
+.comp-title{font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:7px;line-height:1.35}
+.comp-body{font-size:12.5px;color:var(--ink-soft);line-height:1.58}
+
+/* KPI STRIP */
+.kpi-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:12px;
+  overflow:hidden;margin-top:28px;
+}
+.kpi{background:#fff;padding:30px 16px;text-align:center}
+.kpi .kval{
+  font-family:'Playfair Display',serif;font-size:36px;font-weight:700;
+  color:var(--ink);line-height:1;
+}
+.kpi .kval sup{font-size:20px}
+.kpi .klabel{font-size:12px;color:var(--ink-muted);margin-top:7px;line-height:1.42}
+
+/* ROADMAP */
+.roadmap{margin-top:36px}
+.rm-item{
+  display:grid;grid-template-columns:148px 1fr;
+  gap:0 28px;position:relative;padding-bottom:40px;
+}
+.rm-item:not(:last-child)::before{
+  content:'';position:absolute;left:64px;top:32px;bottom:0;
+  width:1px;background:var(--border);
+}
+.rm-left{padding-top:2px;text-align:right}
+.rm-badge{
+  display:inline-block;background:var(--ink);color:#fff;
+  font-size:11px;font-weight:500;padding:4px 12px;border-radius:20px;
+}
+.rm-badge.gold{background:var(--gold);color:var(--ink)}
+.rm-badge.teal{background:var(--teal)}
+.rm-phase{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin-top:5px}
+.rm-dot{
+  position:absolute;left:58px;top:6px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--ink);border:3px solid var(--surface);
+  box-shadow:0 0 0 1px var(--border);
+}
+.rm-dot.gold{background:var(--gold)}
+.rm-dot.teal{background:var(--teal)}
+.rm-title{font-size:16px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.rm-desc{font-size:13.5px;color:var(--ink-soft);line-height:1.63}
+.rm-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:11px;background:var(--surface-alt);border:1px solid var(--border);color:var(--ink-soft);padding:2px 10px;border-radius:20px}
+
+/* RISK TABLE */
+.risk-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:13.5px}
+.risk-table th{
+  text-align:left;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-muted);font-weight:500;padding:10px 14px;
+  border-bottom:1px solid var(--border);
+}
+.risk-table td{padding:14px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.risk-table tr:last-child td{border-bottom:none}
+.risk-table td:first-child{color:var(--ink);font-weight:500;width:38%}
+.pill{display:inline-block;font-size:11px;font-weight:500;padding:2px 10px;border-radius:20px}
+.pill-hi{background:var(--coral-light);color:var(--coral)}
+.pill-md{background:var(--gold-pale);color:var(--gold)}
+.pill-lo{background:var(--teal-light);color:var(--teal)}
+
+/* INVEST */
+.invest-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.invest-card{border:1px solid var(--border);border-radius:10px;padding:24px 22px;background:#fff}
+.invest-card h4{font-size:10.5px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-muted);margin-bottom:14px}
+.invest-item{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:8px 0;border-bottom:1px solid var(--surface-alt);
+  font-size:13.5px;color:var(--ink-soft);
+}
+.invest-item:last-child{border-bottom:none}
+.invest-item strong{color:var(--ink);font-weight:500}
+
+/* NEXT STEPS */
+.steps-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:13.5px}
+.steps-table th{
+  text-align:left;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-muted);font-weight:500;padding:10px 14px;
+  border-bottom:1px solid var(--border);
+}
+.steps-table td{padding:13px 14px;border-bottom:1px solid var(--border);color:var(--ink-soft);vertical-align:top}
+.steps-table tr:last-child td{border-bottom:none}
+.steps-table td:first-child{color:var(--ink);font-weight:500}
+
+/* PRINCIPLES */
+.principles{display:flex;flex-direction:column;gap:0;margin-top:28px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.principle{display:grid;grid-template-columns:44px 1fr;gap:0;border-bottom:1px solid var(--border)}
+.principle:last-child{border-bottom:none}
+.principle-icon{
+  background:var(--ink);display:flex;align-items:flex-start;
+  justify-content:center;padding-top:18px;
+  font-family:'Playfair Display',serif;font-size:18px;font-weight:700;
+  color:var(--gold);
+}
+.principle-body{padding:16px 20px;background:#fff}
+.principle-title{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.principle-desc{font-size:13px;color:var(--ink-soft);line-height:1.58}
+
+/* CALLOUT */
+.callout{
+  background:var(--ink);border-radius:12px;
+  padding:40px 44px;margin-top:52px;position:relative;overflow:hidden;
+}
+.callout::before{
+  content:'"';font-family:'Playfair Display',serif;font-size:240px;
+  line-height:1;position:absolute;right:24px;top:-20px;
+  color:rgba(184,134,11,.12);pointer-events:none;
+}
+.callout-text{
+  font-family:'Playfair Display',serif;font-size:22px;line-height:1.52;
+  color:#fff;max-width:700px;position:relative;font-style:italic;
+}
+.callout-attr{font-size:12px;color:rgba(255,255,255,.4);margin-top:18px;font-weight:300}
+
+/* FOOTER */
+.footer{
+  margin-top:80px;padding-top:28px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.footer-left{font-size:12px;color:var(--ink-muted);line-height:1.55}
+.footer-badge{
+  font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-muted);border:1px solid var(--border);padding:5px 14px;border-radius:20px;
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-eyebrow">Documento estratégico · Uso interno · 2025</div>
+  <h1 class="cover-title">Transformación AI-Ready del Análisis Funcional</h1>
+  <p class="cover-sub">Modelo operativo completo para automatizar la generación de artefactos Agile mediante Inteligencia Artificial, desde la captura de requisitos hasta la trazabilidad en producción. Doce componentes. Cuatro fases. Doce meses.</p>
+  <div class="cover-meta">
+    <div class="meta-item">
+      <span class="mlabel">Ámbito</span>
+      <span class="mval">Análisis funcional · Jira · QA</span>
+    </div>
+    <div class="meta-item">
+      <span class="mlabel">Horizonte</span>
+      <span class="mval">12 meses</span>
+    </div>
+    <div class="meta-item">
+      <span class="mlabel">Modelo de implantación</span>
+      <span class="mval">Piloto → Expansión → Autonomía</span>
+    </div>
+    <div class="meta-item">
+      <span class="mlabel">Metodología</span>
+      <span class="mval">BDD · Event Storming · RAG</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+<!-- 01 EL PROBLEMA -->
+<div class="section">
+  <div class="eyebrow">01 · Situación actual</div>
+  <h2 class="section-title">El análisis funcional consume tiempo valioso en trabajo mecánico</h2>
+  <div class="body-text">
+    <p>El equipo de análisis funcional dedica entre el 60% y el 70% de su tiempo a tareas repetitivas: redactar documentos Word, copiar información entre sistemas, crear manualmente épicas, historias y tareas en Jira, y generar test cases desde cero. Este trabajo mecánico desplaza al trabajo de valor: entender el negocio, detectar ambigüedades y facilitar decisiones de alcance.</p>
+    <p>El coste no es solo de tiempo. Los requisitos ambiguos o incompletos que entran al sprint sin detección generan bugs en producción que cuestan entre 10 y 100 veces más corregir que si se hubieran detectado en la fase funcional. Sin trazabilidad automática, nadie sabe qué test case verifica qué requisito de negocio hasta que alguien lo busca manualmente.</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="big">2–5</div>
+      <div class="unit">días de trabajo</div>
+      <div class="desc">Desde la reunión de requisitos hasta historias listas en Jira, con el proceso actual.</div>
+    </div>
+    <div class="stat-card">
+      <div class="big">~30%</div>
+      <div class="unit">de bugs en producción</div>
+      <div class="desc">Tienen como causa raíz un requisito ambiguo o incompleto que nadie detectó a tiempo.</div>
+    </div>
+    <div class="stat-card">
+      <div class="big">60%</div>
+      <div class="unit">del tiempo del analista</div>
+      <div class="desc">Se dedica a trabajo mecánico: formatear, copiar, crear issues y generar tests manualmente.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 02 LA PROPUESTA -->
+<div class="section">
+  <div class="eyebrow">02 · La propuesta</div>
+  <h2 class="section-title">Automatizar lo mecánico para liberar el juicio experto</h2>
+  <div class="body-text">
+    <p>El modelo propone rediseñar la fase de definición funcional introduciendo Inteligencia Artificial en dos capas. Una capa de estructuración convierte los requisitos en un formato que la IA puede procesar con precisión: YAML con campos atómicos, vocabulario controlado y criterios de aceptación en formato Dado/Cuando/Entonces. Una capa de generación transforma esos requisitos estructurados en todos los artefactos Agile necesarios de forma automática, con aprobación humana obligatoria antes de que llegue nada a Jira.</p>
+    <p>El resultado es un pipeline que, partiendo de un requisito bien definido, genera en menos de dos minutos: historias de usuario, criterios de aceptación, tareas técnicas por capa tecnológica, test cases positivos y negativos, scripts Gherkin y la trazabilidad completa desde el requisito hasta el commit de código.</p>
+  </div>
+  <div class="flow">
+    <div class="flow-step">
+      <div class="fn">1</div>
+      <div class="flabel">Workshop<br>Event Storming</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step">
+      <div class="fn">2</div>
+      <div class="flabel">Requisito<br>YAML estructurado</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step">
+      <div class="fn">3</div>
+      <div class="flabel">Validación<br>automática</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step hi">
+      <div class="fn">4</div>
+      <div class="flabel">Pipeline IA<br>genera artefactos</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step">
+      <div class="fn">5</div>
+      <div class="flabel">Aprobación<br>humana</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step">
+      <div class="fn">6</div>
+      <div class="flabel">Push a Jira<br>+ Xray/Zephyr</div>
+    </div>
+    <div class="flow-arr">›</div>
+    <div class="flow-step">
+      <div class="fn">7</div>
+      <div class="flabel">Trazabilidad<br>automática</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 03 LOS 12 COMPONENTES -->
+<div class="section">
+  <div class="eyebrow">03 · El modelo</div>
+  <h2 class="section-title">Doce componentes que forman un sistema completo e integrado</h2>
+  <div class="body-text">
+    <p>El modelo operativo se articula en doce componentes interdependientes organizados en cuatro capas: la base conceptual que define cómo se captura y estructura la información, el núcleo técnico que automatiza la generación de artefactos, la capa de inteligencia que da al sistema memoria y conciencia del contexto histórico, y el sistema de gobierno que garantiza que el pipeline sigue funcionando correctamente a lo largo del tiempo.</p>
+  </div>
+  <div class="comp-grid">
+
+    <div class="comp-card">
+      <div class="comp-layer layer-base">Base conceptual</div>
+      <div class="comp-num">01</div>
+      <div class="comp-title">Plantilla de requisito AI-ready</div>
+      <div class="comp-body">Estructura de cinco bloques con campos obligatorios, vocabulario controlado y formato YAML dual: legible para humanos en Confluence y procesable por la IA en el pipeline. Se diseña en un taller con el equipo antes de tocar ninguna herramienta.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-base">Base conceptual</div>
+      <div class="comp-num">02</div>
+      <div class="comp-title">Glosario estructurado</div>
+      <div class="comp-body">Repositorio YAML de actores, entidades, acciones y eventos del dominio de negocio. Se inyecta como contexto en cada llamada al pipeline para garantizar que todos los artefactos generados usan el mismo vocabulario que el negocio.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-base">Base conceptual</div>
+      <div class="comp-num">03</div>
+      <div class="comp-title">Metodología de captura</div>
+      <div class="comp-body">Event Storming para descubrimiento, User Stories en formato BDD para definición, Specification by Example para reglas complejas. El analista facilita; el usuario de negocio trabaja en lenguaje natural sin aprender ningún formato nuevo.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Núcleo técnico</div>
+      <div class="comp-num">04</div>
+      <div class="comp-title">Pipeline de generación de artefactos Jira</div>
+      <div class="comp-body">Cuatro prompts encadenados que transforman un requisito YAML en épicas, historias, tareas técnicas y subtareas. El analista revisa el JSON generado antes del push. Ningún artefacto llega a Jira sin aprobación explícita.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Núcleo técnico</div>
+      <div class="comp-num">05</div>
+      <div class="comp-title">Generación automática de test cases</div>
+      <div class="comp-body">Cinco prompts especializados que generan casos positivos, negativos, de contorno, scripts Gherkin ejecutables y la matriz de cobertura AC↔TC. Se integran con Xray o Zephyr Scale vía API sin intervención manual.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Núcleo técnico</div>
+      <div class="comp-num">06</div>
+      <div class="comp-title">Validación automática de calidad</div>
+      <div class="comp-body">Cuatro llamadas especializadas que verifican estructura, semántica, consistencia terminológica y completitud funcional de cada requisito. Los requisitos con problemas bloqueantes no pueden generar artefactos hasta que se corrigen.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Inteligencia contextual</div>
+      <div class="comp-num">07</div>
+      <div class="comp-title">Arquitectura RAG</div>
+      <div class="comp-body">Todo el repositorio de requisitos se indexa en una base vectorial (pgvector). Antes de generar cualquier artefacto, el sistema recupera los requisitos relacionados para detectar duplicidades, contradicciones y oportunidades de reutilización.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Inteligencia contextual</div>
+      <div class="comp-num">08</div>
+      <div class="comp-title">Detección de impacto de cambios</div>
+      <div class="comp-body">Cuando un requisito validado cambia, el sistema identifica automáticamente qué historias, test cases y requisitos dependientes se ven afectados, genera un plan de acción priorizado y notifica al equipo con el nivel de urgencia correcto.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-tech">Inteligencia contextual</div>
+      <div class="comp-num">09</div>
+      <div class="comp-title">Matriz de trazabilidad automática</div>
+      <div class="comp-body">Grafo dirigido que conecta en tiempo real: requisito → historia → criterio AC → test case → issue Jira → commit. Responde preguntas de auditoría en segundos y detecta gaps de cobertura antes del cierre del sprint.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-int">Integración</div>
+      <div class="comp-num">10</div>
+      <div class="comp-title">Conector Jira API</div>
+      <div class="comp-body">Cola de aprobación con interfaz de revisión, push idempotente a Jira con gestión de rate limiting y reintentos automáticos, y webhook receiver que mantiene el grafo de trazabilidad sincronizado con los cambios en Jira y Xray.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-gov">Personas y adopción</div>
+      <div class="comp-num">11</div>
+      <div class="comp-title">Plan de formación y adopción</div>
+      <div class="comp-body">Cuatro fases en doce meses con materiales diferenciados para analistas, usuarios de negocio, equipo técnico y dirección. El usuario de negocio no percibe ningún cambio. El analista ve reducido su trabajo mecánico desde la primera semana del piloto.</div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-layer layer-gov">Sostenibilidad</div>
+      <div class="comp-num">12</div>
+      <div class="comp-title">Gobierno del modelo</div>
+      <div class="comp-body">Observabilidad continua con alertas automáticas, versionado riguroso de prompts con evaluación sobre dataset de referencia, auditoría semanal del repositorio, comité mensual de 45 minutos y catálogo de riesgos con planes de contingencia.</div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 04 IMPACTO -->
+<div class="section">
+  <div class="eyebrow">04 · Impacto esperado</div>
+  <h2 class="section-title">Resultados medibles en los primeros doce meses</h2>
+  <div class="body-text">
+    <p>Los indicadores de impacto se miden desde el primer día del piloto para tener datos reales que respalden la expansión. Los objetivos se establecen en tres horizontes: mes 2 al cierre del piloto, mes 6 al término de la expansión, y mes 12 en régimen de autonomía supervisada.</p>
+  </div>
+  <div class="kpi-strip">
+    <div class="kpi">
+      <div class="kval">−60<sup>%</sup></div>
+      <div class="klabel">Tiempo de creación de artefactos Jira por requisito</div>
+    </div>
+    <div class="kpi">
+      <div class="kval">−40<sup>%</sup></div>
+      <div class="klabel">Bugs por ambigüedad funcional en producción</div>
+    </div>
+    <div class="kpi">
+      <div class="kval">100<sup>%</sup></div>
+      <div class="klabel">Trazabilidad completa sin mantenimiento manual</div>
+    </div>
+    <div class="kpi">
+      <div class="kval">&gt;80<sup>%</sup></div>
+      <div class="klabel">Artefactos aprobados sin edición manual en mes 6</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 05 ROADMAP -->
+<div class="section">
+  <div class="eyebrow">05 · Roadmap</div>
+  <h2 class="section-title">Implantación gradual en cuatro fases sin interrumpir el trabajo actual</h2>
+  <div class="body-text">
+    <p>El modelo se implanta de forma incremental. Cada fase entrega valor antes de iniciar la siguiente. No se reemplaza ninguna herramienta existente en las fases iniciales. El equipo trabaja con lo que ya conoce mientras incorpora gradualmente las nuevas capacidades. El primer mes no requiere ninguna inversión tecnológica adicional.</p>
+  </div>
+  <div class="roadmap">
+
+    <div class="rm-item">
+      <div class="rm-left">
+        <div class="rm-badge">Semanas 1–4</div>
+        <div class="rm-phase">Fase 0–1 · Arranque</div>
+      </div>
+      <div class="rm-dot"></div>
+      <div>
+        <div class="rm-title">Fundación silenciosa y primer impacto visible</div>
+        <div class="rm-desc">Taller de plantillas con el equipo, construcción del glosario inicial, selección del proyecto piloto y medición de la línea base. Demo en vivo con tres requisitos reales del proyecto: el equipo ve por primera vez sus propios requisitos transformados en historias y test cases en menos de dos minutos. Sin herramientas nuevas todavía.</div>
+        <div class="rm-tags">
+          <div class="tag">Plantilla YAML v1</div>
+          <div class="tag">Glosario inicial</div>
+          <div class="tag">Métricas de línea base</div>
+          <div class="tag">Demo con datos reales</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-item">
+      <div class="rm-left">
+        <div class="rm-badge gold">Meses 2–3</div>
+        <div class="rm-phase">Fase 2 · Piloto</div>
+      </div>
+      <div class="rm-dot gold"></div>
+      <div>
+        <div class="rm-title">Piloto asistido con un analista y un proyecto real</div>
+        <div class="rm-desc">El champion usa el sistema en su proyecto real. La IA actúa como asistente de escritura y validador automático. Los artefactos Jira se generan con el pipeline pero se revisan manualmente antes del push. Las métricas se miden semana a semana y se comunican al equipo con actualizaciones breves de tres líneas cada semana.</div>
+        <div class="rm-tags">
+          <div class="tag">Validación automática</div>
+          <div class="tag">Pipeline de generación</div>
+          <div class="tag">Cola de aprobación</div>
+          <div class="tag">1 analista · 1 proyecto</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-item">
+      <div class="rm-left">
+        <div class="rm-badge">Meses 4–6</div>
+        <div class="rm-phase">Fase 3 · Expansión</div>
+      </div>
+      <div class="rm-dot"></div>
+      <div>
+        <div class="rm-title">Expansión a todo el equipo con el caso de éxito documentado</div>
+        <div class="rm-desc">El champion presenta los resultados del piloto con datos reales al resto del equipo. Cada analista recibe formación individual de 90 minutos facilitada por un igual. Se activan la integración completa con Jira API, Xray, el sistema RAG y la detección automática de impacto de cambios. Los usuarios de negocio no perciben ningún cambio en el proceso.</div>
+        <div class="rm-tags">
+          <div class="tag">Todos los analistas</div>
+          <div class="tag">RAG activo</div>
+          <div class="tag">Trazabilidad automática</div>
+          <div class="tag">QA integrado</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-item">
+      <div class="rm-left">
+        <div class="rm-badge teal">Mes 7+</div>
+        <div class="rm-phase">Fase 4 · Autonomía</div>
+      </div>
+      <div class="rm-dot teal"></div>
+      <div>
+        <div class="rm-title">Autonomía supervisada y mejora continua del sistema</div>
+        <div class="rm-desc">El pipeline funciona con mínima intervención manual. La IA propone, el humano aprueba solo por excepción. El comité mensual de gobierno de 45 minutos revisa métricas y evoluciona los prompts. El sistema aprende continuamente de los patrones de aprobación y rechazo del equipo y mejora su output con cada ciclo.</div>
+        <div class="rm-tags">
+          <div class="tag">Pipeline autónomo</div>
+          <div class="tag">Comité de gobierno mensual</div>
+          <div class="tag">Alertas automáticas</div>
+          <div class="tag">Mejora continua de prompts</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 06 INVERSIÓN -->
+<div class="section">
+  <div class="eyebrow">06 · Inversión y recursos</div>
+  <h2 class="section-title">Coste estimado para el piloto y la expansión</h2>
+  <div class="body-text">
+    <p>La inversión principal es tiempo de las personas, no licencias. En las fases iniciales no se requieren herramientas nuevas: el pipeline se construye sobre la infraestructura existente —Confluence, Jira, Git, PostgreSQL— más el coste por uso de la API del modelo de lenguaje elegido, que para un equipo de análisis de tamaño medio oscila entre 50 y 200 euros mensuales.</p>
+  </div>
+  <div class="invest-grid">
+    <div class="invest-card">
+      <h4>Recursos humanos</h4>
+      <div class="invest-item"><span>Responsable técnico (configuración piloto)</span><strong>~40 h</strong></div>
+      <div class="invest-item"><span>Champion — gobierno semanal</span><strong>3–4 h/semana</strong></div>
+      <div class="invest-item"><span>Taller de plantillas (equipo completo)</span><strong>4 h · una vez</strong></div>
+      <div class="invest-item"><span>Formación individual por analista</span><strong>90 min/persona</strong></div>
+      <div class="invest-item"><span>Comité de gobierno mensual</span><strong>45 min/mes</strong></div>
+    </div>
+    <div class="invest-card">
+      <h4>Infraestructura y herramientas</h4>
+      <div class="invest-item"><span>API LLM (Claude Sonnet / GPT-4o)</span><strong>50–200 €/mes</strong></div>
+      <div class="invest-item"><span>pgvector (extensión PostgreSQL)</span><strong>Gratuito</strong></div>
+      <div class="invest-item"><span>Confluence + Jira (ya licenciados)</span><strong>Sin coste adicional</strong></div>
+      <div class="invest-item"><span>Xray / Zephyr (si ya existe)</span><strong>Sin coste adicional</strong></div>
+      <div class="invest-item"><span>Nuevas licencias de software</span><strong>Ninguna en piloto</strong></div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 07 RIESGOS -->
+<div class="section">
+  <div class="eyebrow">07 · Gestión del riesgo</div>
+  <h2 class="section-title">Riesgos identificados y planes de mitigación</h2>
+  <div class="body-text">
+    <p>Los cinco riesgos principales del modelo están identificados, cuantificados y tienen planes de contingencia documentados. El sistema de gobierno activa alertas automáticas cuando los indicadores anticipan un problema antes de que sea visible para el equipo.</p>
+  </div>
+  <table class="risk-table">
+    <thead>
+      <tr>
+        <th>Riesgo</th>
+        <th>Probabilidad</th>
+        <th>Mitigación clave</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Degradación silenciosa de la calidad del output</td>
+        <td><span class="pill pill-hi">Alta</span></td>
+        <td>Dashboard semanal con alertas automáticas. Dataset de referencia fijo que detecta regresiones de prompts antes de que impacten al equipo.</td>
+      </tr>
+      <tr>
+        <td>Rechazo del equipo por sobrecarga percibida en las primeras semanas</td>
+        <td><span class="pill pill-md">Media</span></td>
+        <td>Métricas de tiempo antes/después desde el día uno. Taller de simplificación de la plantilla si la fricción supera el umbral acordado.</td>
+      </tr>
+      <tr>
+        <td>Dependencia de un único proveedor de modelo de lenguaje</td>
+        <td><span class="pill pill-md">Media</span></td>
+        <td>Arquitectura abstraída que permite cambiar de proveedor con una variable de entorno. Acceso mantenido a mínimo dos proveedores alternativos.</td>
+      </tr>
+      <tr>
+        <td>Pérdida del champion sin sucesor preparado</td>
+        <td><span class="pill pill-md">Media</span></td>
+        <td>Champion secundario formado desde el mes 4. Todo el conocimiento documentado en Confluence, no en la cabeza de una persona.</td>
+      </tr>
+      <tr>
+        <td>Artefacto incorrecto que supera el gate de aprobación</td>
+        <td><span class="pill pill-lo">Baja</span></td>
+        <td>Triple barrera: validación automática, aprobación humana obligatoria y lectura de criterios AC en el sprint planning. Los fallos alimentan el dataset de evaluación.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="divider">
+
+<!-- 08 PRINCIPIOS -->
+<div class="section">
+  <div class="eyebrow">08 · Principios de diseño</div>
+  <h2 class="section-title">Tres cosas que este modelo no es</h2>
+  <div class="principles">
+    <div class="principle">
+      <div class="principle-icon">I</div>
+      <div class="principle-body">
+        <div class="principle-title">No es un proyecto de sustitución de analistas</div>
+        <div class="principle-desc">El modelo elimina el 60% del trabajo mecánico del analista para que pueda dedicarse al 40% que requiere juicio experto: entender el negocio, detectar ambigüedades, facilitar conversaciones difíciles y tomar decisiones de alcance. La IA propone siempre. El analista decide siempre.</div>
+      </div>
+    </div>
+    <div class="principle">
+      <div class="principle-icon">II</div>
+      <div class="principle-body">
+        <div class="principle-title">No es automatización sin control</div>
+        <div class="principle-desc">Cada artefacto generado por la IA requiere aprobación humana explícita antes de llegar a Jira. No existe ningún modo de push automático sin revisión en las fases iniciales. El gobierno del sistema garantiza que el nivel de autonomía escala solo cuando las métricas de calidad lo justifican.</div>
+      </div>
+    </div>
+    <div class="principle">
+      <div class="principle-icon">III</div>
+      <div class="principle-body">
+        <div class="principle-title">No es un proyecto de tecnología</div>
+        <div class="principle-desc">Es un proyecto de cambio organizacional que usa tecnología como habilitador. La parte más difícil no es configurar el pipeline: es conseguir que el equipo lo use consistentemente, que el glosario se mantenga actualizado y que la dirección entienda el valor antes de ver los resultados de doce meses.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 09 PRÓXIMOS PASOS -->
+<div class="section">
+  <div class="eyebrow">09 · Próximos pasos</div>
+  <h2 class="section-title">Cinco acciones para arrancar en las próximas dos semanas</h2>
+  <div class="body-text">
+    <p>El primer paso no requiere ninguna inversión ni aprobación tecnológica. Requiere seleccionar el proyecto piloto, identificar al champion y fijar la fecha del taller de plantillas. El piloto puede empezar con las herramientas que el equipo ya usa hoy.</p>
+  </div>
+  <table class="steps-table">
+    <thead>
+      <tr>
+        <th>Acción concreta</th>
+        <th>Responsable</th>
+        <th>Plazo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Seleccionar el proyecto piloto y el champion del pipeline</td>
+        <td>Dirección + Analista líder</td>
+        <td><strong>Semana 1</strong></td>
+      </tr>
+      <tr>
+        <td>Medir las métricas de línea base del proceso actual durante dos semanas</td>
+        <td>Champion designado</td>
+        <td><strong>Semanas 1–2</strong></td>
+      </tr>
+      <tr>
+        <td>Transformar tres requisitos reales del piloto con el pipeline para la demo</td>
+        <td>Responsable técnico</td>
+        <td><strong>Semana 2</strong></td>
+      </tr>
+      <tr>
+        <td>Celebrar el taller de plantillas con el equipo de análisis (4 horas)</td>
+        <td>Champion + Facilitador</td>
+        <td><strong>Semana 3</strong></td>
+      </tr>
+      <tr>
+        <td>Demo en vivo con el equipo de análisis, QA y product owners</td>
+        <td>Champion + Resp. técnico</td>
+        <td><strong>Semana 4</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CALLOUT FINAL -->
+<div class="callout">
+  <div class="callout-text">La IA hace el trabajo repetitivo. El analista hace el trabajo de valor. El negocio obtiene más velocidad y menos bugs. El equipo técnico recibe artefactos más completos. La trazabilidad existe sin que nadie la mantenga manualmente.</div>
+  <div class="callout-attr">Propuesta de valor del modelo operativo de análisis funcional AI-ready · 2025</div>
+</div>
+
+<div class="footer">
+  <div class="footer-left">
+    Modelo Operativo AI-Ready · Análisis Funcional<br>
+    Documento estratégico · Versión 1.0 · 2025
+  </div>
+  <div class="footer-badge">Confidencial · Uso interno</div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>

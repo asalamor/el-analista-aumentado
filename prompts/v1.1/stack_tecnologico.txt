@@ -1,0 +1,9 @@
+Frontend: React 18 + TypeScript
+Backend: Java 17 + Spring Boot 3
+Base de datos: PostgreSQL 15
+API: REST JSON + OpenAPI 3.0
+Autenticación: OAuth2 + JWT
+Testing backend: JUnit 5 + Mockito
+Testing frontend: Jest + React Testing Library + Playwright
+CI/CD: GitHub Actions
+Gestión de migraciones BD: Flyway

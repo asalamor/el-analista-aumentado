@@ -1,0 +1,299 @@
+# glosario.yaml
+# Glosario estructurado del proyecto — Documento de autoridad terminológica
+# Gobierno: el analista líder actualiza, el product owner aprueba
+# Versión: 1.0 — Fecha: 2025-05-12
+
+metadata:
+  proyecto: "Sistema de Gestión de Facturación"
+  version: "1.0"
+  propietario: "Ana López — Dirección Financiera"
+  analista_responsable: "Carlos Ruiz"
+  fecha_ultima_revision: "2025-05-12"
+  proxima_revision: "2025-07-01"
+
+actores:
+  - id: ACT-001
+    nombre_oficial: "Gestor de facturación"
+    descripcion: >
+      Empleado del área financiera con acceso completo al módulo de facturación.
+      Puede consultar, filtrar, exportar y archivar facturas. No puede emitir
+      ni anular facturas sin aprobación del Responsable financiero.
+    sinonimos_no_oficiales:
+      - "usuario de facturación"
+      - "operador financiero"
+      - "gestor"
+      - "contable"
+    permisos_clave:
+      - "Consultar facturas"
+      - "Filtrar y exportar facturas"
+      - "Archivar facturas"
+      - "Aprobar facturas con importe ≤ 10.000€"
+    sistemas_que_usa:
+      - "Módulo de Facturación"
+      - "Módulo de Reporting"
+
+  - id: ACT-002
+    nombre_oficial: "Responsable financiero"
+    descripcion: >
+      Directivo del área financiera con permisos de aprobación sobre operaciones
+      iniciadas por el Gestor de facturación. Recibe notificaciones automáticas
+      cuando se supera el umbral de importe configurado.
+    sinonimos_no_oficiales:
+      - "director financiero"
+      - "aprobador"
+      - "validador"
+      - "jefe de contabilidad"
+    permisos_clave:
+      - "Aprobar y rechazar facturas (cualquier importe)"
+      - "Anular facturas emitidas"
+      - "Configurar umbrales de aprobación"
+    sistemas_que_usa:
+      - "Módulo de Facturación"
+      - "Módulo de Aprobaciones"
+
+  - id: ACT-003
+    nombre_oficial: "Administrador del sistema"
+    descripcion: >
+      Responsable técnico de la configuración del sistema. Gestiona usuarios,
+      roles, permisos e integraciones. No tiene acceso a datos financieros.
+    sinonimos_no_oficiales:
+      - "sysadmin"
+      - "admin"
+      - "superusuario"
+    permisos_clave:
+      - "Gestionar usuarios y roles"
+      - "Configurar integraciones"
+      - "Ver logs del sistema"
+
+entidades:
+  - id: ENT-001
+    nombre_oficial: "Factura"
+    descripcion: >
+      Documento fiscal que registra una transacción comercial entre la organización
+      y un proveedor. En este proyecto, factura hace referencia SIEMPRE a facturas
+      recibidas de proveedores, no a facturas emitidas a clientes.
+    sinonimos_no_oficiales:
+      - "albarán"        # INCORRECTO: el albarán es un documento de entrega
+      - "recibo"         # INCORRECTO: el recibo es el justificante de pago
+      - "documento"      # AMBIGUO: demasiado genérico
+      - "facturita"      # Coloquial, no usar en documentación
+    atributos_clave:
+      - nombre: "id_factura"
+        tipo: string
+        descripcion: "Identificador único. Formato: FACT-YYYYNNNNN"
+      - nombre: "fecha_factura"
+        tipo: date
+        descripcion: "Fecha de emisión por el proveedor. ISO-8601 (YYYY-MM-DD)."
+      - nombre: "fecha_recepcion"
+        tipo: date
+        descripcion: "Fecha en que la organización recibe la factura."
+      - nombre: "importe_total"
+        tipo: decimal
+        descripcion: "Importe total con impuestos incluidos. Moneda: EUR. 2 decimales."
+      - nombre: "estado"
+        tipo: enum
+        valores: ["pendiente", "en-revision", "aprobada", "rechazada", "pagada", "archivada"]
+      - nombre: "proveedor"
+        tipo: referencia
+        entidad_referenciada: ENT-002
+    estados:
+      - nombre: "pendiente"
+        descripcion: "Factura recibida, pendiente de asignación a un gestor"
+        transiciones_permitidas: ["en-revision", "rechazada"]
+      - nombre: "en-revision"
+        descripcion: "Factura siendo revisada por el gestor asignado"
+        transiciones_permitidas: ["aprobada", "rechazada"]
+      - nombre: "aprobada"
+        descripcion: "Factura validada, pendiente de pago"
+        transiciones_permitidas: ["pagada"]
+      - nombre: "rechazada"
+        descripcion: "Factura no aceptada. Requiere nota de rechazo."
+        transiciones_permitidas: ["pendiente"]
+      - nombre: "pagada"
+        descripcion: "Pago registrado en el sistema"
+        transiciones_permitidas: ["archivada"]
+      - nombre: "archivada"
+        descripcion: "Factura en archivo histórico. Solo lectura."
+        transiciones_permitidas: []
+    reglas_negocio_asociadas:
+      - "Una factura solo puede archivarse si está en estado 'pagada'"
+      - "El rechazo requiere nota de motivo de al menos 20 caracteres"
+      - "Facturas superiores a 10.000€ requieren aprobación del Responsable financiero"
+      - "Solo se procesan facturas del ejercicio fiscal en curso (año natural)"
+
+  - id: ENT-002
+    nombre_oficial: "Proveedor"
+    descripcion: >
+      Persona jurídica o física que emite facturas a la organización.
+      En el módulo de facturación, el proveedor es siempre una entidad
+      ya registrada en el catálogo. No se pueden registrar facturas de
+      proveedores no existentes en el catálogo.
+    sinonimos_no_oficiales:
+      - "vendedor"
+      - "suministrador"
+      - "acreedor"
+      - "tercero"
+    atributos_clave:
+      - nombre: "id_proveedor"
+        tipo: string
+        descripcion: "Identificador interno. Formato: PROV-NNNNN"
+      - nombre: "razon_social"
+        tipo: string
+        descripcion: "Nombre legal completo. Máximo 200 caracteres."
+      - nombre: "cif"
+        tipo: string
+        descripcion: "Identificador fiscal. Validación: formato NIF/CIF español."
+      - nombre: "activo"
+        tipo: boolean
+        descripcion: "Solo proveedores activos pueden asociarse a nuevas facturas."
+    notas: >
+      Distinguir de 'cliente', que es la entidad a la que la organización emite facturas.
+      El módulo de clientes es un sistema separado fuera del alcance de este proyecto.
+
+acciones:
+  - id: ACC-001
+    verbo_oficial: "filtrar"
+    descripcion: >
+      Reducir el conjunto de registros visibles aplicando uno o más criterios
+      estructurados sobre los atributos de las entidades. El filtrado no elimina
+      registros, solo restringe los visibles en la sesión actual.
+    sinonimos_no_oficiales:
+      - "buscar"     # buscar implica texto libre; filtrar implica criterios estructurados
+      - "consultar"  # consultar es más amplio; filtrar es una operación específica
+      - "listar"     # listar es mostrar sin criterios
+      - "ver"        # demasiado genérico
+    ejemplo_correcto: >
+      "El gestor de facturación filtra las facturas por rango de fechas y estado."
+
+  - id: ACC-002
+    verbo_oficial: "exportar"
+    descripcion: >
+      Generar un archivo descargable con el contenido de un listado o conjunto
+      de registros. La exportación no modifica los registros del sistema.
+      Formatos soportados: CSV, XLSX, PDF.
+    sinonimos_no_oficiales:
+      - "descargar"
+      - "extraer"
+      - "sacar"
+      - "bajar"
+    nota_importante: >
+      'Exportar' y 'reportar' son acciones distintas. Exportar genera un archivo
+      con datos en bruto. Reportar genera un documento con formato y agregaciones.
+
+  - id: ACC-003
+    verbo_oficial: "aprobar"
+    descripcion: >
+      Validar que una factura cumple los requisitos para su pago.
+      La aprobación queda registrada con el nombre del aprobador, fecha y hora.
+    sinonimos_no_oficiales:
+      - "validar"
+      - "autorizar"
+      - "dar el visto bueno"
+      - "confirmar"
+
+  - id: ACC-004
+    verbo_oficial: "archivar"
+    descripcion: >
+      Mover una factura pagada al archivo histórico. Una factura archivada
+      solo puede consultarse, no modificarse.
+    sinonimos_no_oficiales:
+      - "guardar"
+      - "almacenar"
+      - "cerrar"
+
+eventos:
+  - id: EVT-001
+    nombre_oficial: "Factura recibida"
+    descripcion: >
+      Evento que ocurre cuando la organización recibe una nueva factura
+      de un proveedor, por cualquier canal configurado.
+    disparado_por:
+      - "Integración automática con el buzón de facturas (correo electrónico)"
+      - "Carga manual por parte del Gestor de facturación"
+      - "Integración EDI con proveedores homologados"
+    consecuencias:
+      - "Se crea un registro de Factura en estado 'pendiente'"
+      - "Se notifica al Gestor de facturación asignado al proveedor"
+      - "Se inicia el contador de SLA de revisión (72h laborables)"
+    modulo: "EP-04 Gestión de Facturación"
+
+  - id: EVT-002
+    nombre_oficial: "Factura aprobada"
+    descripcion: >
+      Evento que ocurre cuando el Gestor de facturación (o el Responsable
+      financiero para importes superiores al umbral) valida una factura.
+    disparado_por:
+      - "Acción manual de aprobación por el Gestor de facturación (≤ 10.000€)"
+      - "Acción manual de aprobación por el Responsable financiero (cualquier importe)"
+    consecuencias:
+      - "La factura pasa a estado 'aprobada'"
+      - "Se programa el pago según las condiciones de pago del proveedor"
+      - "Se notifica al área de tesorería"
+    modulo: "EP-04 Gestión de Facturación"
+
+  - id: EVT-003
+    nombre_oficial: "Factura rechazada"
+    descripcion: >
+      Evento que ocurre cuando una factura no supera la revisión.
+    disparado_por:
+      - "Acción manual de rechazo por el Gestor de facturación"
+      - "Acción manual de rechazo por el Responsable financiero"
+    consecuencias:
+      - "La factura vuelve a estado 'pendiente'"
+      - "Se notifica al proveedor con el motivo del rechazo"
+      - "Se registra el historial de rechazo con fecha, usuario y motivo"
+    modulo: "EP-04 Gestión de Facturación"
+
+reglas_globales:
+  - id: RG-001
+    descripcion: >
+      Todos los datos personales se tratan según el RGPD.
+      Ningún requisito puede contemplar el almacenamiento de datos personales
+      sin base legal documentada y aprobada por el DPO.
+    afecta_a: "todos los módulos"
+
+  - id: RG-002
+    descripcion: >
+      El sistema opera en zona horaria Europe/Madrid.
+      Todas las fechas y horas se almacenan en UTC y se muestran convertidas
+      a la zona horaria del usuario según su configuración de perfil.
+    afecta_a: "todos los módulos con campos de fecha o datetime"
+
+  - id: RG-003
+    descripcion: >
+      El acceso a cualquier módulo requiere autenticación activa.
+      Una sesión inactiva durante más de 30 minutos se cierra automáticamente.
+      El usuario es redirigido a login con el mensaje:
+      'Tu sesión ha expirado. Por favor, vuelve a iniciar sesión.'
+    afecta_a: "todos los módulos"
+
+  - id: RG-004
+    descripcion: >
+      Todas las operaciones de escritura (crear, modificar, aprobar, rechazar)
+      quedan registradas en el log de auditoría con usuario, fecha, hora
+      y valor anterior/posterior.
+    afecta_a: "todos los módulos con operaciones de escritura"
+
+abreviaturas:
+  - sigla: "AC"
+    expansion: "Criterio de Aceptación (Acceptance Criterion)"
+  - sigla: "EP"
+    expansion: "Épica"
+  - sigla: "REQ"
+    expansion: "Requisito"
+  - sigla: "US"
+    expansion: "Historia de Usuario (User Story)"
+  - sigla: "TC"
+    expansion: "Caso de Prueba (Test Case)"
+  - sigla: "DoD"
+    expansion: "Definición de Terminado (Definition of Done)"
+  - sigla: "NFR"
+    expansion: "Requisito No Funcional (Non-Functional Requirement)"
+  - sigla: "SLA"
+    expansion: "Acuerdo de Nivel de Servicio (Service Level Agreement)"
+  - sigla: "BDD"
+    expansion: "Behaviour Driven Development"
+  - sigla: "RAG"
+    expansion: "Retrieval-Augmented Generation"
+  - sigla: "DPO"
+    expansion: "Data Protection Officer (Delegado de Protección de Datos)"

@@ -1,0 +1,165 @@
+# templates/requisito.template.yaml
+# Plantilla base de requisito AI-ready
+# Instrucciones: copia este archivo, renómbralo como REQ-NNN.yaml
+# y rellena todos los campos marcados como OBLIGATORIO.
+# Los campos opcionales pueden dejarse vacíos o eliminarse.
+
+# ─────────────────────────────────────────────────────────────
+# BLOQUE 1 — IDENTIDAD  [TODOS OBLIGATORIOS]
+# ─────────────────────────────────────────────────────────────
+
+id: REQ-000                         # OBLIGATORIO · Formato: REQ-NNN
+titulo: ""                          # OBLIGATORIO · Máx 80 chars · Sin verbos ambiguos
+version: "1.0"                      # OBLIGATORIO · Incrementar al cambiar comportamiento
+estado: borrador                    # OBLIGATORIO · borrador|en-revision|validado|rechazado|deprecado
+epica: EP-00                        # OBLIGATORIO · Formato: EP-NN
+modulo: ""                          # OBLIGATORIO · Nombre legible del módulo
+sucesor: null                       # Solo si estado = deprecado
+
+origen:
+  solicitante: ""                   # OBLIGATORIO · Nombre completo
+  area: ""                          # OBLIGATORIO · Departamento
+  fecha_solicitud: ""               # OBLIGATORIO · YYYY-MM-DD
+  referencia: ""                    # Ticket, acta o email de origen
+
+fecha_creacion: ""                  # YYYY-MM-DD
+fecha_validacion: ""                # YYYY-MM-DD — rellenar al validar
+analista: ""                        # Nombre del analista responsable
+prioridad: must-have                # OBLIGATORIO · must-have|should-have|could-have|wont-have
+
+
+# ─────────────────────────────────────────────────────────────
+# BLOQUE 2 — CONTEXTO DE NEGOCIO  [TODOS OBLIGATORIOS]
+# ─────────────────────────────────────────────────────────────
+
+actor: ""
+# OBLIGATORIO · Rol específico del glosario. NO usar "el usuario" genérico.
+# Ejemplo: "Gestor de facturación"
+
+actores_secundarios: []
+# Opcional · Roles que intervienen pero no son el actor principal
+
+evento_disparador: ""
+# OBLIGATORIO · Qué situación concreta activa este requisito.
+# Mal: "cuando el usuario lo necesita"
+# Bien: "El gestor accede al módulo Facturas para el cierre mensual"
+
+objetivo_negocio: ""
+# OBLIGATORIO · Por qué existe. Mínimo 20 palabras.
+# Incluir el problema actual y la mejora esperada con datos si es posible.
+
+descripcion: ""
+# OBLIGATORIO · Narrativa en lenguaje de negocio. Mínimo 30 palabras.
+# Sin tecnicismos. La IA usa este campo para el contexto de la historia.
+
+reglas_negocio:
+  - ""
+# OBLIGATORIO · Mínimo 1. Cada regla debe ser una afirmación verificable.
+# Mal: "Los datos deben ser correctos"
+# Bien: "Solo se muestran facturas del ejercicio fiscal en curso"
+
+dependencias:
+  requisitos: []    # IDs de requisitos que deben estar implementados antes
+  sistemas: []      # Sistemas externos de los que depende
+  decisiones: []    # Decisiones de negocio pendientes
+
+
+# ─────────────────────────────────────────────────────────────
+# BLOQUE 3 — COMPORTAMIENTO ESPERADO  [CRITERIOS OBLIGATORIOS]
+# ─────────────────────────────────────────────────────────────
+
+flujo_principal:
+  - paso: 1
+    actor: ""       # "Gestor de facturación" o "sistema"
+    accion: ""      # Qué hace
+    resultado: ""   # Qué ocurre como consecuencia
+
+# Máximo 10 pasos. Si necesita más, el requisito es demasiado grande.
+
+flujos_alternativos:
+  - condicion: ""   # Cuándo se activa este flujo
+    pasos:
+      - paso: 1
+        actor: ""
+        accion: ""
+        resultado: ""
+
+excepciones:
+  - condicion: ""       # OBLIGATORIO · Mínimo 1 excepción
+    comportamiento: ""  # Qué hace el sistema (mensaje, redirección, log...)
+
+# REGLA: Mínimo una excepción por cada campo obligatorio de entrada
+# y una por cada regla de negocio que pueda violarse.
+
+criterios_aceptacion:
+  - id: AC-000-01    # OBLIGATORIO · Mínimo 1 criterio
+    titulo: ""       # Resumen de una línea
+    dado: ""         # Estado previo del sistema y del actor
+    cuando: ""       # UNA acción concreta. Solo una.
+    entonces: ""     # Resultado observable. Verificable con true/false.
+    tipo: positivo   # positivo | negativo | contorno
+    datos_ejemplo:   # Datos concretos para este criterio
+      campo: valor
+
+# REGLAS DE ORO:
+# 1. El 'dado' describe un ESTADO, no una acción
+# 2. El 'cuando' describe UNA SOLA acción
+# 3. El 'entonces' describe algo observable y medible
+# 4. Mínimo un criterio negativo por cada validación de campo
+
+definition_of_done:
+  - "Todos los criterios de aceptación superan las pruebas de regresión"
+  - "Revisión de código aprobada"
+  - ""   # Añadir criterios específicos del requisito aquí
+
+
+# ─────────────────────────────────────────────────────────────
+# BLOQUE 4 — DATOS  [OBLIGATORIO si el req tiene inputs/outputs]
+# ─────────────────────────────────────────────────────────────
+
+datos_entrada:
+  - nombre: ""
+    tipo: ""
+    # string|integer|decimal|boolean|date|datetime|enum|file|array|object
+    requerido: true
+    formato: ""         # ISO-8601, regex, etc.
+    longitud_max: null  # Solo para string
+    rango:
+      min: null
+      max: null
+    valores_enum: []    # Solo si tipo = enum
+    valor_defecto: null
+    descripcion: ""
+
+datos_salida:
+  campos: []
+  formato: ""           # JSON|CSV|PDF|pantalla|email
+  paginacion:
+    aplica: false
+    tamanyo_pagina_defecto: null
+    max_registros: null
+  orden_defecto: ""     # Ej: "fecha DESC"
+  tiempo_respuesta_max_ms: null
+
+
+# ─────────────────────────────────────────────────────────────
+# BLOQUE 5 — METADATOS TÉCNICOS  [Rellenar en refinamiento]
+# ─────────────────────────────────────────────────────────────
+
+componentes_afectados: []
+
+integraciones_externas: []
+
+restricciones_no_funcionales:
+  rendimiento: ""
+  seguridad: ""
+  disponibilidad: ""
+  accesibilidad: ""
+  volumen_datos: ""
+
+notas_implementacion: ""
+
+trazabilidad:
+  historias_generadas: []   # Auto-rellenado por el pipeline
+  test_cases_generados: []  # Auto-rellenado por el pipeline
+  jira_issues: []           # Auto-rellenado por el pipeline

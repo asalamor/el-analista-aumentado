@@ -1,0 +1,45 @@
+A partir de la Historia de Usuario generada, descompón el trabajo técnico
+necesario en Tareas Técnicas Jira por capa tecnológica.
+
+HISTORIA DE USUARIO:
+{historia_json}
+
+STACK TECNOLÓGICO DEL PROYECTO:
+{stack_tecnologico}
+
+CONVENCIONES DEL EQUIPO:
+{convenciones_equipo}
+
+REGLAS DE DESCOMPOSICIÓN:
+- Crea una tarea por capa tecnológica afectada.
+- Nunca mezcles trabajo de frontend y backend en la misma tarea.
+- Incluye siempre una tarea de testing si la historia tiene lógica de negocio.
+- Incluye una tarea de base de datos si hay cambios en esquema o consultas nuevas.
+- El campo "dependencias" indica qué tareas deben completarse antes.
+- La estimación es en horas ideales (sin interrupciones).
+
+Genera el siguiente JSON:
+
+{{
+  "tareas": [
+    {{
+      "issue_type": "Task",
+      "summary": "[Verbo en infinitivo] + [componente] + [para qué]",
+      "capa": "[backend | frontend | base_datos | integracion | testing | devops]",
+      "parent_story": "[historia_jira_id]",
+      "description": {{
+        "objetivo": "[Qué debe implementarse exactamente]",
+        "criterios_tecnico": [
+          "[Criterio técnico verificable 1]",
+          "[Criterio técnico verificable 2]"
+        ],
+        "consideraciones": ["[Decisión técnica relevante]"],
+        "referencias": ["[Endpoint, tabla, componente o documento relevante]"]
+      }},
+      "estimacion_horas": NÚMERO,
+      "dependencias": ["[Summary de tarea que debe completarse antes]"],
+      "labels": ["[etiqueta_tecnica]"],
+      "components": ["[componente]"]
+    }}
+  ]
+}}

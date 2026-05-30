@@ -1,0 +1,29 @@
+A partir del módulo funcional descrito a continuación, genera una Épica Jira.
+
+MÓDULO FUNCIONAL:
+{epica_yaml}
+
+REQUISITOS QUE CONTIENE ESTE MÓDULO:
+{lista_ids_requisitos}
+
+Genera el siguiente JSON:
+
+{{
+  "issue_type": "Epic",
+  "summary": "[Título conciso, máximo 8 palabras, en infinitivo]",
+  "description": {{
+    "objetivo": "[Qué capacidad de negocio habilita esta épica. 2-3 frases.]",
+    "alcance": "[Qué incluye y qué excluye explícitamente.]",
+    "valor_negocio": "[Beneficio medible para el negocio o usuario final.]",
+    "actores_principales": ["[Actor 1]", "[Actor 2]"],
+    "kpis_exito": ["[KPI 1]", "[KPI 2]"]
+  }},
+  "epic_name": "[Nombre corto para el campo Epic Name de Jira, máx. 4 palabras]",
+  "priority": "[Must Have | Should Have | Could Have]",
+  "labels": ["[etiqueta_1]", "[etiqueta_2]"],
+  "components": ["[componente_sistema]"],
+  "custom_fields": {{
+    "modulo_funcional": "{id_epica}",
+    "origen_requisito": "{lista_ids_requisitos}"
+  }}
+}}
