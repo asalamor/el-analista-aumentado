@@ -300,6 +300,8 @@ trazabilidad:
 
 ## Fase 4 — Decisiones de adaptación que hay que tomar en el taller
 
+La plantilla anterior es la referencia. Cada organización debe tomar estas decisiones antes de implantarla:
+
 ### Decisión 1: ¿Cuántos campos obligatorios?
 
 La tentación es marcar todo como obligatorio. Es un error. Un campo obligatorio que nadie puede rellenar en el momento de la captura se convierte en un bloqueo que el analista sortea poniendo texto basura ("N/A", "TBD", "pendiente") que inutiliza el campo para la IA.
