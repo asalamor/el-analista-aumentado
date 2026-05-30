@@ -567,25 +567,25 @@ El YAML es para la máquina. Ana López nunca debería ver un YAML.
 Lo que Ana ve cuando Carlos le pide validación de REQ-023 es una versión renderizada automáticamente desde el YAML, en formato de tabla comprensible para alguien que no ha oído hablar de YAML ni de pipelines:
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│  REQUISITO  REQ-023  │  Módulo: Gestión de Facturación       │
-│  Estado: En revisión │  Prioridad: Must Have                 │
-├──────────────────────────────────────────────────────────────┤
+┌───────────────────────────────────────────────────────────────┐
+│  REQUISITO  REQ-023  │  Módulo: Gestión de Facturación        │
+│  Estado: En revisión │  Prioridad: Must Have                  │
+├───────────────────────────────────────────────────────────────┤
 │  TÍTULO                                                       │
-│  Filtrar facturas por rango de fechas                        │
-├──────────────────────────────────────────────────────────────┤
-│  ¿QUIÉN LO NECESITA?       │  ¿POR QUÉ?                      │
-│  Gestor de facturación     │  Para localizar facturas de un  │
-│                            │  período contable en el cierre  │
-│                            │  mensual sin búsqueda manual    │
-├──────────────────────────────────────────────────────────────┤
+│  Filtrar facturas por rango de fechas                         │
+├───────────────────────────────────────────────────────────────┤
+│  ¿QUIÉN LO NECESITA?       │  ¿POR QUÉ?                       │
+│  Gestor de facturación     │  Para localizar facturas de un   │
+│                            │  período contable en el cierre   │
+│                            │  mensual sin búsqueda manual     │
+├───────────────────────────────────────────────────────────────┤
 │  ¿QUÉ DEBE HACER EL SISTEMA?                                  │
 │  El gestor introduce un rango de fechas y el sistema muestra  │
 │  las facturas de ese período ordenadas de más reciente a más  │
 │  antigua. Si el rango supera 365 días, avisa. Si no hay       │
 │  facturas, lo indica con un mensaje.                          │
-├──────────────────────────────────────────────────────────────┤
-│  ¿CUÁNDO DEBE FUNCIONAR? (Criterios de aceptación)           │
+├───────────────────────────────────────────────────────────────┤
+│  ¿CUÁNDO DEBE FUNCIONAR? (Criterios de aceptación)            │
 │                                                               │
 │  ✓ Si introduzco fechas válidas y pulso Buscar,               │
 │    veo las facturas del período en menos de 2 segundos        │
@@ -595,14 +595,14 @@ Lo que Ana ve cuando Carlos le pide validación de REQ-023 es una versión rende
 │                                                               │
 │  ✓ Si no hay facturas en ese período,                         │
 │    el sistema me lo indica y me ofrece ampliar                │
-├──────────────────────────────────────────────────────────────┤
+├───────────────────────────────────────────────────────────────┤
 │  REGLAS IMPORTANTES                                           │
-│  • Solo se ven facturas del ejercicio fiscal en curso        │
-│  • El rango máximo de búsqueda es de 365 días                │
-├──────────────────────────────────────────────────────────────┤
-│  SOLICITADO POR: Ana López (Dir. Financiera) · 2025-05-12    │
-│  ANALISTA: Carlos Ruiz · Validado: pendiente                 │
-└──────────────────────────────────────────────────────────────┘
+│  • Solo se ven facturas del ejercicio fiscal en curso         │
+│  • El rango máximo de búsqueda es de 365 días                 │
+├───────────────────────────────────────────────────────────────┤
+│  SOLICITADO POR: Ana López (Dir. Financiera) · 2025-05-12     │
+│  ANALISTA: Carlos Ruiz · Validado: pendiente                  │
+└───────────────────────────────────────────────────────────────┘
 ```
 
 Esta vista la genera automáticamente una macro de Confluence o un script de renderizado. Ana la lee, la entiende en dos minutos y la aprueba o pide cambios. No sabe que detrás hay un YAML. No necesita saberlo.
