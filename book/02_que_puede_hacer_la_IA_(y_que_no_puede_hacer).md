@@ -68,6 +68,8 @@ Cuando el sistema RAG que describe el Capítulo 10 está activo, el LLM trabaja 
 
 Esta capacidad no es perfecta —tiene sus propios errores y limitaciones, que discutiremos— pero a escala de proyectos medianos y grandes produce una coherencia entre requisitos que es prácticamente imposible de mantener manualmente.
 
+![Lo que la IA hace bien en este contexto](./images/02_01_lo_que_la_IA_hacce_bien.png)
+
 ---
 
 ## Lo que la IA no hace bien
