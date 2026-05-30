@@ -32,41 +32,41 @@ El modelo operativo tiene doce componentes organizados en tres niveles que se co
 ┌─────────────────────────────────────────────────────────────────┐
 │                    MODELO OPERATIVO — TRES NIVELES              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  NIVEL 1 — BASE CONCEPTUAL          Capítulos 4, 5, 6           │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐            │
-│  │  Plantilla   │ │   Glosario   │ │    Event     │            │
-│  │  AI-ready    │ │ estructurado │ │   Storming   │            │
-│  │  (Cap. 4)    │ │   (Cap. 5)   │ │   (Cap. 6)   │            │
-│  └──────────────┘ └──────────────┘ └──────────────┘            │
-│         │                │                │                      │
-│         └────────────────┴────────────────┘                      │
-│                          │                                        │
-│                   Requisito AI-ready                             │
-│                          │                                        │
-│                          ▼                                        │
-│  NIVEL 2 — NÚCLEO TÉCNICO           Capítulos 7 – 12             │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐            │
-│  │  Validación  │ │  Generación  │ │  Test cases  │            │
-│  │  automática  │ │  artefactos  │ │  automáticos │            │
-│  │   (Cap. 7)   │ │   (Cap. 8)   │ │   (Cap. 9)   │            │
-│  └──────────────┘ └──────────────┘ └──────────────┘            │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐            │
-│  │ Arquitectura │ │Trazabilidad  │ │Orquestador   │            │
-│  │     RAG      │ │ e impacto    │ │  completo    │            │
-│  │  (Cap. 10)   │ │  (Cap. 11)   │ │  (Cap. 12)   │            │
-│  └──────────────┘ └──────────────┘ └──────────────┘            │
-│                          │                                        │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐             │
+│  │  Plantilla   │ │   Glosario   │ │    Event     │             │
+│  │  AI-ready    │ │ estructurado │ │   Storming   │             │
+│  │  (Cap. 4)    │ │   (Cap. 5)   │ │   (Cap. 6)   │             │
+│  └──────────────┘ └──────────────┘ └──────────────┘             │
+│         │                │                │                     │
+│         └────────────────┴────────────────┘                     │
+│                          │                                      │
+│                   Requisito AI-ready                            │
+│                          │                                      │
+│                          ▼                                      │
+│  NIVEL 2 — NÚCLEO TÉCNICO           Capítulos 7 – 12            │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐             │
+│  │  Validación  │ │  Generación  │ │  Test cases  │             │
+│  │  automática  │ │  artefactos  │ │  automáticos │             │
+│  │   (Cap. 7)   │ │   (Cap. 8)   │ │   (Cap. 9)   │             │
+│  └──────────────┘ └──────────────┘ └──────────────┘             │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐             │
+│  │ Arquitectura │ │Trazabilidad  │ │Orquestador   │             │
+│  │     RAG      │ │ e impacto    │ │  completo    │             │
+│  │  (Cap. 10)   │ │  (Cap. 11)   │ │  (Cap. 12)   │             │
+│  └──────────────┘ └──────────────┘ └──────────────┘             │
+│                          │                                      │
 │               Artefactos en Jira + Xray                         │
-│                          │                                        │
-│                          ▼                                        │
-│  NIVEL 3 — IMPLANTACIÓN             Capítulos 13, 14, 15         │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐            │
-│  │    Plan de   │ │  Gobierno    │ │  Medición    │            │
-│  │   adopción   │ │ del modelo   │ │   y ROI      │            │
-│  │  (Cap. 13)   │ │  (Cap. 14)   │ │  (Cap. 15)   │            │
-│  └──────────────┘ └──────────────┘ └──────────────┘            │
-│                                                                  │
+│                          │                                      │
+│                          ▼                                      │
+│  NIVEL 3 — IMPLANTACIÓN             Capítulos 13, 14, 15        │
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐             │
+│  │    Plan de   │ │  Gobierno    │ │  Medición    │             │
+│  │   adopción   │ │ del modelo   │ │   y ROI      │             │
+│  │  (Cap. 13)   │ │  (Cap. 14)   │ │  (Cap. 15)   │             │
+│  └──────────────┘ └──────────────┘ └──────────────┘             │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -317,7 +317,7 @@ FASE 2 — SEMI-AUTOMATIZACIÓN (meses 4-6)
          ▼
 FASE 3 — SISTEMA COMPLETO (meses 7-9)
 ┌─────────────────────────────────────────────────────────────┐
-│ Componentes: + RAG (C7) + Trazabilidad (C8) + Orq. (C9)    │
+│ Componentes: + RAG (C7) + Trazabilidad (C8) + Orq. (C9)     │
 │ Herramientas: + pgvector + grafo de trazabilidad            │
 │ Qué cambia: coherencia histórica + trazabilidad automática  │
 │ Qué no cambia: el gate de aprobación humana siempre activo  │
