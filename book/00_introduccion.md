@@ -52,6 +52,50 @@ El punto de partida de este libro no es la IA. Es el requisito.
 
 Este libro describe un modelo operativo completo para transformar el proceso de análisis funcional en organizaciones que trabajan con metodologías Agile. Un modelo que introduce inteligencia artificial desde las etapas más tempranas del proceso —la captura de requisitos con el usuario de negocio— y que automatiza los pasos mecánicos del camino desde el requisito aprobado hasta los artefactos en Jira y los test cases en la herramienta de QA.
 
+El flujo completo tiene este aspecto:
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     EL FLUJO DEL MODELO OPERATIVO                       │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  USUARIO DE       ANALISTA          PIPELINE DE IA        EQUIPO        │
+│   NEGOCIO        FUNCIONAL                                              │
+│                                                                         │
+│  "Necesito         Workshop    ───►  Requisito YAML                     │
+│   filtrar          Event             estructurado                       │
+│   facturas"        Storming          (5 bloques)                        │
+│       │                │                  │                             │
+│       │                │                  ▼                             │
+│       │                │         Validación automática                  │
+│       │                │         ¿Ambigüedad? ¿Campos                   │
+│       │                │         incompletos? ¿Conflictos?              │
+│       │                │                  │                             │
+│       │                │          APROBADO / BLOQUEADO                  │
+│       │                │                  │                             │
+│       │                │                  ▼                             │
+│       │                │         Pipeline de generación                 │
+│       │                │         (LLM + contexto RAG)                   │
+│       │                │                  │                             │
+│       │                │       ┌──────────┴──────────┐                  │
+│       │                │       │                     │                  │
+│       │                ▼       ▼                     ▼                  │
+│                    Revisión  Épica · Historia    Test cases             │
+│                    humana    Tareas técnicas     (positivos,            │
+│                    (gate)    Subtareas           negativos,             │
+│                       │      Criterios AC        contorno)              │
+│                       │           │                  │                  │
+│                       └─────┬─────┘                  │                  │
+│                             ▼                        ▼                  │
+│                           JIRA                     XRAY /               │
+│                           (issues)                 ZEPHYR               │
+│                             │                        │                  │
+│                             └──────────┬─────────────┘                  │
+│                                        ▼                                │
+│                              Grafo de trazabilidad                      │
+│                              REQ → US → TC → Commit                     │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
 El modelo tiene doce componentes que se construyen en capas:
 
 La **base conceptual** —los capítulos 4, 5 y 6— define cómo deben escribirse los requisitos para que la IA pueda procesarlos, cómo debe estructurarse el vocabulario del proyecto para garantizar coherencia, y cómo facilitar los workshops de Event Storming que producen la materia prima del sistema.
