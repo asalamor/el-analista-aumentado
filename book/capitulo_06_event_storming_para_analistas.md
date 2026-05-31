@@ -387,14 +387,14 @@ Esta es la referencia que el analista tiene delante durante el workshop. Una sol
 ║  Rojo     → Pregunta abierta / incertidumbre                 ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  FASES Y DURACIÓN (taller de 3h)                             ║
-║  00:00  Introducción y código de colores       (10 min)      ║
+║  00:00  Introducción y código de colores         (10 min)    ║
 ║  00:10  Fase 1: Caos creativo — post-its naranja (30 min)    ║
-║  00:40  Fase 2: Línea de tiempo                (20 min)      ║
-║  01:00  Fase 3: Añadir contexto (azul/lila/rosa)(40 min)     ║
-║  01:40  Fase 4: Límites de dominio → épicas    (15 min)      ║
-║  01:55  PAUSA                                  (10 min)      ║
-║  02:05  Fase 5: Captura estructurada en YAML   (30 min)      ║
-║  02:35  Cierre: preguntas abiertas y siguientes (25 min)     ║
+║  00:40  Fase 2: Línea de tiempo                  (20 min)    ║
+║  01:00  Fase 3: Añadir contexto (azul/lila/rosa) (40 min)    ║
+║  01:40  Fase 4: Límites de dominio → épicas      (15 min)    ║
+║  01:55  PAUSA                                    (10 min)    ║
+║  02:05  Fase 5: Captura estructurada en YAML     (30 min)    ║
+║  02:35  Cierre: preguntas abiertas y siguientes  (25 min)    ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  TRADUCCIONES CLAVE                                          ║
 ║  Evento naranja   → evento_disparador del requisito          ║
