@@ -8,13 +8,13 @@ Este capítulo describe exactamente cómo ocurre eso. No la magia: el mecanismo.
 
 ---
 
-**En este capítulo aprenderás:**
+*En este capítulo aprenderás:*
 
-- La arquitectura de cuatro llamadas encadenadas que transforma un YAML en una jerarquía completa de artefactos Jira.
-- Los cuatro prompts de generación con sus variables, su lógica interna y los ejemplos de output real para REQ-023.
-- Cómo el contexto viaja entre las llamadas para garantizar coherencia vertical entre la épica, la historia y las tareas.
-- El gate de aprobación humana: qué revisa el analista, en cuánto tiempo y con qué criterio decide.
-- Las variantes de prompt para requisitos de integración, reglas de negocio complejas y modificaciones de funcionalidad existente.
+- *La arquitectura de cuatro llamadas encadenadas que transforma un YAML en una jerarquía completa de artefactos Jira.*
+- *Los cuatro prompts de generación con sus variables, su lógica interna y los ejemplos de output real para REQ-023.*
+- *Cómo el contexto viaja entre las llamadas para garantizar coherencia vertical entre la épica, la historia y las tareas.*
+- *El gate de aprobación humana: qué revisa el analista, en cuánto tiempo y con qué criterio decide.*
+- *Las variantes de prompt para requisitos de integración, reglas de negocio complejas y modificaciones de funcionalidad existente.*
 
 ---
 
@@ -803,4 +803,4 @@ Tomad el último sprint planning que os llevó más de dos horas. ¿Cuánto de e
 
 ---
 
-*El capítulo siguiente cierra el triángulo del núcleo técnico: si el capítulo 7 garantizó que el input es correcto y este capítulo transformó ese input en artefactos Jira, el capítulo 9 convierte esos mismos criterios de aceptación en test cases ejecutables. El mismo REQ-023 que acaba de producir cuatro tareas técnicas producirá nueve casos de prueba, tres de ellos para flujos de error que ningún QA habría documentado bajo la presión del sprint.*
+El capítulo siguiente cierra el triángulo del núcleo técnico: si el capítulo 7 garantizó que el input es correcto y este capítulo transformó ese input en artefactos Jira, el capítulo 9 convierte esos mismos criterios de aceptación en test cases ejecutables. El mismo REQ-023 que acaba de producir cuatro tareas técnicas producirá nueve casos de prueba, tres de ellos para flujos de error que ningún QA habría documentado bajo la presión del sprint.
