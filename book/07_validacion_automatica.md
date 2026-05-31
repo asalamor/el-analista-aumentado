@@ -76,7 +76,7 @@ El validador de completitud actúa como el QA senior que siempre pregunta «¿y 
 
 Cada una de estas preguntas sin respuesta en el requisito se convierte en una decisión que tomará el desarrollador solo, en el momento en que se encuentra el caso, con la presión del sprint encima. El validador de completitud las surfacea antes de que eso ocurra.
 
-![Los cuatro tipos de problema](./images/06_01_los_cuatro_filtros.png)
+![Los cuatro tipos de problema](./images/07_01_los_cuatro_filtros.png)
 
 ---
 
@@ -669,6 +669,8 @@ El campo `puede_entrar_al_pipeline` es el único que el pipeline consulta antes 
 > 🛠️ **En la práctica**
 >
 > En los primeros meses de uso, el equipo de Meridian decidió que los requisitos con `APROBADO_CON_ADVERTENCIAS` y más de tres advertencias también necesitaban revisión humana antes de continuar. El umbral lo define cada equipo según su tolerancia al riesgo. Lo importante es que el umbral esté documentado y sea consistente: si cambia según el sprint o la urgencia, el equipo aprende a sortear el validador en lugar de mejorar los requisitos.
+
+![Proceso de validación automática](./images/07_02_validacion_automatica.png)
 
 ---
 
