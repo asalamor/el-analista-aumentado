@@ -205,6 +205,7 @@ Los últimos quince minutos son para tres cosas: leer en voz alta las preguntas 
 
 El analista no desmonta el mapa al terminar. Lo deja físicamente intacto al menos cuarenta y ocho horas o, si es en Miro, exporta una versión de alta resolución antes de archivar el tablero. El mapa sin el contexto de las conversaciones pierde el cuarenta por ciento de la información. Las fotografías son la copia de seguridad de ese contexto.
 
+06_01_event_storming
 ---
 
 ## De la captura del taller al YAML de requisito
