@@ -65,9 +65,9 @@ El Event Storming usa un código de colores que todos los participantes deben co
 | 🟠 Naranja | Evento de negocio | ¿Qué ha ocurrido? (en pasado) | «Factura recibida» |
 | 🔵 Azul | Comando | ¿Qué desencadena ese evento? (en imperativo) | «Registrar factura» |
 | 🟡 Amarillo pálido | Actor | ¿Quién ejecuta el comando? | «Gestor de facturación» |
-| 🟣 Lila / morado | Política | ¿Qué regla provoca que este evento dispare este comando? | «Si importe > 10.000€, notificar al Responsable financiero» |
+| 🟣 Lila / morado | Política | ¿Qué regla provoca que este evento <br>dispare este comando? | «Si importe > 10.000€, notificar al Responsable financiero» |
 | 🩷 Rosa | Punto de dolor | ¿Qué no funciona bien aquí? | «No sabemos qué facturas están pendientes sin revisar el correo» |
-| 🟢 Verde | Vista / read model | ¿Qué información necesita el actor para decidir? | «Listado de facturas pendientes con importe y proveedor» |
+| 🟢 Verde | Vista / read model | ¿Qué información necesita <br>el actor para decidir? | «Listado de facturas pendientes con importe y proveedor» |
 | 🔴 Rojo | Pregunta abierta | ¿Qué no sabemos todavía? | «¿Cuál es el plazo máximo de revisión?» |
 
 La regla de oro del código de colores es que los post-its naranjas son la espina dorsal del taller. Todo lo demás se construye alrededor de ellos. Si el facilitador nota que el grupo está poniendo pocos post-its naranjas, hay que parar y redirigir.
@@ -177,7 +177,7 @@ El facilitador dibuja líneas verticales con cinta de carrocero separando las zo
 │                            │ Factura rechazada             │ Proveedor notificado  │
 │                            │                               │                       │
 │ Actor: Sistema             │ Actor: Gestor facturación     │ Actor: Tesorería      │
-│ Actor: Proveedor           │ Actor: Resp. financiero        │ Actor: Sistema banco  │
+│ Actor: Proveedor           │ Actor: Resp. financiero       │ Actor: Sistema banco  │
 ```
 
 ### Fase 5 — Captura estructurada (30 minutos)
@@ -375,54 +375,54 @@ Esta es la referencia que el analista tiene delante durante el workshop. Una sol
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  EVENT STORMING — Guía rápida del facilitador               ║
+║  EVENT STORMING — Guía rápida del facilitador                ║
 ╠══════════════════════════════════════════════════════════════╣
-║  CÓDIGO DE COLORES                                          ║
-║  Naranja  → Evento de negocio (pasado: "X ocurrió")         ║
-║  Azul     → Comando (imperativo: "Hacer X")                 ║
-║  Amarillo → Actor (quién ejecuta el comando)                ║
-║  Lila     → Política (si X entonces Y)                      ║
-║  Rosa     → Punto de dolor / problema actual                ║
-║  Verde    → Vista / información necesaria                   ║
-║  Rojo     → Pregunta abierta / incertidumbre               ║
+║  CÓDIGO DE COLORES                                           ║
+║  Naranja  → Evento de negocio (pasado: "X ocurrió")          ║
+║  Azul     → Comando (imperativo: "Hacer X")                  ║
+║  Amarillo → Actor (quién ejecuta el comando)                 ║
+║  Lila     → Política (si X entonces Y)                       ║
+║  Rosa     → Punto de dolor / problema actual                 ║
+║  Verde    → Vista / información necesaria                    ║
+║  Rojo     → Pregunta abierta / incertidumbre                 ║
 ╠══════════════════════════════════════════════════════════════╣
-║  FASES Y DURACIÓN (taller de 3h)                            ║
-║  00:00  Introducción y código de colores       (10 min)     ║
-║  00:10  Fase 1: Caos creativo — post-its naranja (30 min)   ║
-║  00:40  Fase 2: Línea de tiempo                (20 min)     ║
-║  01:00  Fase 3: Añadir contexto (azul/lila/rosa)(40 min)    ║
-║  01:40  Fase 4: Límites de dominio → épicas    (15 min)     ║
-║  01:55  PAUSA                                  (10 min)     ║
-║  02:05  Fase 5: Captura estructurada en YAML   (30 min)     ║
-║  02:35  Cierre: preguntas abiertas y siguientes (25 min)    ║
+║  FASES Y DURACIÓN (taller de 3h)                             ║
+║  00:00  Introducción y código de colores       (10 min)      ║
+║  00:10  Fase 1: Caos creativo — post-its naranja (30 min)    ║
+║  00:40  Fase 2: Línea de tiempo                (20 min)      ║
+║  01:00  Fase 3: Añadir contexto (azul/lila/rosa)(40 min)     ║
+║  01:40  Fase 4: Límites de dominio → épicas    (15 min)      ║
+║  01:55  PAUSA                                  (10 min)      ║
+║  02:05  Fase 5: Captura estructurada en YAML   (30 min)      ║
+║  02:35  Cierre: preguntas abiertas y siguientes (25 min)     ║
 ╠══════════════════════════════════════════════════════════════╣
-║  TRADUCCIONES CLAVE                                         ║
-║  Evento naranja   → evento_disparador del requisito         ║
-║  Comando azul     → cuando (en el criterio AC)              ║
-║  Actor amarillo   → actor del requisito                     ║
-║  Política lila    → reglas_negocio del requisito            ║
-║  Punto dolor rosa → objetivo_negocio del requisito          ║
-║  Vista verde      → datos_salida del requisito              ║
-║  Pregunta roja    → incertidumbre a resolver antes del req  ║
+║  TRADUCCIONES CLAVE                                          ║
+║  Evento naranja   → evento_disparador del requisito          ║
+║  Comando azul     → cuando (en el criterio AC)               ║
+║  Actor amarillo   → actor del requisito                      ║
+║  Política lila    → reglas_negocio del requisito             ║
+║  Punto dolor rosa → objetivo_negocio del requisito           ║
+║  Vista verde      → datos_salida del requisito               ║
+║  Pregunta roja    → incertidumbre a resolver antes del req   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  FRASES DE FACILITACIÓN                                     ║
-║  "¿Qué ocurrió antes de esto para que llegáramos aquí?"     ║
-║  "¿Y qué pasa si esto no funciona como se espera?"          ║
-║  "¿Quién necesita saber que esto ha ocurrido?"              ║
-║  "¿Siempre ocurre así o hay casos en que es diferente?"     ║
-║  "Anoto esa pregunta en rojo y continuamos."                ║
+║  FRASES DE FACILITACIÓN                                      ║
+║  "¿Qué ocurrió antes de esto para que llegáramos aquí?"      ║
+║  "¿Y qué pasa si esto no funciona como se espera?"           ║
+║  "¿Quién necesita saber que esto ha ocurrido?"               ║
+║  "¿Siempre ocurre así o hay casos en que es diferente?"      ║
+║  "Anoto esa pregunta en rojo y continuamos."                 ║
 ╠══════════════════════════════════════════════════════════════╣
-║  SEÑALES DE QUE EL TALLER VA BIEN                           ║
-║  ✓ Hay debate sobre el orden de los eventos                 ║
-║  ✓ Aparecen post-its rojos de preguntas                     ║
-║  ✓ Alguien dice "esto no lo hacemos así, lo hacemos asá"    ║
-║  ✓ El mapa tiene zonas densas y zonas vacías                ║
-║                                                             ║
-║  SEÑALES DE ALERTA                                          ║
-║  ✗ Una persona escribe el 80% de los post-its               ║
-║  ✗ Nadie pone post-its en silencio                          ║
-║  ✗ El grupo debate sobre implementación técnica             ║
-║  ✗ El mapa es perfectamente uniforme (falta descubrimiento) ║
+║  SEÑALES DE QUE EL TALLER VA BIEN                            ║
+║  ✓ Hay debate sobre el orden de los eventos                  ║
+║  ✓ Aparecen post-its rojos de preguntas                      ║
+║  ✓ Alguien dice "esto no lo hacemos así, lo hacemos asá"     ║
+║  ✓ El mapa tiene zonas densas y zonas vacías                 ║
+║                                                              ║
+║  SEÑALES DE ALERTA                                           ║
+║  ✗ Una persona escribe el 80% de los post-its                ║
+║  ✗ Nadie pone post-its en silencio                           ║
+║  ✗ El grupo debate sobre implementación técnica              ║
+║  ✗ El mapa es perfectamente uniforme (falta descubrimiento)  ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
