@@ -797,9 +797,9 @@ El gate de aprobación humana es el componente más importante del pipeline. No 
 
 ---
 
-**Pregunta de reflexión para el equipo**
-
-Tomad el último sprint planning que os llevó más de dos horas. ¿Cuánto de ese tiempo fue debatir el alcance de historias que nadie había leído antes de entrar a la sala, y cuánto fue tomar decisiones reales sobre cómo construirlas? La respuesta define el impacto potencial del pipeline en vuestro proceso.
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Tomad el último sprint planning que os llevó más de dos horas. ¿Cuánto de ese tiempo fue debatir el alcance de historias que nadie había leído antes de entrar a la sala, y cuánto fue tomar decisiones reales sobre cómo construirlas? La respuesta define el impacto potencial del pipeline en vuestro proceso.
 
 ---
 
