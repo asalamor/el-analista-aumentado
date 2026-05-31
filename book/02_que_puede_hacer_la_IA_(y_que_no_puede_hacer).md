@@ -231,3 +231,5 @@ La confianza en el sistema no es ciega: es calibrada. Y se calibra con uso real 
 *Pregunta para llevar a tu próxima reunión de equipo:*
 
 Si tomamos un requisito real de nuestro backlog y lo pasamos a un modelo de lenguaje tal como está, ¿qué nos dice el output sobre la calidad del requisito de entrada?
+
+---
