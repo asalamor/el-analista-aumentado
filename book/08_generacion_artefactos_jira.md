@@ -50,7 +50,7 @@ Esta cadena resuelve el problema de coherencia vertical que aparece cuando se in
 > El sistema genera en el mismo orden en que un equipo humano construiría los artefactos: primero se entiende el módulo (épica), luego la funcionalidad concreta (historia), luego el trabajo técnico necesario (tareas). Respetar ese orden en el pipeline no es un capricho de diseño: es lo que garantiza que cada nivel tiene el contexto suficiente para ser coherente con el nivel anterior.
 
 ![Generación de artefactos Jira](./images/08_01_generacion_artefactos_jira.png)
-![El Gate de aprobación humana](./images/08_02_gate_aprobacion_humana.png)
+
 ---
 
 ## El system prompt base
@@ -723,6 +723,8 @@ El resultado de la revisión es binario: aprobar (con o sin ediciones) o rechaza
 > ⚠️ **Error frecuente**
 >
 > El gate de aprobación pierde todo su valor cuando el analista lo convierte en un trámite de «aprobar sin leer» bajo presión de sprint. La IA propone; el humano decide. Si ese principio se erosiona en las semanas de alta carga, los primeros artefactos incorrectos que llegan a producción generan una desconfianza en el sistema que es mucho más difícil de recuperar que el tiempo que se habría tardado en revisar.
+
+![El Gate de aprobación humana](./images/08_02_gate_aprobacion_humana.png)
 
 ---
 
