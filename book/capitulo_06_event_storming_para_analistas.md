@@ -4,7 +4,7 @@
 
 ---
 
-Carlos llegó a la sala con un rotulador negro, un rollo de papel de embalar y seis bloques de post-its de colores. Ana López lo miró con curiosidad. «¿No traes el portátil?», preguntó. «Hoy no», dijo Carlos. «Hoy lo hacemos con las manos.»
+Carlos llegó a la sala con un rotulador negro, un rollo de papel de embalar y seis bloques de post-its de colores. Ana López lo miró con curiosidad. «¿No traes el portátil?», preguntó. «Hoy no», dijo Carlos. «Hoy toca hacer manualidades.»
 
 Llevaban tres semanas intentando arrancar la definición funcional del nuevo módulo de gestión de pagos a proveedores. Las reuniones de requisitos habían producido cuarenta páginas de notas, tres documentos Word parcialmente contradictorios y la sensación colectiva de que cuanto más hablaban, menos entendían. El problema no era que Ana no supiera explicar su proceso. El problema era que el formato de la reunión —alguien pregunta, alguien responde, alguien toma notas— no era el adecuado para capturar un proceso tan interconectado como ese.
 
@@ -16,13 +16,13 @@ Eso es el Event Storming. Y ese es el tema de este capítulo.
 
 ---
 
-**En este capítulo aprenderás a:**
+*En este capítulo aprenderás a:*
 
-- Entender qué es el Event Storming y por qué es la técnica de descubrimiento más eficaz para proyectos donde se va a usar el pipeline de IA.
-- Preparar y facilitar un taller de Event Storming de nivel Process Level con usuarios de negocio no técnicos.
-- Usar el código de colores del Event Storming para producir exactamente los elementos que necesita la plantilla YAML.
-- Traducir el mapa resultante del taller a los campos del requisito AI-ready sin perder información.
-- Evitar los cinco errores más frecuentes del facilitador novel.
+- *Entender qué es el Event Storming y por qué es la técnica de descubrimiento más eficaz para proyectos donde se va a usar el pipeline de IA.*
+- *Preparar y facilitar un taller de Event Storming de nivel Process Level con usuarios de negocio no técnicos.*
+- *Usar el código de colores del Event Storming para producir exactamente los elementos que necesita la plantilla YAML.*
+- *Traducir el mapa resultante del taller a los campos del requisito AI-ready sin perder información.*
+- *Evitar los cinco errores más frecuentes del facilitador novel.*
 
 ---
 
