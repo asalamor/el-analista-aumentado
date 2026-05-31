@@ -761,4 +761,4 @@ La integración del validador en el flujo de trabajo es más importante que la s
 
 ---
 
-*El siguiente capítulo construye sobre lo que el validador garantiza: que el input es suficientemente bueno para que la IA genere artefactos fiables. El capítulo 8 describe los cuatro prompts que transforman un YAML validado en la épica, la historia de usuario, las tareas técnicas y las subtareas que aparecen en Jira antes de que el analista haya terminado el café.*
+El siguiente capítulo construye sobre lo que el validador garantiza: que el input es suficientemente bueno para que la IA genere artefactos fiables. El capítulo 8 describe los cuatro prompts que transforman un YAML validado en la épica, la historia de usuario, las tareas técnicas y las subtareas que aparecen en Jira antes de que el analista haya terminado el café.*
