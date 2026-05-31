@@ -76,6 +76,8 @@ El validador de completitud actúa como el QA senior que siempre pregunta «¿y 
 
 Cada una de estas preguntas sin respuesta en el requisito se convierte en una decisión que tomará el desarrollador solo, en el momento en que se encuentra el caso, con la presión del sprint encima. El validador de completitud las surfacea antes de que eso ocurra.
 
+![Los cuatro tipos de problema](./images/05_01_anatomia_de_un_glosario_AI-ready.png)
+
 ---
 
 ## Los prompts del validador
