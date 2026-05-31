@@ -381,6 +381,8 @@ El Capítulo 4 construye el primer componente. Empezamos con la plantilla.
 
 ---
 
-*Pregunta para llevar a tu próxima reunión de equipo:*
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Si evaluamos tres requisitos del backlog actual contra los cinco campos obligatorios de la plantilla, ¿cuántos los cumplen todos? ¿Cuál es el campo que falla con más frecuencia?
 
-Si evaluamos tres requisitos del backlog actual contra los cinco campos obligatorios de la plantilla, ¿cuántos los cumplen todos? ¿Cuál es el campo que falla con más frecuencia?
+---
