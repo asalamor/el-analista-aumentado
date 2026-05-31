@@ -755,9 +755,9 @@ La integración del validador en el flujo de trabajo es más importante que la s
 
 ---
 
-**Pregunta de reflexión para el equipo**
-
-Tomad los cinco últimos requisitos que entraron a un sprint de vuestro proyecto. Pasadlos por el checklist de ocho puntos del informe consolidado: actor definido, criterios verificables, sin ambigüedad bloqueante, sin contradicciones, flujos de error documentados, datos de entrada completos, glosario usado. ¿Cuántos los pasan todos? La respuesta define por dónde empezar la implantación.
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Tomad los cinco últimos requisitos que entraron a un sprint de vuestro proyecto. Pasadlos por el checklist de ocho puntos del informe consolidado: actor definido, criterios verificables, sin ambigüedad bloqueante, sin contradicciones, flujos de error documentados, datos de entrada completos, glosario usado. ¿Cuántos los pasan todos? La respuesta define por dónde empezar la implantación.
 
 ---
 
