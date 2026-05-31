@@ -1,4 +1,4 @@
-# Punto 4: Prompts de generación de artefactos Jira
+# Punto 4 — Prompts de generación de artefactos Jira
 
 Vamos a construir esto de forma que puedas copiar, probar y adaptar cada prompt directamente.
 
