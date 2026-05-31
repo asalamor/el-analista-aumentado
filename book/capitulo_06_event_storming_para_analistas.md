@@ -63,11 +63,11 @@ El Event Storming usa un código de colores que todos los participantes deben co
 | Color | Elemento | Pregunta que responde | Ejemplo en Meridian |
 |---|---|---|---|
 | 🟠 Naranja | Evento de negocio | ¿Qué ha ocurrido? (en pasado) | «Factura recibida» |
-| 🔵 Azul | Comando | ¿Qué desencadena ese evento? (en imperativo) | «Registrar factura» |
+| 🔵 Azul | Comando | ¿Qué desencadena ese evento? <br>(en imperativo) | «Registrar factura» |
 | 🟡 Amarillo pálido | Actor | ¿Quién ejecuta el comando? | «Gestor de facturación» |
-| 🟣 Lila / morado | Política | ¿Qué regla provoca que este evento <br>dispare este comando? | «Si importe > 10.000€, notificar al Responsable financiero» |
-| 🩷 Rosa | Punto de dolor | ¿Qué no funciona bien aquí? | «No sabemos qué facturas están pendientes sin revisar el correo» |
-| 🟢 Verde | Vista / read model | ¿Qué información necesita <br>el actor para decidir? | «Listado de facturas pendientes con importe y proveedor» |
+| 🟣 Lila / morado | Política | ¿Qué regla provoca que este evento <br>dispare este comando? | «Si importe > 10.000€, notificar <br>al Responsable financiero» |
+| 🩷 Rosa | Punto de dolor | ¿Qué no funciona bien aquí? | «No sabemos qué facturas están <br>pendientes sin revisar el correo» |
+| 🟢 Verde | Vista / read model | ¿Qué información necesita <br>el actor para decidir? | «Listado de facturas pendientes <br>con importe y proveedor» |
 | 🔴 Rojo | Pregunta abierta | ¿Qué no sabemos todavía? | «¿Cuál es el plazo máximo de revisión?» |
 
 La regla de oro del código de colores es que los post-its naranjas son la espina dorsal del taller. Todo lo demás se construye alrededor de ellos. Si el facilitador nota que el grupo está poniendo pocos post-its naranjas, hay que parar y redirigir.
