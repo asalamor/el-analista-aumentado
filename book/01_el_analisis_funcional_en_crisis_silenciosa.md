@@ -230,6 +230,8 @@ Ese ejercicio, en sí mismo, produce dos cosas valiosas: crea conciencia colecti
 
 ---
 
-*Pregunta para llevar a tu próxima reunión de equipo:*
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Si revisamos los últimos tres sprints, ¿cuántas historias tuvieron cambios de alcance durante la ejecución, y cuánto tiempo costó resolver esos cambios? ¿Tenemos ese dato?
 
-Si revisamos los últimos tres sprints, ¿cuántas historias tuvieron cambios de alcance durante la ejecución, y cuánto tiempo costó resolver esos cambios? ¿Tenemos ese dato?
+---
