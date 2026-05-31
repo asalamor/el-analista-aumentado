@@ -30,6 +30,24 @@ Para la mayoría de los proyectos, el analista facilitará el Process Level porq
 
 El Event Storming usa un código de colores que todos los participantes deben conocer antes de empezar. Cinco minutos de explicación al inicio del taller son suficientes.
 
+| COLOR | ELEMENTO | PREGUNTA QUE RESPONDE |
+|---|---|---|
+| Naranja | Evento de negocio <br>(pasado) | ¿Qué ha ocurrido? <br>"Factura recibida" <br>"Pedido confirmado" <br>"Usuario registrado" |
+|  |  |  |
+| Azul | Comando <br>(imperativo) | ¿Qué desencadena ese evento? <br>"Registrar factura" <br>"Confirmar pedido" <br>"Crear cuenta" |
+|  |  |  |
+| Amarillo <br>pálido | Actor <br>(persona/rol) | ¿Quién ejecuta el comando? <br>"Gestor de facturación" <br>"Cliente" <br>"Sistema externo" |
+|  |  |  |
+| Lila/morado | Política <br>(si...entonces) | ¿Qué regla de negocio provoca que <br>este evento dispare este comando? <br>"Si el importe supera 10.000€, <br>notificar al responsable" |
+|  |  |  |
+| Rosa | Punto de dolor <br>(problema) | ¿Qué no funciona bien aquí? <br>"No sabemos qué facturas están <br>pendientes sin revisar el email" |
+|  |  |  |
+| Verde | Vista/read model <br>(información) | ¿Qué información necesita el <br>actor para tomar la decisión? <br>"Listado de facturas pendientes" |
+|  |  |  |
+| Rojo | Pregunta abierta <br>(incertidumbre) | ¿Qué no sabemos todavía? <br>"¿Cuál es el plazo máximo de <br>revisión?" |
+
+---
+
 | Color | Elemento | Pregunta que responde | Ejemplo |
 |---|---|---|---|
 | 🟠 Naranja | Evento de negocio (pasado) | ¿Qué ha ocurrido? | "Factura recibida", "Pedido confirmado" |
