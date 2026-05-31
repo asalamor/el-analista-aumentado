@@ -109,7 +109,7 @@ El facilitador dibuja líneas verticales con cinta de carrocero separando las zo
 **Ejemplo de mapa resultante (simplificado):**
 
 ```
-│← EP-03 Recepción ───────┤← EP-04 Revisión ──────────┤← EP-05 Pago ───────────→│
+│← EP-03 Recepción ───────┤← EP-04 Revisión ───────────┤← EP-05 Pago ───────────→│
 │                         │                            │                         │
 │ [Factura recibida] ──→  │ [Revisión iniciada] ────→  │ [Pago programado] ───→  │
 │ [Proveedor notificado]  │ [Factura aprobada]         │ [Pago ejecutado]        │
