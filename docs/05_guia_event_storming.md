@@ -1,4 +1,4 @@
-# Punto 3: Guía de Event Storming para analistas funcionales
+# Punto 3 — Guía de Event Storming para analistas funcionales
 
 El Event Storming es la pieza que falta en la base conceptual del modelo: es el método que permite capturar los requisitos en el workshop de forma que encajen directamente con la plantilla YAML y respeten el vocabulario del glosario desde el primer momento.
 
