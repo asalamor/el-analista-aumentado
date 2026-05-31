@@ -10,13 +10,13 @@ La validación automática resuelve exactamente este problema. No corrige los re
 
 ---
 
-**En este capítulo aprenderás:**
+*En este capítulo aprenderás:*
 
-- Por qué la validación debe ser un paso separado de la generación, y por qué ese orden importa.
-- Los cuatro tipos de problema que el validador detecta: estructural, semántico, de consistencia y de completitud.
-- Cómo construir y encadenar los prompts de validación para que el output sea diagnóstico accionable, no ruido.
-- Cómo integrar la validación en el flujo de trabajo del analista sin que se convierta en un obstáculo.
-- Los quince problemas más frecuentes en los requisitos de equipos Agile y cómo el sistema los detecta.
+- *Por qué la validación debe ser un paso separado de la generación, y por qué ese orden importa.*
+- *Los cuatro tipos de problema que el validador detecta: estructural, semántico, de consistencia y de completitud.*
+- *Cómo construir y encadenar los prompts de validación para que el output sea diagnóstico accionable, no ruido.*
+- *Cómo integrar la validación en el flujo de trabajo del analista sin que se convierta en un obstáculo.*
+- *Los quince problemas más frecuentes en los requisitos de equipos Agile y cómo el sistema los detecta.*
 
 ---
 
