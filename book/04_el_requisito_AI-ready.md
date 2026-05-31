@@ -639,6 +639,8 @@ La tercera es la demostración inmediata del valor: tomar el primer requisito qu
 
 ---
 
-*Pregunta para llevar a tu próxima reunión de equipo:*
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Si tomamos los criterios de aceptación de las últimas cinco historias de nuestro backlog y los evaluamos contra las cuatro reglas del formato Dado/Cuando/Entonces, ¿cuántos cumplen las cuatro reglas? ¿Cuál es la regla que se incumple con más frecuencia?
 
-Si tomamos los criterios de aceptación de las últimas cinco historias de nuestro backlog y los evaluamos contra las cuatro reglas del formato Dado/Cuando/Entonces, ¿cuántos cumplen las cuatro reglas? ¿Cuál es la regla que se incumple con más frecuencia?
+---
