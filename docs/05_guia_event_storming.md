@@ -50,17 +50,17 @@ El Event Storming usa un código de colores que todos los participantes deben co
 
 | COLOR | ELEMENTO | PREGUNTA QUE RESPONDE |
 |---|---|---|
-| Naranja | Evento de negocio <br>(pasado) | ¿Qué ha ocurrido? <br>"Factura recibida" <br>"Pedido confirmado" <br>"Usuario registrado" |
+| Naranja | Evento de negocio <br>(pasado) | ¿Qué ha ocurrido? <br>"Factura recibida" ,"Pedido confirmado" ,"Usuario registrado" |
 |  |  |  |
-| Azul | Comando <br>(imperativo) | ¿Qué desencadena ese evento? <br>"Registrar factura" <br>"Confirmar pedido" <br>"Crear cuenta" |
+| Azul | Comando <br>(imperativo) | ¿Qué desencadena ese evento? <br>"Registrar factura" ,"Confirmar pedido" ,"Crear cuenta" |
 |  |  |  |
-| Amarillo <br>pálido | Actor <br>(persona/rol) | ¿Quién ejecuta el comando? <br>"Gestor de facturación" <br>"Cliente" <br>"Sistema externo" |
+| Amarillo <br>pálido | Actor <br>(persona/rol) | ¿Quién ejecuta el comando? <br>"Gestor de facturación" ,"Cliente" ,"Sistema externo" |
 |  |  |  |
 | Lila/morado | Política <br>(si...entonces) | ¿Qué regla de negocio provoca que este evento dispare este comando? <br>"Si el importe supera 10.000€, notificar al responsable" |
 |  |  |  |
 | Rosa | Punto de dolor <br>(problema) | ¿Qué no funciona bien aquí? <br>"No sabemos qué facturas están pendientes sin revisar el email" |
 |  |  |  |
-| Verde | Vista/read model <br>(información) | ¿Qué información necesita el <br>actor para tomar la decisión? <br>"Listado de facturas pendientes" |
+| Verde | Vista/read model <br>(información) | ¿Qué información necesita el actor para tomar la decisión? <br>"Listado de facturas pendientes" |
 |  |  |  |
 | Rojo | Pregunta abierta <br>(incertidumbre) | ¿Qué no sabemos todavía? <br>"¿Cuál es el plazo máximo de revisión?" |
 
