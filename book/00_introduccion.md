@@ -287,6 +287,8 @@ Esta vez, las cosas van a ser diferentes.
 
 ---
 
-*Pregunta para llevar a tu próxima reunión de equipo:*
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> ¿Cuánto tiempo dedicamos cada semana a crear artefactos en Jira que podríamos dedicar a entender mejor lo que el negocio necesita?
 
-¿Cuánto tiempo dedicamos cada semana a crear artefactos en Jira que podríamos dedicar a entender mejor lo que el negocio necesita?
+---
