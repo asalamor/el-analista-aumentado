@@ -122,6 +122,8 @@ Esto produce entre cuatro y seis chunks por requisito, según cuántos bloques t
 
 Este diseño permite hacer búsquedas específicas. Cuando el pipeline está generando test cases de contorno, no necesita recuperar todos los fragmentos de un requisito similar: solo necesita los de datos de entrada, donde están los rangos y formatos que generan los casos límite.
 
+![Chunking semántico del requisito](./images/10_02_chunking_semantico.png)
+
 Aquí está la implementación que Carlos desplegó en Meridian:
 
 ```python
