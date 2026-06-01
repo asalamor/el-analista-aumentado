@@ -1,4 +1,4 @@
-# 2. Matriz de trazabilidad automática
+# Punto 9 — Matriz de trazabilidad automática
 
 La matriz de trazabilidad es el artefacto que más tiempo consume cuando se mantiene manualmente y el primero que se abandona cuando el proyecto acelera. Automatizarla elimina ese trade-off: el equipo tiene trazabilidad completa sin coste de mantenimiento.
 
