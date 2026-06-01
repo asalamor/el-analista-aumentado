@@ -27,7 +27,7 @@ Este capítulo resuelve ese problema en su raíz.
 
 ---
 
-## El dividend de los criterios bien escritos
+## El valor de unos criterios bien escritos
 
 En el Capítulo 4 se insistió en una cosa: el formato Dado/Cuando/Entonces no es una convención estética. Es una estructura determinista que un sistema puede procesar de forma predecible. El *dado* describe un estado del sistema. El *cuando* describe una acción concreta. El *entonces* describe un resultado observable.
 
