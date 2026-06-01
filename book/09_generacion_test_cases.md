@@ -2,12 +2,12 @@
 
 ---
 
-> **En este capítulo:**
-> - Por qué los test cases son el artefacto que más se beneficia del análisis funcional estructurado
-> - La arquitectura de siete llamadas ramificadas que genera cobertura completa desde los criterios de aceptación
-> - Los prompts para casos positivos, negativos y de contorno, con los outputs reales de REQ-023
-> - La matriz de cobertura AC ↔ TC generada automáticamente
-> - Cómo integrar los test cases en Xray o Zephyr Scale sin trabajo manual
+> *En este capítulo aprenderás:*
+> - *Por qué los test cases son el artefacto que más se beneficia del análisis funcional estructurado*
+> - *La arquitectura de siete llamadas ramificadas que genera cobertura completa desde los criterios de aceptación*
+> - *Los prompts para casos positivos, negativos y de contorno, con los outputs reales de REQ-023*
+> - *La matriz de cobertura AC ↔ TC generada automáticamente*
+> - *Cómo integrar los test cases en Xray o Zephyr Scale sin trabajo manual*
 
 ---
 
