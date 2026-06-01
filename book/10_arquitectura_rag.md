@@ -73,6 +73,8 @@ Con RAG:
 
 La diferencia en el output es equivalente a la diferencia entre pedirle a alguien que escriba un documento nuevo de cero frente a pedirle que lo haga después de haber leído los veinte documentos similares más recientes del equipo.
 
+![Arquitecctura RAG](./images/10_01_arquitectura_rag.png)
+
 ---
 
 ## Cómo funciona el índice: embeddings y similitud semántica
