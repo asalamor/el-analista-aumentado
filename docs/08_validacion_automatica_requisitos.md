@@ -1,4 +1,4 @@
-# Validación automática de calidad de requisitos
+# Punto 6 — Validación automática de calidad de requisitos
 
 La validación automática es la **red de seguridad de todo el pipeline**: si entra un requisito ambiguo, todo lo que se genera aguas abajo hereda esa ambigüedad. Un checklist automático ejecutado antes del Prompt 1 evita que el problema se multiplique.
 
