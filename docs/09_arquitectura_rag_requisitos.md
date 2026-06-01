@@ -1,4 +1,4 @@
-# Arquitectura RAG para el repositorio de requisitos
+# Punto 7 — Arquitectura RAG para el repositorio de requisitos
 
 La arquitectura RAG es el salto cualitativo que separa un pipeline de generación puntual de un sistema que aprende y es coherente con todo el historial del proyecto. Sin RAG, la IA trabaja con el requisito que tiene delante y nada más. Con RAG, trabaja con el requisito actual más todo el conocimiento acumulado del proyecto.
 
