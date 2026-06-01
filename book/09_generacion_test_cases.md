@@ -823,9 +823,9 @@ La primera semana, los analistas descubrieron un patrón: los test cases de cont
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-De los requisitos que llegaron al último sprint, ¿cuántos tenían casos de contorno documentados? Si la respuesta es «ninguno» o «alguno», ese es el gap que el pipeline resuelve de forma más inmediata.
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> De los requisitos que llegaron al último sprint, ¿cuántos tenían casos de contorno documentados? Si la respuesta es «ninguno» o «alguno», ese es el gap que el pipeline resuelve de forma más inmediata.
 
 ---
 
