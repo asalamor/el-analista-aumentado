@@ -21,6 +21,8 @@ Tres de esos nueve casos verificaban flujos de error que Lucía sabe, por experi
 
 Lo que Lucía estaba viendo no era un truco ni una simplificación: era el resultado de un principio que este capítulo va a explicar en detalle. Cuando el criterio de aceptación está bien escrito —en formato Dado/Cuando/Entonces, con datos concretos, con flujos de error documentados—, el salto hasta el caso de prueba ejecutable es casi mecánico. La IA no adivina: transforma una estructura en otra estructura equivalente.
 
+![Generación de artefactos Jira](./images/08_01_generacion_artefactos_jira.png)
+
 El problema histórico del testing funcional no ha sido la falta de intención de documentar casos de prueba. Ha sido la falta de tiempo: el QA llega al sprint cuando el desarrollo ya ha empezado, con el backlog lleno de historias que nadie ha testeado formalmente, y hace lo que puede. Los flujos felices se documentan. Los flujos de error se recuerdan a medias. Los casos de contorno casi nunca aparecen.
 
 Este capítulo resuelve ese problema en su raíz.
