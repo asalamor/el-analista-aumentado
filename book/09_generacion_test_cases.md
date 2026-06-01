@@ -670,9 +670,9 @@ Esta es la matriz generada para FACT-47:
 
 | AC | Descripción | Positivos | Negativos | Contorno | Cobertura |
 |---|---|---|---|---|---|
-| AC-023-01 | Filtrado válido devuelve <br>resultados ordenados en < 2s | TC-023-01 | TC-023-03, <br>TC-023-04 | TC-023-06..09 | ✅ Completa |
-| AC-023-02 | Rango > 365 días bloquea <br>la búsqueda y muestra error | — | TC-023-02 | TC-023-08 | ✅ Completa |
-| AC-023-03 | Sin resultados muestra estado <br>vacío con botón de acción | TC-023-05 | — | — | ✅ Completa |
+| AC-023-01 | Filtrado válido devuelve resultados <br>ordenados en < 2s | TC-023-01 | TC-023-03, <br>TC-023-04 | TC-023-06..09 | ✅ Completa |
+| AC-023-02 | Rango > 365 días bloquea la búsqueda <br>y muestra error | — | TC-023-02 | TC-023-08 | ✅ Completa |
+| AC-023-03 | Sin resultados muestra estado vacío <br>con botón de acción | TC-023-05 | — | — | ✅ Completa |
 
 **Resumen de cobertura:**
 - Total criterios AC: 3
