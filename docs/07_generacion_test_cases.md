@@ -1,4 +1,4 @@
-# Punto 5: Generación automática de test cases
+# Punto 5 — Generación automática de test cases
 
 Los test cases son donde la inversión en criterios de aceptación bien escritos paga el dividendo más grande. Un AC en formato Gherkin correcto se convierte en un test case casi sin intervención humana.
 
