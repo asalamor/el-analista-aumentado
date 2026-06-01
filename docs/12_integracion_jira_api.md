@@ -1,4 +1,4 @@
-# 3. Integración técnica con Jira API
+# Punto 10 — Integración técnica con Jira API
 
 La integración con Jira API es el punto donde todo el trabajo previo se materializa en artefactos reales que el equipo puede ver, planificar y ejecutar. Sin esta capa, el pipeline genera JSONs que viven en el repositorio, pero no llegan al flujo de trabajo del equipo.
 
