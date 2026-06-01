@@ -1,4 +1,4 @@
-# 1. Detección de impacto de cambios
+# Punto 8 — Detección de impacto de cambios
 
 La detección de impacto de cambios es donde el sistema deja de ser reactivo y se vuelve proactivo. Sin ella, un cambio en un requisito validado se propaga silenciosamente a artefactos ya generados que nadie actualiza. Con ella, el sistema alerta exactamente de qué está roto y qué hay que regenerar antes de que llegue al sprint.
 
