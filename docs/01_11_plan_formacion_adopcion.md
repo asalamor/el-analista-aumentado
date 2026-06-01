@@ -1,4 +1,4 @@
-# Plan de formación y adopción
+# Punto 11 — Plan de formación y adopción
 
 Todo el trabajo técnico vale cero si el equipo no lo usa. La adopción es el problema más difícil de este tipo de transformaciones, no la tecnología.
 
