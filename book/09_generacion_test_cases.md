@@ -77,6 +77,8 @@ Cada llamada tiene su propio system prompt y su propio enfoque. No es lo mismo g
 
 La razón de separarlos en llamadas distintas es la misma que en el pipeline de Jira: el modelo optimiza para el objetivo que tiene delante. Si le pedimos que genere «todos los tipos de test cases», tenderá a generar los positivos con detalle y los negativos con menos cuidado. Si le pedimos exclusivamente casos negativos, los genera con el nivel de exhaustividad que esos casos merecen.
 
+![Generación automática de test cases](./images/09_01_generacion_automatica_test_cases.png)
+
 ---
 
 ## System prompt base para el pipeline de QA
