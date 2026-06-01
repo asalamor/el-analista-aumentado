@@ -1019,9 +1019,9 @@ El sistema no es mágico. Sigue siendo el analista quien decide. Pero decide con
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-¿Cuántos requisitos del repositorio actual de tu proyecto contienen funcionalidad que ya está implementada, al menos parcialmente, en otro requisito del mismo módulo?
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> ¿Cuántos requisitos del repositorio actual de tu proyecto contienen funcionalidad que ya está implementada, al menos parcialmente, en otro requisito del mismo módulo?
 
 ---
 
