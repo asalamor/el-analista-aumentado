@@ -352,31 +352,31 @@ YAML de NFR validado
        ▼
 [Clasificador] → ¿Qué categoría es?
        │
-       ├── rendimiento ──────────────────────────────────────────────────────────────────┐
-       │   [Llamada 1] Spike de benchmark (investigación previa si se necesita)          │
-       │   [Llamada 2] Tareas técnicas de optimización (indexación, caché, query tuning) │
-       │   [Llamada 3] Scripts de prueba de carga (k6/JMeter)                           │
-       │   [Llamada 4] Criterios de aceptación de benchmark para CI/CD                  │
-       │                                                                                 │
-       ├── disponibilidad ────────────────────────────────────────────────────────────────┤
-       │   [Llamada 1] Spike de arquitectura de resiliencia                              │
-       │   [Llamada 2] Tareas técnicas (circuit breaker, health checks, failover)        │
-       │   [Llamada 3] Runbook de respuesta a incidentes                                 │
-       │   [Llamada 4] Scripts de prueba de chaos engineering                            │
-       │                                                                                 │
-       ├── seguridad ────────────────────────────────────────────────────────────────────┤
-       │   [Llamada 1] Spike de análisis de superficie de ataque                        │
-       │   [Llamada 2] Tareas técnicas de hardening                                     │
-       │   [Llamada 3] Checklist de revisión de seguridad por capa                      │
-       │   [Llamada 4] Criterios de aceptación para escaneo automático (DAST/SAST)      │
-       │                                                                                 │
-       ├── accesibilidad ────────────────────────────────────────────────────────────────┤
-       │   [Llamada 1] Checklist WCAG por componente afectado                           │
-       │   [Llamada 2] Tareas técnicas de corrección por criterio de fallo              │
-       │   [Llamada 3] Plan de pruebas manuales con tecnologías asistivas               │
-       │   [Llamada 4] Criterios de aceptación para auditoría automática (axe, Lighthouse)│
-       │                                                                                 │
-       └── cumplimiento_normativo ──────────────────────────────────────────────────────┘
+       ├── rendimiento ────────────────────────────────────────────────────────────────────┐
+       │   [Llamada 1] Spike de benchmark (investigación previa si se necesita)            │
+       │   [Llamada 2] Tareas técnicas de optimización (indexación, caché, query tuning)   │
+       │   [Llamada 3] Scripts de prueba de carga (k6/JMeter)                              │
+       │   [Llamada 4] Criterios de aceptación de benchmark para CI/CD                     │
+       │                                                                                   │
+       ├── disponibilidad ─────────────────────────────────────────────────────────────────┤
+       │   [Llamada 1] Spike de arquitectura de resiliencia                                │
+       │   [Llamada 2] Tareas técnicas (circuit breaker, health checks, failover)          │
+       │   [Llamada 3] Runbook de respuesta a incidentes                                   │
+       │   [Llamada 4] Scripts de prueba de chaos engineering                              │
+       │                                                                                   │
+       ├── seguridad ──────────────────────────────────────────────────────────────────────┤
+       │   [Llamada 1] Spike de análisis de superficie de ataque                           │
+       │   [Llamada 2] Tareas técnicas de hardening                                        │
+       │   [Llamada 3] Checklist de revisión de seguridad por capa                         │
+       │   [Llamada 4] Criterios de aceptación para escaneo automático (DAST/SAST)         │
+       │                                                                                   │
+       ├── accesibilidad ──────────────────────────────────────────────────────────────────┤
+       │   [Llamada 1] Checklist WCAG por componente afectado                              │
+       │   [Llamada 2] Tareas técnicas de corrección por criterio de fallo                 │
+       │   [Llamada 3] Plan de pruebas manuales con tecnologías asistivas                  │
+       │   [Llamada 4] Criterios de aceptación para auditoría automática (axe, Lighthouse) │
+       │                                                                                   │
+       └── cumplimiento_normativo ─────────────────────────────────────────────────────────┘
            [Llamada 1] Análisis de brechas (gap analysis) respecto a la norma
            [Llamada 2] Tareas técnicas de remediación
            [Llamada 3] Evidencias requeridas para auditoría
