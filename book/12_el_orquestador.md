@@ -493,7 +493,7 @@ Al final de cada run, el orquestador genera automáticamente un informe Markdown
 | s3_rag_contexto            | ✅ completado | 3.4s     | 7 requisitos relacionados          |
 | s4_generacion_artefactos   | ✅ completado | 14.2s    | 1 historia · 4 tareas · 3 AC       |
 | s5_generacion_test_cases   | ✅ completado | 11.8s    | 9 test cases                       |
-| s6_analisis_impacto        | ⏭ omitido    | —        | Requisito nuevo                    |
+| s6_analisis_impacto        | ⏭ omitido     | —        | Requisito nuevo                    |
 | s7_registro_trazabilidad   | ✅ completado | 0.9s     | 14 nodos · 19 aristas              |
 | s8_aprobacion              | ✅ completado | 23.0s    | Aprobado por carlos.ruiz@empresa   |
 | s9_push_jira               | ✅ completado | 5.7s     | FACT-47 + FACT-48..51              |
