@@ -2,11 +2,12 @@
 
 ---
 
-> **En este capítulo:**
-> - Por qué la trazabilidad manual siempre fracasa y qué la hace diferente cuando es automática
-> - El modelo de datos del grafo de trazabilidad y cómo construirlo
-> - Cómo navegar la cadena completa desde un bug hasta el requisito que lo originó
-> - Cómo el sistema detecta qué artefactos rompe un cambio antes de que lo haga el equipo
+*En este capítulo aprenderás:*
+
+- *Por qué la trazabilidad manual siempre fracasa y qué la hace diferente cuando es automática*
+- *El modelo de datos del grafo de trazabilidad y cómo construirlo*
+- *Cómo navegar la cadena completa desde un bug hasta el requisito que lo originó*
+- *Cómo el sistema detecta qué artefactos rompe un cambio antes de que lo haga el equipo*
 
 ---
 
