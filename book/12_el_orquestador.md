@@ -1,4 +1,4 @@
-# Capítulo 12 — El orquestador: el pipeline completo
+# Capítulo 12. El orquestador: el pipeline completo
 
 > *«La diferencia entre una colección de herramientas y un sistema es que las herramientas se usan por separado. El sistema funciona solo.»*
 
