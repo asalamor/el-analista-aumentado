@@ -682,9 +682,9 @@ El valor del orquestador se mide en el terminal de Carlos a las 9:18 de la maña
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-Antes de instalar el pipeline, tomad el último requisito que llegó al sprint con un cambio de alcance. ¿En qué paso del pipeline habría fallado la validación del Capítulo 7? ¿Habría llegado siquiera al gate de aprobación?
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Antes de instalar el pipeline, tomad el último requisito que llegó al sprint con un cambio de alcance. ¿En qué paso del pipeline habría fallado la validación del Capítulo 7? ¿Habría llegado siquiera al gate de aprobación?
 
 ---
 
