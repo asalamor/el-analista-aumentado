@@ -1610,7 +1610,7 @@ La trazabilidad automática no sustituye el juicio del analista: lo amplifica. E
 
 ---
 
-> **Pregunta de reflexión para el equipo**
+> 💡 **Pregunta de reflexión para tu equipo**
 >
 > ¿Cuánto tiempo tardaría tu equipo hoy en responder esta pregunta con precisión: «si cambiamos esta regla de negocio, ¿qué historias en progreso y qué test cases quedan afectados?». ¿Ese tiempo cambia algo sobre cómo priorizáis los cambios durante el sprint?
 
