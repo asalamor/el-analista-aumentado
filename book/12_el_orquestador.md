@@ -4,13 +4,13 @@
 
 ---
 
-## En este capítulo
+*En este capítulo aprenderás:*
 
-- Cómo el orquestador une en un único comando ejecutable los nueve pasos del pipeline
-- Qué decisiones de diseño garantizan que el sistema sea robusto, reanudable y auditable
-- Cómo configurar el entorno para ejecutar el pipeline por primera vez
-- Qué ocurre exactamente cuando escribes `python orchestrator.py --req REQ-023`
-- Cómo integrar el orquestador en el ciclo de trabajo diario del equipo
+- *Cómo el orquestador une en un único comando ejecutable los nueve pasos del pipeline*
+- *Qué decisiones de diseño garantizan que el sistema sea robusto, reanudable y auditable*
+- *Cómo configurar el entorno para ejecutar el pipeline por primera vez*
+- *Qué ocurre exactamente cuando escribes `python orchestrator.py --req REQ-023`*
+- *Cómo integrar el orquestador en el ciclo de trabajo diario del equipo*
 
 ---
 
