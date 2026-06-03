@@ -467,9 +467,9 @@ El usuario de negocio que más resistencia inicial mostró en Meridian fue Ana L
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-¿Cuál es el analista de tu equipo que más ha sufrido el trabajo mecánico en los últimos seis meses? ¿Por qué no es él el champion del piloto?
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> ¿Cuál es el analista de tu equipo que más ha sufrido el trabajo mecánico en los últimos seis meses? ¿Por qué no es él el champion del piloto?
 
 ---
 
