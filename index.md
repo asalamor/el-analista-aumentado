@@ -74,7 +74,7 @@ La regla de gobierno principal es:
 
 ### Inteligencia avanzada y trazabilidad
 
-- *[Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)* — Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
+- *[Arquitectura RAG para requisitos](docs/107-arquitectura-rag.md)* — Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
 - *[Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)* — Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
 - *[Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)* — Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
 
