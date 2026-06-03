@@ -233,3 +233,7 @@ La confianza en el sistema no es ciega: es calibrada. Y se calibra con uso real 
 > Si tomamos un requisito real de nuestro backlog y lo pasamos a un modelo de lenguaje tal como está, ¿qué nos dice el output sobre la calidad del requisito de entrada?
 
 ---
+
+A continuación: [Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.](./03_vision_del_modelo_operativo.md)
+
+---
