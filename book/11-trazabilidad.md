@@ -1624,6 +1624,6 @@ La trazabilidad automática no sustituye el juicio del analista: lo amplifica. E
 
 ---
 
-A continuación: [Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.](./12_el_orquestador.md)
+A continuación: [Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.](./12-orquestador.md)
 
 ---
