@@ -435,3 +435,9 @@ El glosario no solo sirve al pipeline. Sirve también al equipo técnico para no
 Con la plantilla del requisito AI-ready (Capítulo 4) y el glosario estructurado (este capítulo) tienes los dos cimientos que necesita el pipeline para funcionar. La plantilla define cómo se escribe cada requisito. El glosario define con qué vocabulario se escribe.
 
 Pero ambos cimientos se construyen desde algún punto de partida. Ese punto de partida es el workshop de descubrimiento: la sesión con los usuarios de negocio donde se identifican los eventos del dominio, los actores, las reglas y los problemas que hay que resolver. El siguiente capítulo describe cómo facilitarlo.
+
+---
+
+A continuación: [Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.](./06_event_storming_para_analistas.md)
+
+---
