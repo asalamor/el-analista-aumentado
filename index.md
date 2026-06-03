@@ -76,7 +76,7 @@ La regla de gobierno principal es:
 
 - *[Arquitectura RAG para requisitos](docs/107-arquitectura-rag.md)* — Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
 - *[Detección de impacto de cambios](docs/108-impacto-cambios.md)* — Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
-- *[Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)* — Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
+- *[Matriz de trazabilidad automática](docs/109-trazabilidad.md)* — Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
 
 ### Integración, adopción y gobierno
 
