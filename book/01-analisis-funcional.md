@@ -236,6 +236,6 @@ Ese ejercicio, en sí mismo, produce dos cosas valiosas: crea conciencia colecti
 
 ---
 
-A continuación: [Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.](./02-que-puede-hacer-la-IA.md)
+A continuación: [Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.](./02-que-puede-hacer-la-ia.md)
 
 ---
