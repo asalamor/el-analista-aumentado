@@ -143,29 +143,29 @@ La regla de gobierno principal es:
 ### Parte I — El problema y la oportunidad
 
 - *[Introducción](book/00_introduccion.md)* — Presenta el problema, los perfiles de lector, el caso Meridian y la promesa del modelo.
-- *[Capítulo 1. El análisis funcional en crisis silenciosa](book/01_el_analisis_funcional_en_crisis_silenciosa.md)* — Diagnóstico del problema: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.
-- *[Capítulo 2. Qué puede hacer la IA, y qué no puede hacer](book/02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)* — Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.
-- *[Capítulo 3. Visión del modelo operativo](book/03_vision_del_modelo_operativo.md)* — Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.
+- *[1. El análisis funcional en crisis silenciosa](book/01_el_analisis_funcional_en_crisis_silenciosa.md)* — Diagnóstico del problema: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.
+- *[2. Qué puede hacer la IA, y qué no puede hacer](book/02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)* — Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.
+- *[3. Visión del modelo operativo](book/03_vision_del_modelo_operativo.md)* — Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.
 
 ### Parte II — Preparar requisitos para IA
 
-- *[Capítulo 4. El requisito AI-ready](book/04_el_requisito_AI-ready.md)* — Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.
-- *[Capítulo 5. El glosario estructurado](book/05_el_glosario_estructurado.md)* — El glosario como contrato terminológico activo del pipeline.
-- *[Capítulo 6. Event Storming para analistas](book/06_event_storming_para_analistas.md)* — Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.
+- *[4. El requisito AI-ready](book/04_el_requisito_AI-ready.md)* — Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.
+- *[5. El glosario estructurado](book/05_el_glosario_estructurado.md)* — El glosario como contrato terminológico activo del pipeline.
+- *[6. Event Storming para analistas](book/06_event_storming_para_analistas.md)* — Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.
 
 ### Parte III — Construir el pipeline
 
-- *[Capítulo 7. Validación automática](book/07_validacion_automatica.md)* — Validación de calidad del requisito antes de generar artefactos.
-- *[Capítulo 8. Generación de artefactos Jira](book/08_generacion_artefactos_jira.md)* — Conversión de requisitos en épicas, historias, tareas y subtareas.
-- *[Capítulo 9. Generación automática de test cases](book/09_generacion_test_cases.md)* — Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.
-- *[Capítulo 10. Arquitectura RAG](book/10_arquitectura_rag.md)* — Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.
-- *[Capítulo 11. Trazabilidad automática e impacto de cambios](book/11_trazabilidad_automatica_e_impacto_de_cambios.md)* — Grafo de trazabilidad y análisis automático de impacto.
-- *[Capítulo 12. El orquestador](book/12_el_orquestador.md)* — Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.
+- *[7. Validación automática](book/07_validacion_automatica.md)* — Validación de calidad del requisito antes de generar artefactos.
+- *[8. Generación de artefactos Jira](book/08_generacion_artefactos_jira.md)* — Conversión de requisitos en épicas, historias, tareas y subtareas.
+- *[9. Generación automática de test cases](book/09_generacion_test_cases.md)* — Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.
+- *[10. Arquitectura RAG](book/10_arquitectura_rag.md)* — Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.
+- *[11. Trazabilidad automática e impacto de cambios](book/11_trazabilidad_automatica_e_impacto_de_cambios.md)* — Grafo de trazabilidad y análisis automático de impacto.
+- *[12. El orquestador](book/12_el_orquestador.md)* — Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.
 
 ### Parte IV — Implantar y sostener el modelo
 
-- *[Capítulo 13. Plan de adopción](book/13_plan_de_adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
-- *[Capítulo 14. Gobierno del modelo](book/14_gobierno_del_modelo.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
+- *[13. Plan de adopción](book/13_plan_de_adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
+- *[14. Gobierno del modelo](book/14_gobierno_del_modelo.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
 
 ---
 
