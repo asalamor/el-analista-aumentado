@@ -208,8 +208,7 @@ La trazabilidad mediante identificadores únicos permite vincular requisito, dis
 
 Evite reglas ambiguas en párrafos largos. Para productos de seguros, use tablas.
 
-```markdown
-# Reglas de elegibilidad
+**Reglas de elegibilidad**
 
 | Regla | Condición | Resultado | Mensaje |
 |---|---|---|---|
@@ -217,7 +216,6 @@ Evite reglas ambiguas en párrafos largos. Para productos de seguros, use tablas
 | REG-002 | Edad asegurado > 70 | Bloquear simulación | Edad fuera del rango permitido |
 | REG-003 | Modalidad = Premium y capital < 50.000 | Bloquear | Capital insuficiente para modalidad Premium |
 | REG-004 | Tomador ≠ asegurado | Solicitar datos diferenciados | N/A |
-```
 
 Después vincule cada regla a requisitos:
 
@@ -295,8 +293,7 @@ NOREG-005: Los procesos batch, reporting y postprocesos deberán mantener el com
 
 Y después:
 
-```markdown
-# Pruebas de no regresión obligatorias
+**Pruebas de no regresión obligatorias**
 
 | ID | Caso | Producto | Resultado esperado |
 |---|---|---|---|
@@ -304,7 +301,6 @@ Y después:
 | T-NR-002 | Contratación producto actual | Producto A | Contrato emitido |
 | T-NR-003 | Documentación producto actual | Producto A | Documento sin cambios |
 | T-NR-004 | Envío a DWH | Producto A | Mismos códigos actuales |
-```
 
 ---
 
@@ -312,8 +308,7 @@ Y después:
 
 Este es uno de los artefactos más importantes de SDD.
 
-```markdown
-# Matriz de trazabilidad
+**Matriz de trazabilidad**
 
 | Requisito | Regla | Historia Jira | Tarea técnica | Caso de prueba | Estado |
 |---|---|---|---|---|---|
@@ -322,7 +317,6 @@ Este es uno de los artefactos más importantes de SDD.
 | REQ-DOC-001 | REG-DOC-001 | US-003 | TASK-003 | TC-004 | Pendiente |
 | REQ-INT-001 | REG-INT-001 | US-004 | TASK-004 | TC-005 | Pendiente |
 | NOREG-001 | N/A | US-005 | TASK-005 | TC-NR-001 | Pendiente |
-```
 
 El objetivo no es burocracia. El objetivo es poder responder rápidamente:
 
