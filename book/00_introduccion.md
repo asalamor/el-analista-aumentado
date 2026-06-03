@@ -291,6 +291,6 @@ Esta vez, las cosas van a ser diferentes.
 
 ---
 
-A continuación: [Capítulo 1. El análisis funcional en crisis silenciosa](./01_el_analisis_funcional_en_crisis_silenciosa.md)
+A continuación: [Diagnóstico del problema: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.](./01_el_analisis_funcional_en_crisis_silenciosa.md)
 
 ---
