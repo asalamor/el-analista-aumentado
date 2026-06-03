@@ -1621,3 +1621,9 @@ La trazabilidad automática no sustituye el juicio del analista: lo amplifica. E
 ---
 
 *En el capítulo siguiente uniremos todo lo construido en los capítulos siete al once en un único script ejecutable: el orquestador. Un comando que recibe un YAML de requisito y entrega, cuarenta y siete segundos después, una historia en Jira, cuatro tareas técnicas, nueve test cases en Xray, y el grafo de trazabilidad actualizado.*
+
+---
+
+A continuación: [Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.](./12_el_orquestador.md)
+
+---
