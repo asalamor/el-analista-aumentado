@@ -474,3 +474,9 @@ El usuario de negocio que más resistencia inicial mostró en Meridian fue Ana L
 ---
 
 *El sistema ya está adoptado. El equipo lo usa. Las métricas mejoran. Pero ¿qué ocurre cuando el pipeline empieza a degradarse silenciosamente? ¿Quién detecta que los prompts ya no producen el mismo output que hace seis meses? ¿Quién decide cuándo escalar la autonomía de la IA? Esas preguntas son el territorio del siguiente capítulo.*
+
+---
+
+A continuación: [Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.](book/14_gobierno_del_modelo.md)
+
+---
