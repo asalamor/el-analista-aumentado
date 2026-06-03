@@ -83,6 +83,8 @@ EPICA EP-04
 
 Lo que hace útil el grafo no es solo almacenar estas relaciones, sino poder recorrerlas eficientemente en ambas direcciones. Desde un requisito hacia abajo para saber qué artefactos generó. Desde un test case hacia arriba para saber qué requisito justifica su existencia. Y desde cualquier punto hacia los lados para detectar inconsistencias con artefactos relacionados del mismo nivel.
 
+![Trazabilidad automática: del requisito al test case](./images/11_02_trazabilidad_automatica.png)
+
 ### El modelo de datos
 
 El grafo se implementa con dos tablas en PostgreSQL. La elección deliberada es usar la misma base de datos que ya aloja el vector store del capítulo anterior, evitando añadir infraestructura adicional.
