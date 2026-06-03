@@ -132,7 +132,7 @@ La regla de gobierno principal es:
 
 ### Gaps de casos de uso avanzados
 
-- *Análisis funcional de migraciones* — equivalencia con sistema legado
+- *[Análisis funcional de migraciones](gaps/07-advanced/analisis-funcional-migraciones.md)* — equivalencia con sistema legado
 - *Requisitos de accesibilidad y cumplimiento normativo* — WCAG, RGPD, PSD2 automáticos
 - *Generación de documentación de usuario final* — manuales, release notes, ayuda en línea
 
