@@ -80,7 +80,7 @@ La regla de gobierno principal es:
 
 ### Integración, adopción y gobierno
 
-- *[Integración con Jira API](docs/04_10_integracion_jira_api.md)* — Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
+- *[Integración con Jira API](docs/010-integracion-jira-api.md)* — Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
 - *[Script orquestador](docs/05_13_script_orquestador.md)* — Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
 - *[Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)* — Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
 - *[Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)* — Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
