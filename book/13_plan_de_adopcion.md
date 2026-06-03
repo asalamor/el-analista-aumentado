@@ -8,13 +8,13 @@ Esa pregunta —cuándo y cómo hacer que el sistema funcione para un equipo rea
 
 ---
 
-## En este capítulo
+*En este capítulo aprenderás:*
 
-- Por qué la tecnología es la parte fácil y la adopción es el verdadero reto.
-- El plan de cuatro fases para implantar el sistema de forma gradual, con valor visible en las primeras dos semanas.
-- Cómo gestionar las resistencias específicas de cada perfil: analistas funcionales, usuarios de negocio, equipo técnico y dirección.
-- Los materiales de comunicación y formación que han funcionado en la práctica.
-- Las métricas que demuestran el impacto antes de que nadie lo pida.
+- *Por qué la tecnología es la parte fácil y la adopción es el verdadero reto.*
+- *El plan de cuatro fases para implantar el sistema de forma gradual, con valor visible en las primeras dos semanas.*
+- *Cómo gestionar las resistencias específicas de cada perfil: analistas funcionales, usuarios de negocio, equipo técnico y dirección.*
+- *Los materiales de comunicación y formación que han funcionado en la práctica.*
+- *Las métricas que demuestran el impacto antes de que nadie lo pida.*
 
 ---
 
