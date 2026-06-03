@@ -736,9 +736,9 @@ Ese es el objetivo real del gobierno del modelo. No mantener el pipeline funcion
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-Piensa en los últimos cinco requisitos que procesaste con el pipeline. ¿Hubo algún campo que editaste siempre antes de aprobar? Si la respuesta es sí, ese campo es el primer candidato a un ajuste de prompt. ¿Tienes un proceso para proponer ese ajuste, evaluarlo y desplegarlo de forma controlada?
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Piensa en los últimos cinco requisitos que procesaste con el pipeline. ¿Hubo algún campo que editaste siempre antes de aprobar? Si la respuesta es sí, ese campo es el primer candidato a un ajuste de prompt. ¿Tienes un proceso para proponer ese ajuste, evaluarlo y desplegarlo de forma controlada?
 
 ---
 
