@@ -172,9 +172,6 @@ Este baseline sirve para comparar:
 
 En seguros, muchos cambios no deberían ser “desarrollo puro”. Por eso conviene clasificar.
 
-```markdown
-# Clasificación del cambio
-
 | ID | Cambio | Tipo | Requiere código | Requiere parametrización | Requiere QA |
 |---|---|---|---|---|---|
 | CHG-001 | Alta nuevo código de producto | Parametrización | No | Sí | Sí |
@@ -182,7 +179,6 @@ En seguros, muchos cambios no deberían ser “desarrollo puro”. Por eso convi
 | CHG-003 | Nuevo texto en documentación | Documento | No/Sí | Sí | Sí |
 | CHG-004 | Envío nuevo código a DWH | Integración | Sí | No | Sí |
 | CHG-005 | Nuevo campo en pantalla | UI / Backend | Sí | No | Sí |
-```
 
 Esto ayuda a derivar tareas técnicas, estimar esfuerzo y evitar que todo se convierta en una historia genérica.
 
