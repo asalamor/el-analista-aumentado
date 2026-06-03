@@ -838,6 +838,6 @@ La primera semana, los analistas descubrieron un patrón: los test cases de cont
 
 ---
 
-A continuación: [Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.](./10_arquitectura_rag.md)
+A continuación: [Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.](./10-arquitectura-rag.md)
     
 ---
