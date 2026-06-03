@@ -387,6 +387,6 @@ El Capítulo 4 construye el primer componente. Empezamos con la plantilla.
 
 ---
 
-A continuación: [Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.](./04_el_requisito_AI-ready.md)
+A continuación: [Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.](./04-requisito-ai-ready.md)
 
 ---
