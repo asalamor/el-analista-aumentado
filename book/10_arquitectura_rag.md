@@ -1026,3 +1026,9 @@ El sistema no es mágico. Sigue siendo el analista quien decide. Pero decide con
 ---
 
 *El pipeline ya tiene memoria. En el Capítulo 11 añadiremos el siguiente nivel: la capacidad de detectar automáticamente qué artefactos ya generados quedan afectados cuando un requisito validado cambia, y de construir la trazabilidad completa desde el requisito de negocio hasta el test case ejecutado.*
+
+---
+
+A continuación: [Grafo de trazabilidad y análisis automático de impacto.](./11_trazabilidad_automatica_e_impacto_de_cambios.md)
+
+---
