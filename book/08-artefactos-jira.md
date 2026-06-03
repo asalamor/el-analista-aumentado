@@ -811,6 +811,6 @@ El capítulo siguiente cierra el triángulo del núcleo técnico: si el capítul
 
 ---
 
-A continuación: [Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.](./09_generacion_test_cases.md)
+A continuación: [Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.](./09-test-cases.md)
 
 ---
