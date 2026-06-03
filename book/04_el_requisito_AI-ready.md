@@ -644,3 +644,7 @@ La tercera es la demostración inmediata del valor: tomar el primer requisito qu
 > Si tomamos los criterios de aceptación de las últimas cinco historias de nuestro backlog y los evaluamos contra las cuatro reglas del formato Dado/Cuando/Entonces, ¿cuántos cumplen las cuatro reglas? ¿Cuál es la regla que se incumple con más frecuencia?
 
 ---
+
+[El glosario como contrato terminológico activo del pipeline.](./05_el_glosario_estructurado.md)
+
+---
