@@ -69,7 +69,7 @@ La regla de gobierno principal es:
 ### Núcleo técnico del pipeline
 
 - *[Prompts de generación de Jira](docs/104-prompts-jira.md)* — Prompts para transformar requisitos YAML en épicas, historias, tareas técnicas y subtareas.
-- *[Generación automática de test cases](docs/02_05_generacion_test_cases.md)* — Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
+- *[Generación automática de test cases](docs/105-test-cases.md)* — Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
 - *[Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)* — Validación de completitud, ambigüedad, contradicciones y calidad funcional antes de generar artefactos.
 
 ### Inteligencia avanzada y trazabilidad
