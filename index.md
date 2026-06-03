@@ -18,6 +18,8 @@ La carpeta [docs](#docs) contiene la documentación técnica y metodológica del
 
 Aquí se explica cómo capturar requisitos en formato AI-ready, cómo estructurar el glosario, cómo generar artefactos Jira, cómo producir casos de prueba, cómo construir una arquitectura RAG, cómo mantener la trazabilidad y cómo gobernar el modelo a lo largo del tiempo.
 
+La carpeta [gaps](#gaps) contine puntos adicionales que complementan el análisis, identificados al completar el modelo operativo principal.
+
 ### 2. Libro: *El analista aumentado*
 
 La carpeta **book** contiene el libro en capítulos.
@@ -58,72 +60,113 @@ La regla de gobierno principal es:
 2. [Orden lógico de implementación](docs/00_02_orden_logico_implementacion.md)
    Secuencia recomendada para construir el modelo desde las bases documentales hasta la automatización avanzada.
 
-3. [Inventario de puntos pendientes](docs/00_03_inventario_puntos_pendientes.md)
-   Relación de temas identificados para evolucionar el modelo operativo.
-
-4. [Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)
+3. [Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)
    Documento de referencia de los doce componentes principales del modelo.
 
 ### Fundación del modelo
 
-5. [Taller de plantillas](docs/01_01_taller_de_plantillas.md)
+4. [Taller de plantillas](docs/01_01_taller_de_plantillas.md)
    Diseño de la plantilla de requisito AI-ready y definición de campos obligatorios, recomendados y opcionales.
 
-6. [Glosario estructurado](docs/01_02_glosario_estructurado.md)
+5. [Glosario estructurado](docs/01_02_glosario_estructurado.md)
    Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
 
-7. [Guía de Event Storming](docs/01_03_guia_event_storming.md)
+6. [Guía de Event Storming](docs/01_03_guia_event_storming.md)
    Técnica de descubrimiento para transformar conversaciones de negocio en eventos, comandos, actores y requisitos estructurados.
 
 ### Núcleo técnico del pipeline
 
-8. [Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)
+7. [Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)
    Prompts para transformar requisitos YAML en épicas, historias, tareas técnicas y subtareas.
 
-9. [Generación automática de test cases](docs/02_05_generacion_test_cases.md)
+8. [Generación automática de test cases](docs/02_05_generacion_test_cases.md)
    Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
 
-10. [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)
+9. [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)
     Validación de completitud, ambigüedad, contradicciones y calidad funcional antes de generar artefactos.
 
 ### Inteligencia avanzada y trazabilidad
 
-11. [Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)
+10. [Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)
     Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
 
-12. [Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)
+11. [Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)
     Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
 
-13. [Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)
+12. [Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)
     Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
 
 ### Integración, adopción y gobierno
 
-14. [Integración con Jira API](docs/04_10_integracion_jira_api.md)
+13. [Integración con Jira API](docs/04_10_integracion_jira_api.md)
     Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
 
+14. [Script orquestador](docs/05_13_script_orquestador.md)
+    Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
+    
 15. [Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)
     Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
 
 16. [Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)
     Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
 
-### Extensiones del modelo
+<a id="gaps"></a>
+## Gaps que complementan el modelo
 
-17. [Script orquestador](docs/05_13_script_orquestador.md)
-    Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
+### Gaps técnicos del pipeline
 
-18. [Interfaz de analista](docs/05_14_interfaz_analista_pipeline.md)
-    Diseño de una interfaz para que el analista funcional pueda usar el pipeline sin operar desde consola.
+- [Pipeline AI-ready para requisitos no funcionales](docs/06_01_NFR_Pipeline_AI_Ready.md)
+   Adaptación del modelo para rendimiento, seguridad, disponibilidad, accesibilidad y otros NFR.
+- [Requisitos de integración con sistemas externos](docs/06_02_requisitos_integracion_sistemas_externos.md)
+   Tratamiento específico de requisitos que dependen de APIs, contratos, sistemas terceros y comportamientos no controlados.
+- [Pipeline de épicas desde cero](docs/06_03_pipeline-epicas-desde-cero.md)
+   Extensión para construir épicas y estructuras iniciales cuando el proyecto parte de información poco estructurada.
+- *Manejo de requisitos deprecados o divididos* — split y fusión de requisitos
+- *Gestión de versiones de un mismo requisito en sprints distintos* — implementación parcial
 
-19. [Pipeline AI-ready para requisitos no funcionales](docs/06_01_NFR_Pipeline_AI_Ready.md)
-    Adaptación del modelo para rendimiento, seguridad, disponibilidad, accesibilidad y otros NFR.
+### Gaps en la capa de inteligencia
 
-20. [Requisitos de integración con sistemas externos](docs/06_02_requisitos_integracion_sistemas_externos.md)
-    Tratamiento específico de requisitos que dependen de APIs, contratos, sistemas terceros y comportamientos no controlados.
+- *Fine-tuning o few-shot learning con ejemplos propios* — usar artefactos aprobados históricos como referencia
+- *Detección automática de requisitos candidatos a épica nueva* — cuando no encajan en épicas existentes
+- *Análisis de cobertura de negocio* — cruzar requisitos con objetivos de negocio declarados
 
-21. [Pipeline de épicas desde cero](docs/06_03_pipeline-epicas-desde-cero.md)
-    Extensión para construir épicas y estructuras iniciales cuando el proyecto parte de información poco estructurada.
+### Gaps de integración
+
+- *Integración con Azure DevOps* — alternativa a Jira para organizaciones con stack Microsoft
+- *Integración con Confluence como fuente documental* — leer páginas directamente sin transformación manual
+- *Integración con herramientas de modelado BPMN* — Bizagi, Camunda, Lucidchart
+- *Integración con repositorio de código* — vincular commits automáticamente con historias Jira
+- *Integración con herramientas de testing de rendimiento* — scripts JMeter/k6 desde criterios de rendimiento
+
+### Gaps de proceso
+
+- *Flujo de gestión de cambios de alcance mid-sprint* — cambio a historia en desarrollo
+- *Proceso de refinamiento asistido por IA* — preguntas en tiempo real durante la ceremonia
+- *Gestión del backlog de épicas no priorizadas* — consistencia para estimación de capacidad
+- *Proceso de cierre de sprint y actualización de trazabilidad* — historias no completadas
+
+### Gaps de gobierno
+
+- *Métricas de ROI para la dirección* — valor monetario de las métricas técnicas
+- *Política de privacidad y seguridad de datos* — qué enviar a APIs externas en proyectos regulados
+- *Proceso de auditoría externa* — ISO 9001, CMMI, SOC 2
+- *Escalabilidad a múltiples proyectos simultáneos* — glosario y RAG multi-proyecto
+
+### Gaps de experiencia de usuario
+
+- *Interfaz de analista para el pipeline* — interfaz web accesible sin conocimientos técnicos
+- [Interfaz de analista](docs/05_14_interfaz_analista_pipeline.md)
+   Diseño de una interfaz para que el analista funcional pueda usar el pipeline sin operar desde consola.
+- *Plugin de Confluence o extensión del navegador* — integración nativa sin salir de Confluence
+- *Notificaciones y bandeja de entrada del analista* — alertas sin ruido excesivo
+
+### Gaps de casos de uso avanzados
+
+- *Análisis funcional de migraciones* — equivalencia con sistema legado
+- *Requisitos de accesibilidad y cumplimiento normativo* — WCAG, RGPD, PSD2 automáticos
+- *Generación de documentación de usuario final* — manuales, release notes, ayuda en línea
+
+
 
 22. [Resumen ejecutivo](docs/resumen_ejecutivo.html)
     Vista ejecutiva en formato HTML para presentar el modelo a dirección o stakeholders.
