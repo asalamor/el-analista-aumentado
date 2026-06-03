@@ -55,6 +55,7 @@ El sistema de gobierno de Meridian se articula en cinco pilares independientes. 
 
 No hace falta implantar los cinco pilares a la vez. En Meridian, el pillar de observabilidad llegó en el mes dos, la gestión de prompts en el mes cuatro —después del incidente de REQ-039— y la gestión del riesgo en el mes siete, cuando el sistema ya procesaba más de cien requisitos por sprint. La secuencia importa menos que la consistencia: cada pilar, una vez activado, debe revisarse sin excepciones.
 
+14_01_gobierno
 ---
 
 ## Pilar 1: Observabilidad
