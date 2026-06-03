@@ -66,6 +66,9 @@ Antes de entrar en las fases, cuatro principios que determinan todas las decisio
 
 El roadmap de implantación que introdujimos en el Capítulo 3 tiene cuatro fases. En este capítulo lo convertimos en un plan de acción concreto con actividades, responsables y criterios de avance.
 
+
+![Adopcion](./images/13_01_adopcion.png)
+
 ### Fase 0 — Preparación silenciosa (semanas 1 y 2)
 
 Esta fase ocurre sin comunicar nada al equipo todavía. El objetivo es tener todo listo para que la demo de la Fase 1 sea impactante con datos reales del propio proyecto.
