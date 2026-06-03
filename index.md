@@ -14,7 +14,7 @@ El contenido está organizado en dos grandes bloques complementarios:
 
 ### 1. Modelo operativo
 
-La carpeta [docs](#indice-del-modelo-operativo) contiene la documentación técnica y metodológica del modelo operativo.
+La carpeta [docs](#docs) contiene la documentación técnica y metodológica del modelo operativo.
 
 Aquí se explica cómo capturar requisitos en formato AI-ready, cómo estructurar el glosario, cómo generar artefactos Jira, cómo producir casos de prueba, cómo construir una arquitectura RAG, cómo mantener la trazabilidad y cómo gobernar el modelo a lo largo del tiempo.
 
@@ -47,7 +47,7 @@ La regla de gobierno principal es:
 > **La IA propone; el humano aprueba.**
 
 ---
-
+<a id="docs"></a>
 ## Índice del modelo operativo
 
 ### Base conceptual y documental
