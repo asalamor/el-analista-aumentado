@@ -676,39 +676,39 @@ Todo comportamiento existente deberá mantenerse salvo que esta especificación 
 ## 6. Matriz de impacto
 
 | Área | Impacto | Descripción | Riesgo |
-|---|---|---|---|
+|------|---------|-------------|--------|
 
 ## 7. Requisitos
 
 | ID | Descripción | Prioridad | Tipo |
-|---|---|---|---|
+|----|-------------|-----------|------|
 
 ## 8. Reglas de negocio
 
 | ID | Condición | Resultado | Mensaje | Requisito |
-|---|---|---|---|---|
+|----|-----------|-----------|---------|-----------|
 
 ## 9. Contratos de datos
 
 ### Entrada
 
 | Campo | Tipo | Obligatorio | Regla |
-|---|---|---|---|
+|-------|------|-------------|-------|
 
 ### Salida
 
 | Campo | Tipo | Descripción |
-|---|---|---|
+|-------|------|-------------|
 
 ## 10. Documentación
 
 | Documento | Cambio | Producto | Responsable |
-|---|---|---|---|
+|-----------|--------|----------|-------------|
 
 ## 11. Integraciones
 
 | Sistema | Campo | Cambio | Requisito |
-|---|---|---|---|
+|---------|-------|--------|-----------|
 
 ## 12. Escenarios BDD
 
@@ -722,17 +722,17 @@ Scenario: [Nombre]
 ## 13. No regresión
 
 | ID | Caso | Producto existente | Resultado esperado |
-|---|---|---|---|
+|----|------|--------------------|--------------------|
 
 ## 14. Open Points
 
 | ID | Pregunta | Responsable | Estado | Decisión |
-|---|---|---|---|---|
+|----|----------|-------------|--------|----------|
 
 ## 15. Matriz de trazabilidad
 
 | Requisito | Historia | Tarea | Prueba | Estado |
-|---|---|---|---|---|
+|-----------|----------|-------|--------|--------|
 
 ## 16. Criterios de aceptación globales
 
@@ -741,7 +741,6 @@ Scenario: [Nombre]
 - [ ] La documentación se genera correctamente.
 - [ ] Las integraciones reciben los códigos esperados.
 - [ ] Los productos existentes no se ven afectados.
-```
 
 ---
 
