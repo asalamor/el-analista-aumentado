@@ -62,54 +62,54 @@ La regla de gobierno principal es:
 **2. [Orden lógico de implementación](docs/00_02_orden_logico_implementacion.md)**
    Secuencia recomendada para construir el modelo desde las bases documentales hasta la automatización avanzada.
 
-3. [Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)
+**3. [Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)**
    Documento de referencia de los doce componentes principales del modelo.
 
 ### Fundación del modelo
 
-4. [Taller de plantillas](docs/01_01_taller_de_plantillas.md)
+**4. [Taller de plantillas](docs/01_01_taller_de_plantillas.md)**
    Diseño de la plantilla de requisito AI-ready y definición de campos obligatorios, recomendados y opcionales.
 
-5. [Glosario estructurado](docs/01_02_glosario_estructurado.md)
+**5. [Glosario estructurado](docs/01_02_glosario_estructurado.md)**
    Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
 
-6. [Guía de Event Storming](docs/01_03_guia_event_storming.md)
+**6. [Guía de Event Storming](docs/01_03_guia_event_storming.md)**
    Técnica de descubrimiento para transformar conversaciones de negocio en eventos, comandos, actores y requisitos estructurados.
 
 ### Núcleo técnico del pipeline
 
-7. [Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)
+**7. [Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)**
    Prompts para transformar requisitos YAML en épicas, historias, tareas técnicas y subtareas.
 
-8. [Generación automática de test cases](docs/02_05_generacion_test_cases.md)
+**8. [Generación automática de test cases](docs/02_05_generacion_test_cases.md)**
    Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
 
-9. [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)
+**9. [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)**
     Validación de completitud, ambigüedad, contradicciones y calidad funcional antes de generar artefactos.
 
 ### Inteligencia avanzada y trazabilidad
 
-10. [Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)
+**10. [Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)**
     Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
 
-11. [Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)
+**11. [Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)**
     Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
 
-12. [Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)
+**12. [Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)**
     Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
 
 ### Integración, adopción y gobierno
 
-13. [Integración con Jira API](docs/04_10_integracion_jira_api.md)
+**13. [Integración con Jira API](docs/04_10_integracion_jira_api.md)**
     Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
 
-14. [Script orquestador](docs/05_13_script_orquestador.md)
+**14. [Script orquestador](docs/05_13_script_orquestador.md)**
     Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
     
-15. [Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)
+**15. [Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)**
     Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
 
-16. [Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)
+**16. [Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)**
     Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
 
 <a id="gaps"></a>
