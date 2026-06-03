@@ -58,7 +58,7 @@ La regla de gobierno principal es:
 
 - *[Modelo operativo de análisis funcional AI-ready](docs/001-analisis-funcional-ai-ready.md)* — Visión inicial del cambio necesario en la captura de requisitos, estructura documental, metodología y proceso end-to-end.
 - *[Orden lógico de implementación](docs/002-orden-logico-implementacion.md)* — Secuencia recomendada para construir el modelo desde las bases documentales hasta la automatización avanzada.
-- *[Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)* — Documento de referencia de los doce componentes principales del modelo.
+- *[Modelo operativo completo](docs/003-modelo-operativo.md)* — Documento de referencia de los doce componentes principales del modelo.
 
 ### Fundación del modelo
 
