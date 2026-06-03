@@ -56,61 +56,45 @@ La regla de gobierno principal es:
 
 ### Base conceptual y documental
 
-- [Modelo operativo de análisis funcional AI-ready](docs/00_01_modelo_operativo_analisis_funcional_ai_ready.md)
-   Visión inicial del cambio necesario en la captura de requisitos, estructura documental, metodología y proceso end-to-end.
+- *[Modelo operativo de análisis funcional AI-ready](docs/00_01_modelo_operativo_analisis_funcional_ai_ready.md)* — Visión inicial del cambio necesario en la captura de requisitos, estructura documental, metodología y proceso end-to-end.
 
-- [Orden lógico de implementación](docs/00_02_orden_logico_implementacion.md)
-   Secuencia recomendada para construir el modelo desde las bases documentales hasta la automatización avanzada.
+- *[Orden lógico de implementación](docs/00_02_orden_logico_implementacion.md)* — Secuencia recomendada para construir el modelo desde las bases documentales hasta la automatización avanzada.
 
-- [Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)
-   Documento de referencia de los doce componentes principales del modelo.
+- *[Modelo operativo completo](docs/01_00_modelo_operativo_completo.md)* — Documento de referencia de los doce componentes principales del modelo.
 
 ### Fundación del modelo
 
-- [Taller de plantillas](docs/01_01_taller_de_plantillas.md)
-   Diseño de la plantilla de requisito AI-ready y definición de campos obligatorios, recomendados y opcionales.
+- *[Taller de plantillas](docs/01_01_taller_de_plantillas.md)* — Diseño de la plantilla de requisito AI-ready y definición de campos obligatorios, recomendados y opcionales.
 
-- [Glosario estructurado](docs/01_02_glosario_estructurado.md)
-   Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
+- *[Glosario estructurado](docs/01_02_glosario_estructurado.md)* — Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
 
-- [Guía de Event Storming](docs/01_03_guia_event_storming.md)
-   Técnica de descubrimiento para transformar conversaciones de negocio en eventos, comandos, actores y requisitos estructurados.
+- *[Guía de Event Storming](docs/01_03_guia_event_storming.md)* — Técnica de descubrimiento para transformar conversaciones de negocio en eventos, comandos, actores y requisitos estructurados.
 
 ### Núcleo técnico del pipeline
 
-- [Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)
-   Prompts para transformar requisitos YAML en épicas, historias, tareas técnicas y subtareas.
+- *[Prompts de generación de Jira](docs/02_04_prompts_generacion_jira.md)* — Prompts para transformar requisitos YAML en épicas, historias, tareas técnicas y subtareas.
 
-- [Generación automática de test cases](docs/02_05_generacion_test_cases.md)
-   Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
+- *[Generación automática de test cases](docs/02_05_generacion_test_cases.md)* — Pipeline para generar casos de prueba desde criterios de aceptación y reglas de negocio.
 
-- [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)
-    Validación de completitud, ambigüedad, contradicciones y calidad funcional antes de generar artefactos.
+- *[Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)* — Validación de completitud, ambigüedad, contradicciones y calidad funcional antes de generar artefactos.
 
 ### Inteligencia avanzada y trazabilidad
 
-- [Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)
-    Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
+- *[Arquitectura RAG para requisitos](docs/03_07_arquitectura_rag_requisitos.md)* — Diseño de la memoria semántica del pipeline para recuperar contexto del repositorio funcional.
 
-- [Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)
-    Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
+- *[Detección de impacto de cambios](docs/03_08_deteccion_impacto_cambios.md)* — Cómo identificar historias, tareas y test cases afectados cuando cambia un requisito.
 
-- [Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)
-    Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
+- *[Matriz de trazabilidad automática](docs/03_09_matriz_trazabilidad_automatica.md)* — Generación de trazabilidad entre requisitos, historias, test cases, Jira y código.
 
 ### Integración, adopción y gobierno
 
-- [Integración con Jira API](docs/04_10_integracion_jira_api.md)
-    Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
+- *[Integración con Jira API](docs/04_10_integracion_jira_api.md)* — Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
 
-- [Script orquestador](docs/05_13_script_orquestador.md)
-    Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
+- *[Script orquestador](docs/05_13_script_orquestador.md)* — Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
     
-- [Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)
-    Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
+- *[Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)* — Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
 
-- [Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)
-    Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
+- *[Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)* — Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
 
 <a id="gaps"></a>
 ## Gaps que complementan el modelo
