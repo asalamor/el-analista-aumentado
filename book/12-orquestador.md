@@ -67,7 +67,7 @@ El orquestador **no es**:
 
 El orquestador no sabe nada de análisis funcional. Sabe cuándo llamar a cada pieza, en qué orden, qué hacer cuando una falla y cómo presentar el resultado al analista. Es el director de orquesta, no el músico.
 
-![El orquestador](./images/12_01_orquestador.md)
+![El orquestador](./images/12_01_orquestador.png)
 
 ---
 
