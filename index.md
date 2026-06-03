@@ -142,7 +142,7 @@ La regla de gobierno principal es:
 
 ### Parte I — El problema y la oportunidad
 
-- *[Introducción](book/00_introduccion.md)* — Presenta el problema, los perfiles de lector, el caso Meridian y la promesa del modelo.
+- *[Introducción](book/00-introduccion.md)* — Presenta el problema, los perfiles de lector, el caso Meridian y la promesa del modelo.
 - *[1. El análisis funcional en crisis silenciosa](book/01-analisis-funcional.md)* — Diagnóstico: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.
 - *[2. Qué puede hacer la IA, y qué no puede hacer](book/02-que-puede-hacer-la-ia.md)* — Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.
 - *[3. Visión del modelo operativo](book/03-vision.md)* — Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.
@@ -157,15 +157,15 @@ La regla de gobierno principal es:
 
 - *[7. Validación automática](book/07-validacion-automatica.md)* — Validación de calidad del requisito antes de generar artefactos.
 - *[8. Generación de artefactos Jira](book/08-artefactos-jira.md)* — Conversión de requisitos en épicas, historias, tareas y subtareas.
-- *[9. Generación automática de test cases](book/09_generacion_test_cases.md)* — Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.
-- *[10. Arquitectura RAG](book/10_arquitectura_rag.md)* — Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.
-- *[11. Trazabilidad automática e impacto de cambios](book/11_trazabilidad_automatica_e_impacto_de_cambios.md)* — Grafo de trazabilidad y análisis automático de impacto.
-- *[12. El orquestador](book/12_el_orquestador.md)* — Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.
+- *[9. Generación automática de test cases](book/09-test-cases.md)* — Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.
+- *[10. Arquitectura RAG](book/10-arquitectura-rag.md)* — Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.
+- *[11. Trazabilidad automática e impacto de cambios](book/11-trazabilidad.md)* — Grafo de trazabilidad y análisis automático de impacto.
+- *[12. El orquestador](book/12-orquestador.md)* — Pipeline completo ejecutable, gestión de estado, configuración y ejecución por lotes.
 
 ### Parte IV — Implantar y sostener el modelo
 
-- *[13. Plan de adopción](book/13_plan_de_adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
-- *[14. Gobierno del modelo](book/14_gobierno_del_modelo.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
+- *[13. Plan de adopción](book/13-adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
+- *[14. Gobierno del modelo](book/14-gobierno.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
 
 ---
 
