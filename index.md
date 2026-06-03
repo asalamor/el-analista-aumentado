@@ -126,7 +126,7 @@ La regla de gobierno principal es:
 
 ### Gaps de experiencia de usuario
 
-- *[Interfaz de analista](docs/05_14_interfaz_analista_pipeline.md)* — interfaz web accesible sin conocimientos técnicos
+- *[Interfaz de analista](docs/01-interfaz-analista-pipeline.md)* — interfaz web accesible sin conocimientos técnicos
 - *Plugin de Confluence o extensión del navegador* — integración nativa sin salir de Confluence
 - *Notificaciones y bandeja de entrada del analista* — alertas sin ruido excesivo
 
