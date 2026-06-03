@@ -477,6 +477,6 @@ El usuario de negocio que más resistencia inicial mostró en Meridian fue Ana L
 
 ---
 
-A continuación: [Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.](book/14_gobierno_del_modelo.md)
+A continuación: [Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.](./14_gobierno_del_modelo.md)
 
 ---
