@@ -143,6 +143,8 @@ Imagina que el pipeline de REQ-023 falla en el paso 5 (generación de test cases
 
 Los pasos ya completados no se repiten. La historia generada en el paso 4 no se regenera (lo que eliminaría el riesgo de obtener un output diferente). La ejecución continúa exactamente donde se quedó.
 
+![La reanudacion](./images/12_02_reanudacion.png)
+
 ---
 
 ## 12.4 Configuración del entorno
