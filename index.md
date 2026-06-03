@@ -155,7 +155,7 @@ La regla de gobierno principal es:
 
 ### Parte III — Construir el pipeline
 
-- *[7. Validación automática](book/07_validacion_automatica.md)* — Validación de calidad del requisito antes de generar artefactos.
+- *[7. Validación automática](book/07-validacion-automatica.md)* — Validación de calidad del requisito antes de generar artefactos.
 - *[8. Generación de artefactos Jira](book/08_generacion_artefactos_jira.md)* — Conversión de requisitos en épicas, historias, tareas y subtareas.
 - *[9. Generación automática de test cases](book/09_generacion_test_cases.md)* — Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.
 - *[10. Arquitectura RAG](book/10_arquitectura_rag.md)* — Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.
