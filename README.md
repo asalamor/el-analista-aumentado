@@ -290,18 +290,18 @@ python gobierno/dashboard.py --semana 2025-W20
 
 Todos los puntos del modelo operativo están documentados en la carpeta `docs/`:
 
-- `docs/punto_01_plantilla_requisito.md`
-- `docs/punto_02_glosario_estructurado.md`
-- `docs/punto_03_event_storming.md`
-- `docs/punto_04_prompts_jira.md`
-- `docs/punto_05_test_cases.md`
-- `docs/punto_06_validacion_calidad.md`
-- `docs/punto_07_arquitectura_rag.md`
-- `docs/punto_08_impacto_cambios.md`
-- `docs/punto_09_trazabilidad.md`
-- `docs/punto_10_integracion_jira_api.md`
-- `docs/punto_11_adopcion.md`
-- `docs/punto_12_gobierno.md`
+- `docs/01_01_taller_de_plantillas.md`
+- `docs/01_02_glosario_estructurado.md`
+- `docs/01_03_guia_event_storming.md`
+- `docs/02_04_prompts_generacion_jira.md`
+- `docs/02_05_generacion_test_cases.md`
+- `docs/02_06_validacion_automatica_requisitos.md`
+- `docs/03_07_arquitectura_rag_requisitos.md`
+- `docs/03_08_deteccion_impacto_cambios.md`
+- `docs/03_09_matriz_trazabilidad_automatica.md`
+- `docs/04_10_integracion_jira_api.md`
+- `docs/04_11_plan_formacion_adopcion.md`
+- `docs/04_12_gobierno_del_modelo.md`
 
 ---
 
