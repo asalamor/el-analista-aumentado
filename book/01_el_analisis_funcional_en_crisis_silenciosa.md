@@ -236,6 +236,6 @@ Ese ejercicio, en sí mismo, produce dos cosas valiosas: crea conciencia colecti
 
 ---
 
-A continuación: [Capítulo 2. Qué puede hacer la IA, y qué no puede hacer](./02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)
+A continuación: [Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.](./02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)
 
 ---
