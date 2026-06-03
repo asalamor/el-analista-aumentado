@@ -442,7 +442,6 @@ Ejemplo para cálculo:
 | primaTotal | Decimal | Prima final |
 | mensajes | Array | Advertencias o bloqueos |
 | codigoResultado | String | OK / KO |
-```
 
 Ejemplo para integración:
 
