@@ -808,3 +808,9 @@ El gate de aprobación humana es el componente más importante del pipeline. No 
 ---
 
 El capítulo siguiente cierra el triángulo del núcleo técnico: si el capítulo 7 garantizó que el input es correcto y este capítulo transformó ese input en artefactos Jira, el capítulo 9 convierte esos mismos criterios de aceptación en test cases ejecutables. El mismo REQ-023 que acaba de producir cuatro tareas técnicas producirá nueve casos de prueba, tres de ellos para flujos de error que ningún QA habría documentado bajo la presión del sprint.
+
+---
+
+A continuación: [Producción de casos de prueba funcionales, negativos, de contorno y Gherkin.](./09_generacion_test_cases.md)
+
+---
