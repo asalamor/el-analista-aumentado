@@ -205,31 +205,31 @@ Además de la documentación, el repositorio contiene una implementación técni
 
 Empiece por:
 
-1. [Introducción](book/00_introduccion.md)
-2. [Capítulo 1](book/01_el_analisis_funcional_en_crisis_silenciosa.md)
-3. [Capítulo 3](book/03_vision_del_modelo_operativo.md)
-4. [Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)
-5. [Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)
+1. [Introducción](book/00-introduccion.md)
+2. [Capítulo 1](book/01-analisis-funcional.md)
+3. [Capítulo 3](book/03-vision.md)
+4. [Plan de formación y adopción](docs/112-adopcion.md)
+5. [Gobierno del modelo](docs/113-gobierno.md)
 
 ### Si es analista funcional o Product Owner
 
 Empiece por:
 
-1. [Capítulo 4. El requisito AI-ready](book/04_el_requisito_AI-ready.md)
-2. [Capítulo 5. El glosario estructurado](book/05_el_glosario_estructurado.md)
-3. [Capítulo 6. Event Storming para analistas](book/06_event_storming_para_analistas.md)
-4. [Validación automática de requisitos](docs/02_06_validacion_automatica_requisitos.md)
-5. [Generación automática de test cases](docs/02_05_generacion_test_cases.md)
+1. [Capítulo 4. El requisito AI-ready](book/04-requisito-ai-ready.md)
+2. [Capítulo 5. El glosario estructurado](book/05-glosario-estructurado.md)
+3. [Capítulo 6. Event Storming para analistas](book/06-event-storming.md)
+4. [Validación automática de requisitos](docs/106-validacion-calidad.md)
+5. [Generación automática de test cases](docs/105-test-cases.md)
 
 ### Si es arquitecto, desarrollador senior o responsable técnico
 
 Empiece por:
 
-1. [Capítulo 8. Generación de artefactos Jira](book/08_generacion_artefactos_jira.md)
-2. [Capítulo 10. Arquitectura RAG](book/10_arquitectura_rag.md)
-3. [Capítulo 11. Trazabilidad automática e impacto de cambios](book/11_trazabilidad_automatica_e_impacto_de_cambios.md)
-4. [Capítulo 12. El orquestador](book/12_el_orquestador.md)
-5. [Integración con Jira API](docs/04_10_integracion_jira_api.md)
+1. [Capítulo 8. Generación de artefactos Jira](book/08-artefactos-jira.md)
+2. [Capítulo 10. Arquitectura RAG](book/10-arquitectura-rag.md)
+3. [Capítulo 11. Trazabilidad automática e impacto de cambios](book/11-trazabilidad.md)
+4. [Capítulo 12. El orquestador](book/12-orquestador.md)
+5. [Integración con Jira API](docs/110-integracion-jira-api.md)
 
 ---
 
