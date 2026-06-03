@@ -24,7 +24,7 @@ La página [resumen-ejecutivo.html](./resumen-ejecutivo.html) ofrece una vista e
 
 ### 2. Libro: *El analista aumentado*
 
-La carpeta **book** contiene el libro en capítulos.
+La carpeta [book](#book) contiene el libro en capítulos.
 
 El libro presenta el mismo modelo desde una perspectiva narrativa y didáctica, usando un caso de uso recurrente: Empresa Meridian, el módulo de facturación y el requisito REQ-023, “Filtrar facturas por rango de fechas”.
 
@@ -81,9 +81,9 @@ La regla de gobierno principal es:
 ### Integración, adopción y gobierno
 
 - *[Integración con Jira API](docs/010-integracion-jira-api.md)* — Conector para crear artefactos en Jira manteniendo control, idempotencia y aprobación humana.
-- *[Script orquestador](docs/111-adopcion.md)* — Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
-- *[Plan de formación y adopción](docs/04_11_plan_formacion_adopcion.md)* — Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
-- *[Gobierno del modelo](docs/04_12_gobierno_del_modelo.md)* — Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
+- *[Script orquestador](docs/111-orquestador.md)* — Flujo ejecutable que une los pasos del pipeline desde el YAML hasta Jira y Xray.
+- *[Plan de formación y adopción](docs/112-adopcion.md)* — Estrategia de implantación gradual, gestión del cambio, formación y métricas de adopción.
+- *[Gobierno del modelo](docs/113-gobierno.md)* — Gestión de prompts, calidad del repositorio, observabilidad, riesgos y estructura de decisión.
 
 <a id="gaps"></a>
 ## Gaps que complementan el modelo
