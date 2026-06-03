@@ -20,6 +20,8 @@ Aquí se explica cómo capturar requisitos en formato AI-ready, cómo estructura
 
 La carpeta [gaps](#gaps) contine puntos adicionales que complementan el análisis, identificados al completar el modelo operativo principal.
 
+La página [resumen-ejecutivo.html](./resumen_ejecutivo.html) ofrece una vista ejecutiva en formato HTML para presentar el modelo a dirección o stakeholders.
+
 ### 2. Libro: *El analista aumentado*
 
 La carpeta **book** contiene el libro en capítulos.
@@ -160,11 +162,6 @@ La regla de gobierno principal es:
 - *Análisis funcional de migraciones* — equivalencia con sistema legado
 - *Requisitos de accesibilidad y cumplimiento normativo* — WCAG, RGPD, PSD2 automáticos
 - *Generación de documentación de usuario final* — manuales, release notes, ayuda en línea
-
-
-
-22. [Resumen ejecutivo](docs/resumen_ejecutivo.html)
-    Vista ejecutiva en formato HTML para presentar el modelo a dirección o stakeholders.
 
 ---
 
