@@ -235,3 +235,7 @@ Ese ejercicio, en sí mismo, produce dos cosas valiosas: crea conciencia colecti
 > Si revisamos los últimos tres sprints, ¿cuántas historias tuvieron cambios de alcance durante la ejecución, y cuánto tiempo costó resolver esos cambios? ¿Tenemos ese dato?
 
 ---
+
+A continuación: [Capítulo 2. Qué puede hacer la IA, y qué no puede hacer](./02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)
+
+---
