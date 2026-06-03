@@ -421,10 +421,9 @@ Para cada módulo afectado, documente contratos.
 
 Ejemplo para cálculo:
 
-```markdown
-# Contrato de cálculo de prima
+### Contrato de cálculo de prima
 
-## Entrada
+**Entrada**
 
 | Campo | Tipo | Obligatorio | Descripción |
 |---|---|---|---|
@@ -434,7 +433,7 @@ Ejemplo para cálculo:
 | capital | Number | Sí | Capital asegurado |
 | canal | String | Sí | Canal de comercialización |
 
-## Salida
+**Salida**
 
 | Campo | Tipo | Descripción |
 |---|---|---|
@@ -447,8 +446,7 @@ Ejemplo para cálculo:
 
 Ejemplo para integración:
 
-```markdown
-# Contrato de integración con sistemas posteriores
+**Contrato de integración con sistemas posteriores**
 
 | Campo | Origen | Destino | Regla |
 |---|---|---|---|
@@ -456,7 +454,6 @@ Ejemplo para integración:
 | modalidad | Pantalla | DWH | Código homologado |
 | primaTotal | Motor cálculo | DWH | Dos decimales |
 | fechaEfecto | Contratación | DWH | Formato YYYY-MM-DD |
-```
 
 Esto reduce errores entre front, back, batch, DWH y documentación.
 
