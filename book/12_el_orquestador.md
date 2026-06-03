@@ -698,4 +698,6 @@ La Parte IV trata de eso: cómo llevar el sistema al equipo real (Capítulo 13),
 
 ---
 
-*Fin del Capítulo 12*
+A continuación: [Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.](./13_plan_de_adopcion.md)
+
+---
