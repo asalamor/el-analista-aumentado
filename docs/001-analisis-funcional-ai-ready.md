@@ -176,7 +176,7 @@ El flujo completo tiene seis fases, cada una con su intervención de IA correspo
 | **6. Desarrollo + feedback loop** | Sprint activo · Cambios → actualización YAML · Re-gen artefactos | Detección de impacto de cambios · sugerencia de regresión |
 -->
 
-![Proceso end-to-end recomendado](assets/proceso_end_to_end_ai_sdlc.svg)
+![Proceso end-to-end recomendado](assets/proceso_end_to_end_ai_sdlc.png)
 
 ---
 
