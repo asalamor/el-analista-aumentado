@@ -290,3 +290,7 @@ Esta vez, las cosas van a ser diferentes.
 > ¿Cuánto tiempo dedicamos cada semana a crear artefactos en Jira que podríamos dedicar a entender mejor lo que el negocio necesita?
 
 ---
+
+A continuación: [Capítulo 1. El análisis funcional en crisis silenciosa](book/01_el_analisis_funcional_en_crisis_silenciosa.md)
+
+---
