@@ -63,7 +63,7 @@ La regla de gobierno principal es:
 ### Fundación del modelo
 
 - *[Taller de plantillas](docs/101-taller-de-plantillas.md)* — Diseño de la plantilla de requisito AI-ready y definición de campos obligatorios, recomendados y opcionales.
-- *[Glosario estructurado](docs/01_02_glosario_estructurado.md)* — Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
+- *[Glosario estructurado](docs/102-glosario-estructurado.md)* — Cómo construir y gobernar el vocabulario oficial del proyecto para evitar inconsistencias terminológicas.
 - *[Guía de Event Storming](docs/01_03_guia_event_storming.md)* — Técnica de descubrimiento para transformar conversaciones de negocio en eventos, comandos, actores y requisitos estructurados.
 
 ### Núcleo técnico del pipeline
