@@ -20,7 +20,7 @@ Aquí se explica cómo capturar requisitos en formato AI-ready, cómo estructura
 
 La carpeta [gaps](#gaps) contine puntos adicionales que complementan el análisis, identificados al completar el modelo operativo principal.
 
-La página [resumen-ejecutivo.html](./resumen_ejecutivo.html) ofrece una vista ejecutiva en formato HTML para presentar el modelo a dirección o stakeholders.
+La página [resumen-ejecutivo.html](./resumen-ejecutivo.html) ofrece una vista ejecutiva en formato HTML para presentar el modelo a dirección o stakeholders.
 
 ### 2. Libro: *El analista aumentado*
 
