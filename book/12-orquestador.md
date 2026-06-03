@@ -67,8 +67,6 @@ El orquestador **no es**:
 
 El orquestador no sabe nada de análisis funcional. Sabe cuándo llamar a cada pieza, en qué orden, qué hacer cuando una falla y cómo presentar el resultado al analista. Es el director de orquesta, no el músico.
 
-![El orquestador](./images/12_01_orquestador.png)
-
 ---
 
 ## 12.2 Los nueve pasos del pipeline
@@ -96,6 +94,8 @@ Dos principios guían el diseño de estos pasos:
 **El fracaso explícito es mejor que el éxito silencioso.** Si el paso 2 (validación) detecta bloqueantes, el pipeline se detiene con un informe claro. No continúa generando artefactos sobre un requisito con problemas graves esperando que el analista los detecte más tarde.
 
 **Los pasos no críticos no bloquean el pipeline.** El RAG (paso 3) y el registro en el grafo (paso 7) son pasos cuyo fallo no impide generar artefactos útiles. Si la base de datos vectorial no está disponible, el pipeline continúa sin contexto histórico con una advertencia visible. Si el grafo falla, los artefactos llegan a Jira aunque la trazabilidad automática no se registre.
+
+![El orquestador](./images/12_01_orquestador.png)
 
 ---
 
