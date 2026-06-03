@@ -91,7 +91,7 @@ La regla de gobierno principal es:
 ### Gaps técnicos del pipeline
 
 - *[Pipeline AI-ready para requisitos no funcionales](docs/01-nfr-pipeline-ai-ready.md)* — estructura diferente, genera spike técnicos y criterios de benchmark
-- *[Requisitos de integración con sistemas externos](docs/06_02_requisitos_integracion_sistemas_externos.md)* — flujo específico con contratos de API e incertidumbre
+- *[Requisitos de integración con sistemas externos](docs/02-req-integracion-sist-externos.md)* — flujo específico con contratos de API e incertidumbre
 - *[Pipeline de épicas desde cero](docs/06_03_pipeline-epicas-desde-cero.md)* — desde el mapa de Event Storming
 - *Manejo de requisitos deprecados o divididos* — split y fusión de requisitos
 - *Gestión de versiones de un mismo requisito en sprints distintos* — implementación parcial
