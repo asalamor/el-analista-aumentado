@@ -463,3 +463,9 @@ El Event Storming no reemplaza todas las reuniones de requisitos. Es el punto de
 Con los tres cimientos del modelo en su lugar —la plantilla AI-ready, el glosario estructurado y el Event Storming como técnica de captura— la base conceptual del libro está completa. El lector sabe cómo capturar el conocimiento del negocio, cómo estructurarlo en un formato que la IA puede procesar y cómo garantizar que el vocabulario es consistente en todo el repositorio.
 
 La Parte III empieza donde termina la captura: con el requisito ya escrito en la plantilla YAML, listo para entrar al pipeline. El primer paso de ese pipeline no es la generación, sino la validación. Antes de que la IA genere una sola historia, el sistema verifica que el requisito está completo, que no es ambiguo y que no contradice ninguno de los que ya existen en el repositorio. Ese es el tema del siguiente capítulo.
+
+---
+
+A continuación: [ Validación de calidad del requisito antes de generar artefactos.](./07_validacion_automatica.md)
+
+---
