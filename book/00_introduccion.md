@@ -54,7 +54,6 @@ Este libro describe un modelo operativo completo para transformar el proceso de 
 
 El flujo completo tiene este aspecto:
 <!--
-```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                     EL FLUJO DEL MODELO OPERATIVO                       │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -96,7 +95,6 @@ El flujo completo tiene este aspecto:
 │                              REQ → US → TC → Commit                     │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
-```
 -->
 ![El flujo del modelo operativo](./images/00_01_flujo_operativo.png)
 
@@ -177,7 +175,7 @@ La **capa de implantación** —los capítulos 13, 14 y 15— aborda el problema
 
 El libro incluye código Python funcional, prompts probados en proyectos reales, plantillas YAML listas para adaptar, y un script orquestador que puede desplegarse en el entorno de tu organización con menos de una jornada de trabajo de configuración.
 
-### Lo que este libro no es
+## Lo que este libro no es
 
 Antes de continuar, tres aclaraciones sobre lo que no encontrarás aquí.
 
