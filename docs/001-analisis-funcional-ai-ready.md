@@ -26,7 +26,7 @@ La arquitectura recomendada tiene cinco capas:
 | **Capa de exportación** | Word (lectura humana) · Markdown · YAML/JSON (IA y automatización) · Jira API |
 -->
 
-![Estructura del documento funcional AI-Ready](assets/estructura_documento_ai_ready.svg)
+![Estructura del documento funcional AI-Ready](assets/estructura_documento_ai_ready.png)
 
 ---
 
