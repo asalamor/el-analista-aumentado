@@ -645,6 +645,6 @@ La tercera es la demostración inmediata del valor: tomar el primer requisito qu
 
 ---
 
-[El glosario como contrato terminológico activo del pipeline.](./05_el_glosario_estructurado.md)
+A continuación: [El glosario como contrato terminológico activo del pipeline.](./05_el_glosario_estructurado.md)
 
 ---
