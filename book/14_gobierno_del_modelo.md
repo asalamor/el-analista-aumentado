@@ -12,12 +12,12 @@ El problema no estaba en la tecnología. Estaba en el gobierno.
 
 ---
 
-## En este capítulo
+*En este capítulo aprenderás:*
 
-- Por qué el pipeline se degrada silenciosamente si nadie lo gobierna, y cuáles son las señales de alerta que anuncian esa degradación antes de que sea visible en los artefactos.
-- Los cinco pilares del sistema de gobierno: observabilidad, gestión de prompts, calidad del repositorio, estructura de decisión y gestión del riesgo.
-- Cómo estructurar el comité mensual y las métricas semanales para que el gobierno sea una práctica ligera, no una burocracia.
-- Las herramientas concretas que usa Meridian para mantener el sistema en buen estado doce meses después de la implantación.
+- *Por qué el pipeline se degrada silenciosamente si nadie lo gobierna, y cuáles son las señales de alerta que anuncian esa degradación antes de que sea visible en los artefactos.*
+- *Los cinco pilares del sistema de gobierno: observabilidad, gestión de prompts, calidad del repositorio, estructura de decisión y gestión del riesgo.*
+- *Cómo estructurar el comité mensual y las métricas semanales para que el gobierno sea una práctica ligera, no una burocracia.*
+- *Las herramientas concretas que usa Meridian para mantener el sistema en buen estado doce meses después de la implantación.*
 
 ---
 
