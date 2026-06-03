@@ -466,6 +466,6 @@ La Parte III empieza donde termina la captura: con el requisito ya escrito en la
 
 ---
 
-A continuación: [ Validación de calidad del requisito antes de generar artefactos.](./07_validacion_automatica.md)
+A continuación: [ Validación de calidad del requisito antes de generar artefactos.](./07-validacion-automatica.md)
 
 ---
