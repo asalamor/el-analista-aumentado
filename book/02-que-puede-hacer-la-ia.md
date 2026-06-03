@@ -234,6 +234,6 @@ La confianza en el sistema no es ciega: es calibrada. Y se calibra con uso real 
 
 ---
 
-A continuación: [Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.](./03_vision_del_modelo_operativo.md)
+A continuación: [Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.](./03-vision.md)
 
 ---
