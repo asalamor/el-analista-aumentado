@@ -143,7 +143,7 @@ La regla de gobierno principal es:
 ### Parte I — El problema y la oportunidad
 
 - *[Introducción](book/00_introduccion.md)* — Presenta el problema, los perfiles de lector, el caso Meridian y la promesa del modelo.
-- *[1. El análisis funcional en crisis silenciosa](book/01_el_analisis_funcional_en_crisis_silenciosa.md)* — Diagnóstico: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.
+- *[1. El análisis funcional en crisis silenciosa](book/001-analisis-funcional-ai-ready.md)* — Diagnóstico: tiempo mecánico, ambigüedad, deuda funcional y coste de los defectos.
 - *[2. Qué puede hacer la IA, y qué no puede hacer](book/02_que_puede_hacer_la_IA_%28y_que_no_puede_hacer%29.md)* — Explicación práctica de las capacidades y límites de los LLMs en análisis funcional.
 - *[3. Visión del modelo operativo](book/03_vision_del_modelo_operativo.md)* — Mapa completo del sistema, componentes, flujo end-to-end y roadmap de implantación.
 
