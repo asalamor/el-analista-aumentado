@@ -386,3 +386,7 @@ El Capítulo 4 construye el primer componente. Empezamos con la plantilla.
 > Si evaluamos tres requisitos del backlog actual contra los cinco campos obligatorios de la plantilla, ¿cuántos los cumplen todos? ¿Cuál es el campo que falla con más frecuencia?
 
 ---
+
+A continuación: [Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.](./04_el_requisito_AI-ready.md)
+
+---
