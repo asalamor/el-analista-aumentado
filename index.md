@@ -14,13 +14,13 @@ El contenido está organizado en dos grandes bloques complementarios:
 
 ### 1. Modelo operativo
 
-La carpeta [`docs/`](docs/) contiene la documentación técnica y metodológica del modelo operativo.
+La carpeta **docs** contiene la documentación técnica y metodológica del modelo operativo.
 
 Aquí se explica cómo capturar requisitos en formato AI-ready, cómo estructurar el glosario, cómo generar artefactos Jira, cómo producir casos de prueba, cómo construir una arquitectura RAG, cómo mantener la trazabilidad y cómo gobernar el modelo a lo largo del tiempo.
 
 ### 2. Libro: *El analista aumentado*
 
-La carpeta [`book/`](book/) contiene el libro en capítulos.
+La carpeta **book** contiene el libro en capítulos.
 
 El libro presenta el mismo modelo desde una perspectiva narrativa y didáctica, usando un caso de uso recurrente: Empresa Meridian, el módulo de facturación y el requisito REQ-023, “Filtrar facturas por rango de fechas”.
 
