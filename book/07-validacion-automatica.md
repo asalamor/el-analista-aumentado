@@ -769,6 +769,6 @@ El siguiente capítulo construye sobre lo que el validador garantiza: que el inp
 
 ---
 
-A continuación: [Conversión de requisitos en épicas, historias, tareas y subtareas.](./08_generacion_artefactos_jira.md)
+A continuación: [Conversión de requisitos en épicas, historias, tareas y subtareas.](./08-artefactos-jira.md)
 
 ---
