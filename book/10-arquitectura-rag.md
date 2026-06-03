@@ -1029,6 +1029,6 @@ El sistema no es mágico. Sigue siendo el analista quien decide. Pero decide con
 
 ---
 
-A continuación: [Grafo de trazabilidad y análisis automático de impacto.](./11_trazabilidad_automatica_e_impacto_de_cambios.md)
+A continuación: [Grafo de trazabilidad y análisis automático de impacto.](./11-trazabilidad.md)
 
 ---
