@@ -150,7 +150,7 @@ La regla de gobierno principal es:
 ### Parte II — Preparar requisitos para IA
 
 - *[4. El requisito AI-ready](book/04-requisito-ai-ready.md)* — Plantilla de cinco bloques para convertir un requisito en materia prima procesable por IA.
-- *[5. El glosario estructurado](book/05_el_glosario_estructurado.md)* — El glosario como contrato terminológico activo del pipeline.
+- *[5. El glosario estructurado](book/05-glosario-estructurado.md)* — El glosario como contrato terminológico activo del pipeline.
 - *[6. Event Storming para analistas](book/06_event_storming_para_analistas.md)* — Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.
 
 ### Parte III — Construir el pipeline
