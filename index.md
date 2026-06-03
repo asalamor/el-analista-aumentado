@@ -115,8 +115,7 @@ La regla de gobierno principal es:
 
 ### Gaps técnicos del pipeline
 
-- [Pipeline AI-ready para requisitos no funcionales](docs/06_01_NFR_Pipeline_AI_Ready.md)
-   Adaptación del modelo para rendimiento, seguridad, disponibilidad, accesibilidad y otros NFR.
+- *[Pipeline AI-ready para requisitos no funcionales](docs/06_01_NFR_Pipeline_AI_Ready.md)* — estructura diferente, genera spike técnicos y criterios de benchmark
 - [Requisitos de integración con sistemas externos](docs/06_02_requisitos_integracion_sistemas_externos.md)
    Tratamiento específico de requisitos que dependen de APIs, contratos, sistemas terceros y comportamientos no controlados.
 - [Pipeline de épicas desde cero](docs/06_03_pipeline-epicas-desde-cero.md)
