@@ -835,3 +835,9 @@ La primera semana, los analistas descubrieron un patrón: los test cases de cont
 ---
 
 *El siguiente capítulo construye el sistema que da al pipeline memoria: la arquitectura RAG que permite que la IA conozca el contexto de todo lo que se ha definido antes, y no repita ni contradiga lo que ya existe en el repositorio.*
+
+---
+
+A continuación: [Memoria semántica del pipeline para recuperar requisitos relacionados y evitar contradicciones.](./10_arquitectura_rag.md)
+    
+---
