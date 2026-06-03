@@ -1139,8 +1139,8 @@ Taller de Event Storming
         │ pertenece_a
         ▼
     FACT-11 (Epic en Jira)
-        │ pertenece_a ←─────────────────────┐
-        ▼                                    │
+        │ pertenece_a ←────────────────────┐
+        ▼                                  │
     REQ-023 (YAML) ──genera──▶ FACT-47 (Story)
         │                          │
         │                   descompone
