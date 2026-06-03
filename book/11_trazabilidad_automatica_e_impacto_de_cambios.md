@@ -31,7 +31,7 @@ David asintió. «¿Cuánto tarda en regenerar?»
 
 Esa conversación habría sido imposible seis meses antes.
 
-![Qué se rompe si cambio un requisito](./images/11_01_que_se_rompe_si_cambia un_requisito.png)
+![Qué se rompe si cambio un requisito](./images/11_01_que_se_rompe_si_cambia_un_requisito.png)
 
 ---
 
