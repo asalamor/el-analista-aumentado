@@ -438,6 +438,6 @@ Pero ambos cimientos se construyen desde algún punto de partida. Ese punto de p
 
 ---
 
-A continuación: [Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.](./06_event_storming_para_analistas.md)
+A continuación: [Cómo descubrir requisitos mediante eventos de negocio y convertirlos en YAML funcional.](./06-event-storming.md)
 
 ---
