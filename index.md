@@ -166,17 +166,8 @@ La regla de gobierno principal es:
 
 - *[13. Plan de adopción](book/13-adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
 - *[14. Gobierno del modelo](book/14-gobierno.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
-- *[14. Gobierno del modelo](book/14-gobierno.md)* — Los números convencen a la lógica; las palabras del equipo, a la intuición.
-
----
-
-## Estado actual del libro
-
-El libro está en desarrollo. Actualmente están completados la introducción y los capítulos 1 a 14.
-
-El siguiente capítulo previsto es:
-
-* **Capítulo 15. Medición del impacto y ROI**
+- *[15.Medición del impacto y ROI](book/15-medicion-impacto-roi.md)* — Los números convencen a la lógica; las palabras del equipo, a la intuición.
+- Conclusión
 
 ---
 
