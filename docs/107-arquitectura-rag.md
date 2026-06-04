@@ -28,6 +28,8 @@ Antes de diseñar el sistema, conviene tener claros tres conceptos que en la pr�
 
 ## Arquitectura completa del sistema RAG
 
+![Arquitectura RAG de Requisitos](assets/arquitectura_rag_requisitos.png)
+
 ### Fase 1 — Chunking semántico del repositorio
 
 El chunking es la decisión más crítica de todo el sistema RAG. Un chunk demasiado grande recupera información irrelevante junto con la relevante. Un chunk demasiado pequeño pierde contexto y la IA genera respuestas parciales.
