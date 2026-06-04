@@ -86,7 +86,7 @@ Esta es la dimensión más directa y la que produce los primeros resultados visi
 **Cómo evolucionó en Meridian:**
 
 | Período | Tiempo medio por requisito | Reducción vs. línea base |
-|---|---|---|
+|---|---|---:|
 | Línea base (antes del pipeline) | 195 min (trabajo mecánico) | — |
 | Mes 1–2 (calibración) | 155 min | −21% |
 | Mes 3–4 (piloto maduro) | 105 min | −46% |
