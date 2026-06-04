@@ -146,7 +146,7 @@ El argumento de ROI no está completo sin la otra cara de la ecuación: cuánto 
 ### Coste de implantación (único, no recurrente)
 
 | Concepto | Tiempo | Coste |
-|---|---|---|
+|---|---|---:|
 | Diseño y desarrollo del pipeline (Parte III del libro) | 3 semanas del responsable técnico | ~5.400 € |
 | Configuración de infraestructura (pgvector, API keys, CI/CD) | 3 días | ~1.080 € |
 | Formación del equipo (Fase 1 y Fase 2 del Cap. 13) | 2 días del champion + 1 día equipo × 6 personas | ~2.430 € |
@@ -158,7 +158,7 @@ Este coste asume que el responsable técnico forma parte del equipo existente y 
 ### Costes operativos recurrentes (mensuales)
 
 | Concepto | Coste mensual |
-|---|---|
+|---|---:|
 | API del LLM (Claude): ~4.000 llamadas/mes en Meridian | ~120 € |
 | Indexación RAG (text-embedding-3-large): ~0,04 €/semana | ~0,16 € |
 | Infraestructura (pgvector sobre PostgreSQL existente) | 0 € (sin coste adicional) |
