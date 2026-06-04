@@ -12,13 +12,13 @@ Este capítulo describe cómo hacerlo.
 
 ---
 
-## En este capítulo
+*En este capítulo aprenderás:*
 
-- Por qué las métricas técnicas del pipeline no son suficientes para justificar la inversión ante la dirección, y cómo traducirlas al lenguaje del negocio.
-- El modelo de medición de Meridian: qué midieron, cómo lo midieron y qué números resultaron al cabo de doce meses.
-- Cómo construir el argumento de ROI sin inflar los números ni ignorar los costes reales.
-- Las métricas que importan en cada fase de la implantación: qué medir en el mes uno, en el mes seis y en el mes doce.
-- Lo que el pipeline no resuelve, y cómo comunicarlo con honestidad sin debilitar el argumento.
+- *Por qué las métricas técnicas del pipeline no son suficientes para justificar la inversión ante la dirección, y cómo traducirlas al lenguaje del negocio.*
+- *El modelo de medición de Meridian: qué midieron, cómo lo midieron y qué números resultaron al cabo de doce meses.*
+- *Cómo construir el argumento de ROI sin inflar los números ni ignorar los costes reales.*
+- *Las métricas que importan en cada fase de la implantación: qué medir en el mes uno, en el mes seis y en el mes doce.*
+- *Lo que el pipeline no resuelve, y cómo comunicarlo con honestidad sin debilitar el argumento.*
 
 ---
 
