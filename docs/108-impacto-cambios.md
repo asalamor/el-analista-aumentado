@@ -62,6 +62,8 @@ Esta taxonomía determina el árbol de decisión del sistema: qué analizar, qu�
 
 ## Arquitectura del pipeline de detección de impacto
 
+![Arquitectura del pipeline de detección de impacto](assets/pipeline_deteccion_impacto_cambios.png)
+
 ### Fase 1 — Motor de diff semántico
 
 El primer paso es comparar la versión anterior y la nueva del requisito campo a campo. No es un diff de texto plano: necesita entender si un cambio es semánticamente significativo, no solo sintácticamente diferente.
