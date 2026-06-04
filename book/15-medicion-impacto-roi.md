@@ -182,7 +182,7 @@ Con los datos de Meridian, el cálculo del período de retorno es el siguiente:
 **Beneficio mensual en régimen estable (mes 7 en adelante):**
 
 | Fuente | Beneficio mensual |
-|---|---|
+|---|---:|
 | Trabajo mecánico recuperado (67.000 €/año) | 5.583 € |
 | Bugs evitados (28.000 €/año atribuibles al pipeline) | 2.333 € |
 | Cambios de alcance evitados (18.600 €/año) | 1.550 € |
