@@ -166,6 +166,7 @@ La regla de gobierno principal es:
 
 - *[13. Plan de adopción](book/13-adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
 - *[14. Gobierno del modelo](book/14-gobierno.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
+- *[14. Gobierno del modelo](book/14-gobierno.md)* — Los números convencen a la lógica; las palabras del equipo, a la intuición.
 
 ---
 
