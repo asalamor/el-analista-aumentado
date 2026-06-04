@@ -15,7 +15,7 @@ En el flujo tradicional, cuando el negocio cambia un requisito ya validado ocurr
 El coste de un cambio no detectado crece exponencialmente con el tiempo:
 
 | Momento de detección | Coste relativo |
-|---|---|
+|---|---:|
 | En el momento del cambio | 1 |
 | En el refinamiento del sprint | 5 |
 | En QA | 20 |
