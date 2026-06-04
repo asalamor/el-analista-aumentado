@@ -67,35 +67,35 @@ Confluence permite registrar comandos de barra inclinada (`/`) que el analista p
 ┌─────────────────────────────────────────────────────────────┐
 │  CONFLUENCE (navegador del analista)                        │
 │                                                             │
-│  ┌─────────────────────────────────┐  ┌──────────────────┐ │
-│  │  PÁGINA DE REQUISITO            │  │  PANEL LATERAL   │ │
-│  │                                 │  │                  │ │
-│  │  [Contenido YAML / plantilla]   │  │  Estado pipeline │ │
-│  │                                 │  │  Validación live │ │
-│  │  ╔══════════════════════╗       │  │  Sugerencias RAG │ │
-│  │  ║  MACRO pipeline-ai   ║       │  │  Historial runs  │ │
-│  │  ║  [Validar] [Generar] ║       │  │                  │ │
-│  │  ║  [Ver output] [Aprobar]      │  │                  │ │
-│  │  ╚══════════════════════╝       │  │                  │ │
-│  └─────────────────────────────────┘  └──────────────────┘ │
+│  ┌─────────────────────────────────┐  ┌──────────────────┐  │
+│  │  PÁGINA DE REQUISITO            │  │  PANEL LATERAL   │  │
+│  │                                 │  │                  │  │
+│  │  [Contenido YAML / plantilla]   │  │  Estado pipeline │  │
+│  │                                 │  │  Validación live │  │
+│  │  ╔═════════════════════════╗    │  │  Sugerencias RAG │  │
+│  │  ║  MACRO pipeline-ai      ║    │  │  Historial runs  │  │
+│  │  ║  [Validar] [Generar]    ║    │  │                  │  │
+│  │  ║  [Ver output] [Aprobar] ║    │  │                  │  │
+│  │  ╚═════════════════════════╝    │  │                  │  │
+│  └─────────────────────────────────┘  └──────────────────┘  │
 └───────────────────────┬─────────────────────────────────────┘
                         │ API REST (Forge Functions / Connect)
                         ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  BACKEND DEL PLUGIN                                         │
 │                                                             │
-│  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐  │
-│  │  Extractor  │  │  Validador   │  │  Orquestador     │  │
-│  │  YAML       │  │  (punto 6)   │  │  (orchestrator   │  │
-│  │             │  │              │  │   .py)           │  │
-│  └──────┬──────┘  └──────┬───────┘  └────────┬─────────┘  │
-│         │                │                    │            │
-│         └────────────────┴────────────────────┘            │
-│                          │                                 │
-│  ┌───────────────────────▼──────────────────────────────┐  │
-│  │  Orquestador principal (orchestrator.py via API)     │  │
-│  │  Pasos 1-9: validación, RAG, generación, push Jira   │  │
-│  └──────────────────────────────────────────────────────┘  │
+│  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐    │
+│  │  Extractor  │  │  Validador   │  │  Orquestador     │    │
+│  │  YAML       │  │  (punto 6)   │  │  (orchestrator   │    │
+│  │             │  │              │  │   .py)           │    │
+│  └──────┬──────┘  └──────┬───────┘  └────────┬─────────┘    │
+│         │                │                    │             │
+│         └────────────────┴────────────────────┘             │
+│                          │                                  │
+│  ┌───────────────────────▼──────────────────────────────┐   │
+│  │  Orquestador principal (orchestrator.py via API)     │   │
+│  │  Pasos 1-9: validación, RAG, generación, push Jira   │   │
+│  └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -395,9 +395,9 @@ La macro muestra una interfaz diferente según el estado del pipeline para esa p
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Pipeline AI — REQ-023                        ✓ Completado  ║
+║  Pipeline AI — REQ-023                        ✓ Completado   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  Historia: FACT-47   Tareas: FACT-48, 49, 50, 51            ║
+║  Historia: FACT-47   Tareas: FACT-48, 49, 50, 51             ║
 ║  Test cases en Xray: 9                                       ║
 ║  Última ejecución: 12/05/2025 10:15                          ║
 ║                                                              ║
@@ -1482,16 +1482,16 @@ Cuando el analista pulsa [Regenerar] sobre un requisito ya procesado, el plugin 
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  ⚠ Este requisito ya tiene artefactos en Jira              ║
+║  ⚠ Este requisito ya tiene artefactos en Jira                ║
 ╠══════════════════════════════════════════════════════════════╣
-║  Historia existente: FACT-47 (estado: En progreso)          ║
+║  Historia existente: FACT-47 (estado: En progreso)           ║
 ║  Asignada a: María García                                    ║
 ║                                                              ║
-║  Regenerar actualizará los artefactos en Jira. Si la        ║
-║  historia está en desarrollo activo, el equipo recibirá     ║
+║  Regenerar actualizará los artefactos en Jira. Si la         ║
+║  historia está en desarrollo activo, el equipo recibirá      ║
 ║  una notificación de cambio.                                 ║
 ║                                                              ║
-║  [  Continuar y regenerar  ]   [  Cancelar  ]               ║
+║  [  Continuar y regenerar  ]   [  Cancelar  ]                ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
