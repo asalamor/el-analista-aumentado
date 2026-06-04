@@ -311,9 +311,9 @@ El método de atribución más sencillo que funciona en la práctica es pregunta
 
 ---
 
-## Pregunta de reflexión para el equipo
-
-Antes de activar el pipeline en tu organización: ¿tienes una medición del tiempo actual que invierte tu equipo en crear artefactos Jira manualmente? Si no la tienes, esa medición —aunque sea una semana de cronómetro informal— es la primera tarea de la Fase 0. Sin ella, en doce meses tendrás una historia de impacto que nadie podrá verificar.
+> 💡 **Pregunta de reflexión para tu equipo**
+>
+> Antes de activar el pipeline en tu organización: ¿tienes una medición del tiempo actual que invierte tu equipo en crear artefactos Jira manualmente? Si no la tienes, esa medición —aunque sea una semana de cronómetro informal— es la primera tarea de la Fase 0. Sin ella, en doce meses tendrás una historia de impacto que nadie podrá verificar.
 
 ---
 
