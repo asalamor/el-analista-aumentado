@@ -806,6 +806,7 @@ El paper académico fundacional (arXiv, febrero 2026). Define formalmente los tr
 
 | Recurso | URL | Tipo | Descripción |
 |---|---|---|---|
+| <a href="[https://www.ejemplo.com](https://thebcms.com/blog/spec-driven-development)" target="_blank" rel="noopener noreferrer">BCMS Blog — SDD Guide</a> | Guía | Referencia 2026 completa con comparativa de herramientas |
 | [BCMS Blog — SDD Guide](https://thebcms.com/blog/spec-driven-development) | thebcms.com/blog/spec-driven-development | Guía | Referencia 2026 completa con comparativa de herramientas |
 | Augment Code — SDD Guide | augmentcode.com/guides/what-is-spec-driven-development | Guía | Perspectiva técnica en profundidad, muy actualizada |
 | Jama Software — SDD for AI Engineering | jamasoftware.com/blog/what-is-sdd | Guía | Enfoque en equipos regulados y trazabilidad enterprise |
