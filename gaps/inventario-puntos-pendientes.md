@@ -44,6 +44,11 @@ Al completar el modelo operativo principal, se identificaron los siguientes punt
 - **Plugin de Confluence o extensión del navegador** — integración nativa sin salir de Confluence
 - **Notificaciones y bandeja de entrada del analista** — alertas sin ruido excesivo
 
+### Gaps de integración HPQC
+
+ - **Integración técnica con HP Quality Center / ALM** — Por qué HPQC/ALM requiere un tratamiento específico
+ - **Gobierno del ciclo de vida de pruebas en ALM** — Qué es y por qué es diferente del gobierno del pipeline
+
 ### Gaps de casos de uso avanzados
 
 - **Análisis funcional de migraciones** — equivalencia con sistema legado
