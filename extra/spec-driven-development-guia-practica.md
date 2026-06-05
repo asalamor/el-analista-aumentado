@@ -817,7 +817,6 @@ El paper académico fundacional (arXiv, febrero 2026). Define formalmente los tr
 | [OpenSpec (Fission AI)](https://github.com/Fission-AI/OpenSpec) | Tool | Alternativa minimalista, brownfield-friendly |
 | [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Tool | Framework SDD orientado a comunidad |
 | [AWS Kiro](https://kiro.dev/) | Tool | IDE SDD nativo de Amazon |
-| [DeepLearning.AI SDD](https://www.deeplearning.ai/courses/spec-driven-development-with-coding-agents) | Curso | Curso canónico de referencia |
 
 ---
 
