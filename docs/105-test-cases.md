@@ -765,3 +765,9 @@ Al igual que con los prompts de Jira, puedes empezar a usar esto **manualmente e
 4. Usa los casos de contorno del Prompt 3 en la próxima sesión de refinamiento para mostrar al equipo el valor de los requisitos bien estructurados.
 
 El retorno es inmediato: **de un solo AC bien escrito, estos prompts generan entre 4 y 8 test cases** que un QA humano tardaría entre 30 y 60 minutos en redactar, y que habitualmente quedan incompletos por falta de tiempo.
+
+---
+
+A continuación: [Punto 6 — Validación automática de calidad de requisitos.](./106-validacion-calidad.md)
+
+---
