@@ -1,4 +1,4 @@
-# Punto B — Gobierno del ciclo de vida de pruebas en ALM
+# Gobierno del ciclo de vida de pruebas en ALM
 
 ## Qué es el gobierno del ciclo de vida de pruebas y por qué es diferente del gobierno del pipeline
 
