@@ -804,8 +804,8 @@ El paper académico fundacional (arXiv, febrero 2026). Define formalmente los tr
 
 ### 🌐 Sites y recursos web
 
-| Recurso | URL | Tipo | Descripción |
-|---|---|---|---|
+| Recurso | Tipo | Descripción |
+|---|---|---|
 | [BCMS Blog — SDD Guide](https://thebcms.com/blog/spec-driven-development) | Guía | Referencia 2026 completa con comparativa de herramientas |
 | [Augment Code — SDD Guide](https://www.augmentcode.com/guides/what-is-spec-driven-development) | Guía | Perspectiva técnica en profundidad, muy actualizada |
 | [Product Builder — SDD 2026](https://www.productbuilder.net/es/learn/spec-driven-development) | Guía | Foco en Claude Code Skills y ecosistema de herramientas |
