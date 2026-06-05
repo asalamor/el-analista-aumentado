@@ -17,10 +17,10 @@ El gobierno del ciclo de vida en ALM tiene cinco dimensiones que este punto desa
 │  Test Sets, Test Plans y su relación con sprints y releases     │
 ├─────────────────────────────────────────────────────────────────┤
 │  DIMENSIÓN 3 — Ejecución y seguimiento                          │
-│  Cómo se ejecutan, qué se registra y cómo se escalan defectos  │
+│  Cómo se ejecutan, qué se registra y cómo se escalan defectos   │
 ├─────────────────────────────────────────────────────────────────┤
 │  DIMENSIÓN 4 — Sincronización con el resto del modelo           │
-│  Resultados ALM → grafo de trazabilidad → matriz de cobertura  │
+│  Resultados ALM → grafo de trazabilidad → matriz de cobertura   │
 ├─────────────────────────────────────────────────────────────────┤
 │  DIMENSIÓN 5 — Criterios de salida (exit criteria)              │
 │  Cuándo se autoriza una release desde la perspectiva de QA      │
