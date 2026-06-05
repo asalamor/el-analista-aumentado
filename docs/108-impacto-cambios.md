@@ -543,3 +543,9 @@ class NotificadorImpacto:
 **Cambio de actor.** Si el actor principal de un requisito cambia de "Gestor de facturación" a "Responsable financiero", el sistema identifica todas las historias que implementan permisos para el primer actor y alerta al Tech Lead para que revise la implementación de autorización.
 
 **Cambio silencioso en datos de entrada.** Si alguien cambia el tipo de un campo de `string` a `integer` sin documentar el impacto, el sistema detecta el cambio de datos de entrada (Tipo A), identifica los test cases con datos de prueba de tipo string y los marca como potencialmente obsoletos.
+
+---
+
+A continuación: [Punto 9 — Matriz de trazabilidad automática.](./109-trazabilidad.md)
+
+---
