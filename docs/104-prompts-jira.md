@@ -578,3 +578,9 @@ Si quieres probarlo antes de tener el pipeline automatizado, el flujo manual es:
 7. Crea manualmente los issues en Jira o usa el importador CSV/JSON de Jira.
 
 Con este flujo manual ya recuperas entre el 60% y el 70% del tiempo de creación de artefactos. La automatización completa con Jira API llega después, pero el valor es inmediato.
+
+---
+
+A continuación: [Punto 5 — Generación automática de test cases.](./105-test-cases.md)
+
+---
