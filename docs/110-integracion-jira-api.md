@@ -1139,3 +1139,9 @@ Detección de impacto si hay cambios futuros  ──► (punto 1)
 ```
 
 Cada issue creado en Jira referencia al requisito que lo originó. Cada requisito YAML referencia a los keys Jira generados. El grafo conecta ambos extremos en tiempo real. Cuando un requisito cambia, el sistema sabe exactamente qué issues están afectados y quién está trabajando en ellos.
+
+---
+
+A continuación: [Punto 11 — Script orquestador.](./111-orquestador.md)
+
+---
