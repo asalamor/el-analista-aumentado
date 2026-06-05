@@ -415,55 +415,55 @@ CICLO DE VIDA DE UN FACT
 ─────────────────────────────────────────────────────────────────────
 
   ┌──────────────────────────────────────────────────────────────┐
-  │  FUENTE                                                       │
+  │  FUENTE                                                      │
   │  Spec narrativa / Reunión de requisitos / Bug / ADR /        │
   │  Auditoría / Código legacy sin documentar                    │
   └──────────────────┬───────────────────────────────────────────┘
                      │
                      ▼
   ┌──────────────────────────────────────────────────────────────┐
-  │  FASE 1: IDENTIFICAR                                          │
-  │  Detectar una verdad candidata del sistema.                   │
+  │  FASE 1: IDENTIFICAR                                         │
+  │  Detectar una verdad candidata del sistema.                  │
   │  Herramienta: humano o agente con prompt de extracción       │
-  │  Output: fact en estado 'proposed'                            │
+  │  Output: fact en estado 'proposed'                           │
   └──────────────────┬───────────────────────────────────────────┘
                      │
                      ▼
   ┌──────────────────────────────────────────────────────────────┐
-  │  FASE 2: FORMALIZAR                                           │
+  │  FASE 2: FORMALIZAR                                          │
   │  Escribir el fact según la plantilla: id, statement,         │
-  │  category, scope, origin, falsification                       │
+  │  category, scope, origin, falsification                      │
   │  Herramienta: editor + plantilla YAML                        │
-  │  Output: fact completo en estado 'proposed'                   │
+  │  Output: fact completo en estado 'proposed'                  │
   └──────────────────┬───────────────────────────────────────────┘
                      │
                      ▼
   ┌──────────────────────────────────────────────────────────────┐
-  │  FASE 3: VALIDAR (checkpoint humano obligatorio)              │
-  │  - ¿Es atómico?                                               │
-  │  - ¿Es falseable? ¿Existe el test?                            │
-  │  - ¿Contradice algún fact existente?                          │
-  │  - ¿El origen es trazable?                                    │
+  │  FASE 3: VALIDAR (checkpoint humano obligatorio)             │
+  │  - ¿Es atómico?                                              │
+  │  - ¿Es falseable? ¿Existe el test?                           │
+  │  - ¿Contradice algún fact existente?                         │
+  │  - ¿El origen es trazable?                                   │
   │  Herramienta: checklist §11 + revisión de par                │
-  │  Output: fact aprobado → estado 'active'                      │
-  │          o rechazado → vuelve a FORMALIZAR                    │
+  │  Output: fact aprobado → estado 'active'                     │
+  │          o rechazado → vuelve a FORMALIZAR                   │
   └──────────────────┬───────────────────────────────────────────┘
                      │
                      ▼
   ┌──────────────────────────────────────────────────────────────┐
-  │  FASE 4: VERSIONAR                                            │
+  │  FASE 4: VERSIONAR                                           │
   │  Añadir el fact al repositorio. Commit en Git con            │
-  │  referencia al origen (ticket, ADR, etc.)                     │
-  │  Si reemplaza un fact anterior: deprecar el anterior          │
-  │  con 'deprecated-by: FACT-XXX-nueva-version'                  │
+  │  referencia al origen (ticket, ADR, etc.)                    │
+  │  Si reemplaza un fact anterior: deprecar el anterior         │
+  │  con 'deprecated-by: FACT-XXX-nueva-version'                 │
   └──────────────────┬───────────────────────────────────────────┘
                      │
                      ▼
   ┌──────────────────────────────────────────────────────────────┐
-  │  FASE 5: CONSUMIR                                             │
+  │  FASE 5: CONSUMIR                                            │
   │  El agente de IA carga los facts relevantes al scope         │
   │  de la tarea. Los usa como constraints en generación,        │
-  │  verificación y documentación de código.                      │
+  │  verificación y documentación de código.                     │
   └──────────────────────────────────────────────────────────────┘
 ```
 
