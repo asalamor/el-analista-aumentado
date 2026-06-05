@@ -48,24 +48,18 @@ Generación y mantenimiento continuo de la traza completa Req → US → TC → 
 **10. Integración técnica con Jira API**
 Cómo construir el conector que empuja los artefactos generados a Jira, con el flujo de aprobación humana intermedia.
 
-**11. Plan de formación y adopción**
+**11. Script orquestador**
+El flujo Python ejecutable que une en un único comando los pipelines de los puntos 4 al 10, desde el YAML hasta Jira y Xray.
+
+**12. Plan de formación y adopción**
 Materiales concretos para analistas y usuarios de negocio, estructura del piloto, métricas de éxito de las primeras semanas.
 
-**12. Gobierno del modelo**
+**13. Gobierno del modelo**
 Cómo gestionar la evolución de los prompts, quién los valida, cómo se mide la calidad de los artefactos generados y cuándo escalar la autonomía de la IA.
 
 ---
 
-## Puntos adicionales identificados posteriormente
-
-**13. Script orquestador**
-El flujo Python ejecutable que une en un único comando los pipelines de los puntos 4 al 10, desde el YAML hasta Jira y Xray.
-
-**14. Interfaz de analista**
-La interfaz web o integración en Confluence que hace el pipeline accesible para un analista sin conocimientos técnicos.
-
-**15. Modelo de ROI para dirección**
-Un modelo financiero que traduzca las métricas técnicas del pipeline (tiempo de ciclo, tasa de aprobación, bugs detectados) en valor monetario: horas recuperadas, coste evitado de bugs, reducción del time to market.
+## [Puntos adicionales identificados posteriormente](../gaps/inventario-puntos-adicionales)
 
 ---
 
