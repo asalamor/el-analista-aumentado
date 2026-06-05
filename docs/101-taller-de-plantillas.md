@@ -465,3 +465,9 @@ Al terminar el taller deben existir tres documentos:
 **El documento de decisiones**, que registra las cuatro decisiones de adaptación con su justificación. Esto es crucial para cuando el equipo crezca o cambien los analistas: permite entender por qué la plantilla tiene la forma que tiene.
 
 **El ejemplo de referencia**: un requisito real del proyecto rellenado completamente en la plantilla. Este ejemplo vale más que cualquier documentación de instrucciones porque muestra el nivel de detalle esperado con datos reales del dominio de la organización.
+
+---
+
+A continuación: [Punto 2 — Glosario estructurado.](./102-glosario-estructurado.md)
+
+---
