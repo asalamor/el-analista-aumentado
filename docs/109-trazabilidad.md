@@ -871,7 +871,7 @@ el 30% de los criterios de aceptación carece de test case asociado.
 | Requisitos con historia  |     4 |     100%  |
 | Historias con test cases |     4 |      75%  |
 | Criterios AC con test    |    14 |      71%  |
-| Ratio TC por AC          |     — |       2.1 |
+| Ratio TC por AC          |     — |      2.1  |
 
 **Salud de la trazabilidad:** `MEJORABLE`
 
