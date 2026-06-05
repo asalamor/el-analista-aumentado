@@ -338,7 +338,13 @@ El sistema actualiza el nodo correspondiente en el grafo de trazabilidad.
 
 ---
 
-## 11. Plan de formación y adopción
+## 11. El script orquestador
+
+### Cuatro fases
+
+---
+
+## 12. Plan de formación y adopción
 
 ### Cuatro fases
 
@@ -366,7 +372,7 @@ El sistema actualiza el nodo correspondiente en el grafo de trazabilidad.
 
 ---
 
-## 12. Gobierno del modelo
+## 13. Gobierno del modelo
 
 ### Los cinco pilares
 
