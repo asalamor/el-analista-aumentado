@@ -1,4 +1,4 @@
-# Punto A — Integración técnica con HP Quality Center / ALM
+# Integración técnica con HP Quality Center / ALM
 
 ## Por qué HPQC/ALM requiere un tratamiento específico
 
