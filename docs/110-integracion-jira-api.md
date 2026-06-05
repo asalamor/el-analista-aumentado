@@ -38,6 +38,8 @@ ConectorJira
      Webhook Jira ──► Sistema (actualización de estado en tiempo real)
 ```
 
+![Arquitectura de la integración](assets/arquitectura_integracion_jira_api.png)
+
 ---
 
 ## Fase 1 — Configuración y cliente base
