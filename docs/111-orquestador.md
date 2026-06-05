@@ -1,4 +1,4 @@
-# Punto 13 — Script orquestador
+# Punto 11 — Script orquestador
 
 El script orquestador es el pegamento que une todo lo construido en los puntos 4 al 10 en un único comando ejecutable. Lo diseño como un sistema real, no como pseudocódigo: con gestión de errores, logs, reintentos y estado persistente para que una ejecución interrumpida pueda reanudarse sin repetir pasos ya completados.
 
