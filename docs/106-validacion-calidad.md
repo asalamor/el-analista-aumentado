@@ -729,3 +729,9 @@ Una vez implantado el pipeline de validación, estas métricas demuestran el imp
 **Antes de implantar:** medir durante 4 semanas el porcentaje de historias que llegan al sprint con cambios de alcance, el número de bugs clasificados como "ambigüedad funcional" y el tiempo medio entre que un requisito se aprueba y llega a Jira.
 
 **Después de implantar:** el mismo conjunto de métricas muestra la reducción. En proyectos similares, la validación automática reduce entre un 40% y un 60% los bugs por ambigüedad funcional en los primeros tres meses, y elimina prácticamente las contradicciones entre requisitos del mismo módulo.
+
+---
+
+A continuación: [Punto 7 — Arquitectura RAG para el repositorio de requisitos.](./107-arquitectura-rag.md)
+
+---
