@@ -32,6 +32,8 @@ PILARES DEL GOBIERNO
 └── 5. Gestión del riesgo      → Qué puede salir mal y cómo prevenirlo
 ```
 
+![Arquitectura del sistema de gobierno](assets/arquitectura_gobierno_modelo.png)
+
 ---
 
 ## Pilar 1 — Observabilidad
