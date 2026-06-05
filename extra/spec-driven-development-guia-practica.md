@@ -806,20 +806,18 @@ El paper académico fundacional (arXiv, febrero 2026). Define formalmente los tr
 
 | Recurso | URL | Tipo | Descripción |
 |---|---|---|---|
-| [BCMS Blog — SDD Guide](<a href="[https://www.ejemplo.com](https://thebcms.com/blog/spec-driven-development)" target="_blank" rel="noopener noreferrer">BCMS Blog — SDD Guide</a>) | Guía | Referencia 2026 completa con comparativa de herramientas |
-| [BCMS Blog — SDD Guide](https://thebcms.com/blog/spec-driven-development){:target="_blank"} | thebcms.com/blog/spec-driven-development | Guía | Referencia 2026 completa con comparativa de herramientas |
-| Augment Code — SDD Guide | augmentcode.com/guides/what-is-spec-driven-development | Guía | Perspectiva técnica en profundidad, muy actualizada |
-| Jama Software — SDD for AI Engineering | jamasoftware.com/blog/what-is-sdd | Guía | Enfoque en equipos regulados y trazabilidad enterprise |
-| Product Builder — SDD 2026 | productbuilder.net/learn/spec-driven-development | Guía | Foco en Claude Code Skills y ecosistema de herramientas |
-| Thoughtworks Blog | thoughtworks.medium.com/spec-driven-development | Blog | Perspectiva de consultoría enterprise, origen del término |
-| InfoQ — SDD Article | infoq.com/articles/spec-driven-development | Artículo | Análisis técnico profundo, adopción enterprise |
-| Martin Fowler | martinfowler.com/articles/exploring-gen-ai | Blog | Marco conceptual fundacional |
-| arXiv — SDD Paper | arxiv.org/abs/2602.00180 | Paper | Paper académico fundacional (feb 2026) |
-| GitHub Spec Kit | github.com/github/spec-kit | Tool | CLI open source, +90k estrellas |
-| AWS Kiro | kiro.dev | Tool | IDE SDD nativo de Amazon |
-| OpenSpec (Fission AI) | — | Tool | Alternativa minimalista, brownfield-friendly |
-| BMAD-METHOD | github.com/bmadcode/BMAD-METHOD | Tool | Framework SDD orientado a comunidad |
-| DeepLearning.AI SDD | deeplearning.ai/courses/spec-driven-development-with-coding-agents | Curso | Curso canónico de referencia |
+| [BCMS Blog — SDD Guide](https://thebcms.com/blog/spec-driven-development) | Guía | Referencia 2026 completa con comparativa de herramientas |
+| [Augment Code — SDD Guide](https://www.augmentcode.com/guides/what-is-spec-driven-development) | Guía | Perspectiva técnica en profundidad, muy actualizada |
+| [Product Builder — SDD 2026](https://www.productbuilder.net/es/learn/spec-driven-development) | Guía | Foco en Claude Code Skills y ecosistema de herramientas |
+| [Medium - SDD Articles](https://medium.com/search?q=sdd) | Blog | Perspectiva de consultoría enterprise, origen del término |
+| [InfoQ — SDD Article](https://www.infoq.com/articles/spec-driven-development/) | Artículo | Análisis técnico profundo, adopción enterprise |
+| [Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai.html) | Blog | Marco conceptual fundacional |
+| [arXiv — SDD Paper](https://arxiv.org/abs/2602.00180) | Paper | Paper académico fundacional (feb 2026) |
+| [GitHub Spec Kit](https://github.com/github/spec-kit) | Tool | CLI open source, +90k estrellas |
+| [OpenSpec (Fission AI)](https://github.com/Fission-AI/OpenSpec) | Tool | Alternativa minimalista, brownfield-friendly |
+| [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Tool | Framework SDD orientado a comunidad |
+| [AWS Kiro](https://kiro.dev/) | Tool | IDE SDD nativo de Amazon |
+| [DeepLearning.AI SDD](https://www.deeplearning.ai/courses/spec-driven-development-with-coding-agents) | Curso | Curso canónico de referencia |
 
 ---
 
