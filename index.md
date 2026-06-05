@@ -132,12 +132,12 @@ La regla de gobierno principal es:
 
 ### Gaps de integración HPQC
 
-- *[Integración técnica con HP Quality Center / ALM](01-integracion-hpqc-alm.md)* — Por qué HPQC/ALM requiere un tratamiento específico
-- *[Gobierno del ciclo de vida de pruebas en ALM](02-gobierno-ciclo-vida-pruebas-alm.md)* — Qué es y por qué es diferente del gobierno del pipeline
+- *[Integración técnica con HP Quality Center / ALM](gaps/07-hpqc/01-integracion-hpqc-alm.md)* — Por qué HPQC/ALM requiere un tratamiento específico
+- *[Gobierno del ciclo de vida de pruebas en ALM](gaps/07-hpqc/02-gobierno-ciclo-vida-pruebas-alm.md)* — Qué es y por qué es diferente del gobierno del pipeline
 
 ### Gaps de casos de uso avanzados
 
-- *[Análisis funcional de migraciones](gaps/07-advanced/analisis-funcional-migraciones.md)* — equivalencia con sistema legado
+- *[Análisis funcional de migraciones](gaps/08-advanced/analisis-funcional-migraciones.md)* — equivalencia con sistema legado
 - *Requisitos de accesibilidad y cumplimiento normativo* — WCAG, RGPD, PSD2 automáticos
 - *Generación de documentación de usuario final* — manuales, release notes, ayuda en línea
 
