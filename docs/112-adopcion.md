@@ -1,4 +1,4 @@
-# Punto 11 — Plan de formación y adopción
+# Punto 12 — Plan de formación y adopción
 
 Todo el trabajo técnico vale cero si el equipo no lo usa. La adopción es el problema más difícil de este tipo de transformaciones, no la tecnología.
 
@@ -339,3 +339,9 @@ Actualización semanal de tres líneas en el canal del equipo durante los primer
 > **Semana 6:** *"Acumulamos 12 requisitos procesados. El tiempo medio de creación de artefactos ha bajado de 95 a 38 minutos. El validador ha detectado 7 ambigüedades que habrían llegado al sprint."*
 
 > **Semana 10:** *"Primer sprint donde todas las historias tenían criterios de aceptación documentados desde el inicio. El equipo de QA reporta que el tiempo de análisis de test cases se ha reducido a la mitad."*
+
+---
+
+A continuación: [Punto 13 — Gobierno del modelo.](./113-gobierno.md)
+
+---
