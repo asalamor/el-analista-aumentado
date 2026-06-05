@@ -544,7 +544,6 @@ No inventes requisitos nuevos. Si falta información, márcala como pendiente.
 
 No deje dudas en correos dispersos. Cree una sección o fichero:
 
-```markdown
 # Open Points
 
 | ID | Pregunta | Área | Responsable | Estado | Decisión |
@@ -553,7 +552,6 @@ No deje dudas en correos dispersos. Cree una sección o fichero:
 | OP-002 | ¿La documentación requiere nuevo condicionado? | Legal/Cumplimiento | Cumplimiento | Abierto | Pendiente |
 | OP-003 | ¿El código de producto ya existe en DWH? | Datos | Arquitectura | Abierto | Pendiente |
 | OP-004 | ¿La tarifa se parametriza o requiere desarrollo? | Pricing/TI | Sistemas | Abierto | Pendiente |
-```
 
 Regla práctica:
 
