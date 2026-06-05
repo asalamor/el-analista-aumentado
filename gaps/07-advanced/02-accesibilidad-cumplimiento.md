@@ -1,4 +1,4 @@
-# Capítulo — Requisitos de accesibilidad y cumplimiento normativo
+# Requisitos de accesibilidad y cumplimiento normativo
 
 > **Nota de edición:** Este capítulo se sitúa en la Parte III del libro, después del Capítulo 12 (El orquestador) y antes del Capítulo 13 (Plan de adopción). Se puede publicar como capítulo independiente o como apéndice avanzado según la decisión editorial final. El hilo conductor de Meridian y el módulo EP-04 se mantienen intactos.
 
