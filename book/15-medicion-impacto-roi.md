@@ -4,6 +4,8 @@
 
 Tres semanas después de la última retrospectiva que aparece en el capítulo anterior, David Sanz tiene una reunión con la dirección de Meridian. Le piden que justifique la continuidad del proyecto del pipeline para el año siguiente. No quieren dashboards técnicos ni gráficas de tasa de aprobación directa. Quieren saber una cosa: ¿cuánto vale esto en euros?
 
+![Medición del impacto](./images/15_01_medicion_impacto.png)
+
 David llama a Carlos. Carlos abre el cuaderno donde lleva anotados los tiempos desde el primer día.
 
 Lo que tienen es suficiente para construir un argumento sólido. Pero construirlo bien requiere más que sumar horas ahorradas. Requiere traducir métricas técnicas al lenguaje de la dirección, separar el impacto medible del impacto real pero difícil de cuantificar, y ser honestos sobre lo que el sistema no ha resuelto todavía.
@@ -39,8 +41,6 @@ Hay tres tipos de impacto que el pipeline produce y que se pueden medir:
 > 💡 **Idea clave**
 >
 > El argumento de ROI más sólido no es el que tiene los números más grandes. Es el que tiene los números más creíbles. Una estimación conservadora que el equipo directivo puede verificar vale más que una proyección optimista que nadie se cree.
-
-![Medición del impacto](./images/15_01_medicion_impacto.png)
 
 ---
 
