@@ -162,6 +162,8 @@ El analista no abandona su flujo de trabajo habitual. Lo **extiende con tres pas
 
 ### Protocolo de seguimiento semanal (30 min)
 
+El champion y el facilitador se reúnen 30 minutos cada semana con un guión fijo:
+
 ```
 1. ¿Qué funcionó bien esta semana? (5 min)
    → Documentar para el caso de éxito
@@ -213,14 +215,20 @@ Con el caso de éxito documentado del piloto, la expansión es mucho más sencil
 
 No incorporar a todos a la vez. Secuencia recomendada:
 
-- **Semana 1 del mes 4.** El champion presenta el caso de éxito al resto de analistas: 30 minutos, sin presentación formal, solo números reales y anécdotas concretas.
-- **Semanas 2-3.** Cada analista tiene una sesión individual de 90 minutos con el champion (no con el facilitador técnico: con el champion, un igual).
-- **Semanas 4-6.** Cada analista usa el sistema en un requisito real de su proyecto actual, con el champion disponible por Slack.
-- **Mes 5-6.** El sistema es el flujo estándar para todos los analistas.
+**Semana 1 del mes 4**. El champion presenta el caso de éxito del piloto al resto de analistas. Treinta minutos, sin presentación formal. Solo números reales y anécdotas concretas. "Antes tardaba dos horas en crear los issues de Jira para un requisito complejo. Ahora tardo veinte minutos en revisar lo que genera el sistema."
+
+**Semanas 2-3**. Cada analista del equipo tiene una sesión individual de 90 minutos con el champion. No con el facilitador técnico: con el champion, un igual. Esta sesión replica el ejercicio práctico de la Fase 1 pero con los datos del proyecto específico de cada analista.
+
+**Semanas 4-6**. Cada analista usa el sistema en un requisito real de su proyecto actual, con el champion disponible por Slack para preguntas. No hay presión de velocidad ni de perfección.
+
+**Mes 5-6**. El sistema es el flujo estándar para todos los analistas. Las métricas se miden a nivel de equipo, no solo del piloto.
+
 
 ### Incorporación de los usuarios de negocio
 
 Los usuarios de negocio **no reciben formación sobre el sistema**: reciben una versión ligeramente mejorada del proceso que ya conocen.
+
+Lo que cambia para ellos es mínimo y se presenta como una mejora de las reuniones, no como un cambio de proceso:
 
 ```
 ANTES:
@@ -244,8 +252,9 @@ El usuario de negocio percibe que la reunión es más productiva y que el analis
 
 ### Incorporación del equipo técnico y QA
 
-- **Equipo técnico** (60 min): cómo leer los artefactos generados y cómo usar la matriz de trazabilidad para navegar desde un bug hasta el requisito que lo originó.
-- **Equipo de QA** (90 min): cómo revisar los test cases generados, qué criterios usar para aprobarlos o rechazarlos, y cómo integrar los scripts Gherkin con su framework de automatización.
+El equipo técnico recibe una sesión específica de 60 minutos centrada en dos cosas: cómo leer los artefactos generados para entender el contexto funcional completo, y cómo usar la matriz de trazabilidad para navegar desde un bug hasta el requisito que lo originó.
+
+El equipo de QA recibe una sesión de 90 minutos centrada en cómo revisar los test cases generados, qué criterios usar para aprobarlos o rechazarlos, y cómo integrar los scripts Gherkin generados con su framework de automatización.
 
 ---
 
@@ -260,6 +269,8 @@ En esta fase el sistema funciona con mínima intervención manual. El foco pasa 
 - **Proceso de escalada.** Cuando el pipeline genera algo claramente incorrecto que llega a Jira, se abre un issue de tipo "Fallo de pipeline" que alimenta la agenda del comité mensual.
 
 ### Métricas de madurez del sistema
+
+En la Fase 4, las métricas cambian de medir la adopción a medir la calidad del sistema:
 
 ```
 Tasa de aprobación directa de artefactos:
@@ -292,7 +303,11 @@ Satisfacción del analista (encuesta trimestral):
 
 ## Materiales de formación
 
+Cada audiencia necesita materiales distintos porque tiene objetivos distintos.
+
 ### Para analistas funcionales: guía de referencia rápida (1 página)
+
+Un documento de una página que cabe en la pantalla sin scroll. No un manual: una referencia que se consulta en los primeros usos.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -339,40 +354,85 @@ Satisfacción del analista (encuesta trimestral):
 
 ### Para usuarios de negocio: guía de "cómo dar buenos requisitos"
 
-Este documento **no menciona IA, YAML ni pipeline**. Es una guía de comunicación.
+Este documento **no menciona IA, YAML ni pipeline**. Es una guía de comunicación para que el trabajo de definición funcional sea más fluido.
 
-**Antes de la reunión:**
-- Piensa en el problema, no en la solución. *"Perdemos mucho tiempo buscando facturas antiguas"* es mejor que *"Necesitamos un filtro de facturas con fechas"*.
-- Piensa en quién va a usar esta funcionalidad y cuándo.
+```
+CÓMO EXPLICAR LO QUE NECESITAS
+Para que podamos construirlo correctamente la primera vez
 
-**En la reunión:**
-- Te haremos preguntas específicas para entenderte mejor: *"¿Qué pasa si [situación excepcional]?"*, *"¿Cómo sabremos que esto está funcionando correctamente?"*
-- Al final de la reunión, leeremos en voz alta lo que entendimos. Si algo no es correcto, es el mejor momento para decirlo.
+ANTES DE LA REUNIÓN
+→ Piensa en el problema, no en la solución
+  Bien:  "Perdemos mucho tiempo buscando facturas antiguas"
+  Menos: "Necesitamos un filtro de facturas con fechas"
 
-**Después de la reunión:**
-- Recibirás un resumen estructurado en 1-2 días para validar. Una respuesta rápida evita semanas de retraso.
+→ Piensa en quién va a usar esta funcionalidad y cuándo
+  "El equipo de contabilidad lo usa cada cierre mensual"
 
-**Un buen requisito responde estas preguntas:**
-- ¿Quién lo usa?
-- ¿Cuándo lo usa y por qué?
-- ¿Qué debe pasar exactamente cuando funciona bien?
-- ¿Qué debe pasar si algo falla?
-- ¿Cómo sabremos que está bien hecho?
+EN LA REUNIÓN
+→ Te haremos preguntas específicas. Son para entenderte mejor, no
+  para complicar las cosas.
+
+  Preguntas habituales:
+  "¿Qué pasa si [situación excepcional]?"
+  "¿Cómo sabremos que esto está funcionando correctamente?"
+  "¿Quién más usa esto además de ti?"
+
+→ Al final de la reunión, leeremos en voz alta lo que entendimos.
+  Si algo no es correcto, es el mejor momento para decirlo.
+
+DESPUÉS DE LA REUNIÓN
+→ Recibirás un resumen estructurado en 1-2 días para validar.
+→ Es importante que lo revises ese mismo día si puedes.
+→ Una respuesta rápida evita semanas de retraso más adelante.
+
+UN BUEN REQUISITO RESPONDE ESTAS PREGUNTAS:
+□ ¿Quién lo usa?
+□ ¿Cuándo lo usa y por qué?
+□ ¿Qué debe pasar exactamente cuando funciona bien?
+□ ¿Qué debe pasar si algo falla?
+□ ¿Cómo sabremos que está bien hecho?
+```
 
 ### Para equipo técnico y QA: el contrato de artefactos
 
-**Historias de usuario:**
-- El campo *Requisito Origen* siempre tiene el ID del REQ que originó la historia.
-- Los criterios de aceptación en formato Dado/Cuando/Entonces son la fuente de verdad para los test cases.
-- Las tareas técnicas tienen el campo *capa* (backend, frontend, base_datos, testing, integracion).
+Una página que explica qué pueden esperar en los artefactos generados por el pipeline y cómo interpretarlos.
 
-**Test Cases (en Xray):**
-- Los test cases con label *automatizable* tienen un script Gherkin en el campo *Definition*.
-- Los test cases de tipo *contorno* son los valores límite: no saltárselos aunque parezcan obvios.
+```
+CÓMO LEER LOS ARTEFACTOS GENERADOS POR EL PIPELINE AI
 
-**Cuando el artefacto parece incorrecto:**
-- Comentar en el issue con el prefijo `[PIPELINE-FEEDBACK]` antes de modificarlo.
-- Modificar el artefacto en Jira para que el sprint no se bloquee.
+HISTORIAS DE USUARIO
+→ El campo 'Requisito Origen' (custom field) siempre tiene el ID
+  del REQ que originó la historia. Úsalo para consultar el YAML
+  completo si necesitas más contexto que el que cabe en la historia.
+
+→ Los criterios de aceptación en formato Dado/Cuando/Entonces
+  son la fuente de verdad para los test cases. Si la implementación
+  no cumple el 'Entonces', es un bug funcional, no una diferencia
+  de interpretación.
+
+→ Las tareas técnicas tienen el campo 'capa' que indica backend,
+  frontend, base_datos, testing o integracion. Los links 'blocks'
+  entre tareas indican el orden recomendado de implementación.
+
+TEST CASES (en Xray)
+→ Los test cases con label 'automatizable' tienen un script Gherkin
+  en el campo 'Definition'. Importarlo directamente al framework
+  de automatización reduce el tiempo de scripting un 70%.
+
+→ Los test cases de tipo 'contorno' son los valores límite de los
+  campos con rangos. Son los más propensos a encontrar bugs reales.
+  No saltárselos aunque parezcan obvios.
+
+→ El campo 'Requisito Origen' en el test case permite navegar hasta
+  el REQ que originó el criterio de aceptación que verifica ese test.
+
+CUANDO EL ARTEFACTO PARECE INCORRECTO
+→ Antes de modificarlo en Jira, comenta en el issue con el prefijo
+  [PIPELINE-FEEDBACK]: describe qué está mal y cómo debería ser.
+→ El champion del pipeline revisa estos comentarios semanalmente
+  para mejorar los prompts.
+→ Modifica el artefacto en Jira para que el sprint no se bloquee.
+```
 
 ---
 
@@ -392,33 +452,68 @@ Este documento **no menciona IA, YAML ni pipeline**. Es una guía de comunicaci�
 
 ## El argumento para la dirección (3 minutos)
 
-**Situación actual:**
-Desde que un usuario de negocio da un requisito hasta que hay historias en Jira listas para el sprint, pasan entre 2 y 5 días de trabajo de análisis. Aproximadamente el 60% de ese tiempo es trabajo mecánico. Además, entre el 20% y el 30% de los bugs en producción tienen como causa raíz un requisito ambiguo o incompleto.
+La dirección necesita un argumento de negocio, no técnico. Este es el discurso de tres minutos que funciona:
 
-**Lo que se propone:**
-Automatizar el 60% del trabajo mecánico con IA para que los analistas dediquen ese tiempo a lo que realmente aporta valor. Añadir una capa de validación automática que detecta ambigüedades antes de que el requisito entre al sprint.
+```
+SITUACIÓN ACTUAL:
+Desde que un usuario de negocio nos da un requisito hasta que hay
+historias en Jira listas para el sprint, pasan entre 2 y 5 días
+de trabajo de análisis. De ese tiempo, aproximadamente el 60%
+es trabajo mecánico: formatear documentos, copiar información
+de un sistema a otro, crear issues con la misma estructura una
+y otra vez.
 
-**Impacto esperado en 6 meses:**
-- Reducción del 60% en tiempo de creación de artefactos Jira
-- Reducción del 40% en bugs por ambigüedad funcional
-- Trazabilidad completa sin coste de mantenimiento manual
+ADEMÁS, entre el 20% y el 30% de los bugs que llegan a producción
+tienen como causa raíz un requisito ambiguo o incompleto que nadie
+detectó a tiempo.
 
-**El coste:**
-- 2 meses de configuración y piloto con un analista
-- Sin necesidad de nuevas licencias de software en las fases iniciales
-- Sin cambios en el proceso visible para los usuarios de negocio
+LO QUE PROPONEMOS:
+Automatizar el 60% del trabajo mecánico con IA para que los analistas
+dediquen ese tiempo a lo que realmente aporta valor: entender el
+negocio, facilitar conversaciones y detectar problemas antes de que
+lleguen al desarrollo.
+
+Añadir una capa de validación automática que detecta ambigüedades
+antes de que el requisito entre al sprint, reduciendo los bugs por
+causa funcional.
+
+EL IMPACTO ESPERADO EN 6 MESES:
+→ Reducción del 60% en tiempo de creación de artefactos Jira
+→ Reducción del 40% en bugs por ambigüedad funcional
+→ Trazabilidad completa sin coste de mantenimiento manual
+
+EL COSTE:
+→ 2 meses de configuración y piloto con un analista
+→ Sin necesidad de nuevas licencias de software en las fases iniciales
+→ Sin cambios en el proceso visible para los usuarios de negocio
+```
 
 ---
 
 ## Plan de comunicación interna
 
-Actualización semanal de tres líneas en el canal del equipo durante los primeros tres meses:
+La comunicación del proyecto de adopción tiene que ser constante pero breve. El modelo que funciona es una actualización semanal de tres líneas en el canal del equipo durante los primeros tres meses:
 
-> **Semana 3:** *"Esta semana transformamos el primer requisito real con el pipeline. Tardamos 8 minutos en generar las historias y tareas técnicas que normalmente llevan 2 horas. El output necesita ajustes pero la dirección es prometedora."*
+```
+Semana 3:
+"Esta semana transformamos el primer requisito real con el pipeline.
+Tardamos 8 minutos en generar las historias y tareas técnicas que
+normalmente llevan 2 horas. El output necesita ajustes pero la
+dirección es prometedora. Seguimos informando."
 
-> **Semana 6:** *"Acumulamos 12 requisitos procesados. El tiempo medio de creación de artefactos ha bajado de 95 a 38 minutos. El validador ha detectado 7 ambigüedades que habrían llegado al sprint."*
+Semana 6:
+"Acumulamos 12 requisitos procesados con el pipeline. El tiempo medio
+de creación de artefactos ha bajado de 95 a 38 minutos. El validador
+ha detectado 7 ambigüedades que habrían llegado al sprint.
+Esta semana incorporamos al segundo analista al piloto."
 
-> **Semana 10:** *"Primer sprint donde todas las historias tenían criterios de aceptación documentados desde el inicio. El equipo de QA reporta que el tiempo de análisis de test cases se ha reducido a la mitad."*
+Semana 10:
+"Primer sprint donde todas las historias tenían criterios de aceptación
+documentados desde el inicio. El equipo de QA reporta que el tiempo
+de análisis de test cases se ha reducido a la mitad gracias a los
+test cases pre-generados. Próxima semana: presentación de resultados
+a dirección."
+```
 
 ---
 
