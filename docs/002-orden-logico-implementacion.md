@@ -72,3 +72,9 @@ Un modelo financiero que traduzca las métricas técnicas del pipeline (tiempo d
 ## Recomendación de inicio
 
 Mi recomendación concreta es empezar por el **punto 1 y el 4** en paralelo: la plantilla te da la materia prima, y los prompts de generación te permiten ver resultados tangibles rápido. Nada acelera más la adopción que mostrar un requisito real de tu organización convertido en artefactos Jira en tiempo real.
+
+---
+
+A continuación: [Modelo Operativo AI-Ready — Documentación Completa.](./003-modelo-operativo.md)
+
+---
