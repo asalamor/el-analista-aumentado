@@ -59,7 +59,7 @@ Cómo gestionar la evolución de los prompts, quién los valida, cómo se mide l
 
 ---
 
-## [Puntos adicionales identificados posteriormente](../gaps/inventario-puntos-adicionales)
+### [Puntos adicionales identificados posteriormente](../gaps/inventario-puntos-adicionales)
 
 ---
 
