@@ -544,7 +544,7 @@ No inventes requisitos nuevos. Si falta información, márcala como pendiente.
 
 No deje dudas en correos dispersos. Cree una sección o fichero:
 
-# Open Points
+### Open Points
 
 | ID | Pregunta | Área | Responsable | Estado | Decisión |
 |---|---|---|---|---|---|
