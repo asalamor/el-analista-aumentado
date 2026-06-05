@@ -116,14 +116,6 @@ Metáfora útil: el copiloto de avión no sustituye al piloto, hace el trabajo d
 
 Dos días después de la demo, sesión de manos a la obra solo con los analistas. Sin directivos, sin usuarios de negocio.
 
-| Tiempo | Actividad |
-|---|---|
-| 00:00 – 00:20 | El champion explica el pipeline con sus palabras (igual oírlo de un igual es más efectivo) |
-| 00:20 – 00:50 | Ejercicio individual: cada analista rellena un requisito real en la plantilla YAML y lo pasa por el validador |
-| 00:50 – 01:20 | Ejercicio en parejas: una pareja ejecuta el pipeline completo, la otra revisa y aprueba o rechaza con argumentos |
-| 01:20 – 01:40 | Puesta en común: sorpresas, fricciones, propuestas de mejora |
-| 01:40 – 02:00 | Configuración personal y acuerdo de revisión semanal (30 min/semana el primer mes) |
-
 ```
 00:00 - 00:20  Revisión rápida del pipeline
                El champion explica los puntos 4, 5 y 6 con sus palabras
@@ -151,6 +143,7 @@ Dos días después de la demo, sesión de manos a la obra solo con los analistas
                Se acuerda la cadencia de revisión: una sesión semanal de 30 min
                durante el primer mes
 ```
+
 ---
 
 ## Fase 2 — Piloto asistido (meses 2-3)
@@ -169,21 +162,46 @@ El analista no abandona su flujo de trabajo habitual. Lo **extiende con tres pas
 
 ### Protocolo de seguimiento semanal (30 min)
 
-| Pregunta | Objetivo |
-|---|---|
-| ¿Qué funcionó bien esta semana? | Documentar para el caso de éxito |
-| ¿Qué no funcionó o generó fricción? | Categorizar: ¿plantilla, prompt, glosario o proceso? |
-| ¿Qué ajuste concreto hacemos esta semana? | Un solo ajuste por semana, documentado |
-| ¿Qué le contamos al resto del equipo? | Actualización de tres frases en el canal del equipo |
+```
+1. ¿Qué funcionó bien esta semana? (5 min)
+   → Documentar para el caso de éxito
+
+2. ¿Qué no funcionó o generó fricción? (10 min)
+   → Categorizar: ¿es un problema de plantilla, de prompt, de glosario
+     o de proceso?
+
+3. ¿Qué ajuste concreto hacemos esta semana? (10 min)
+   → Un solo ajuste por semana. No acumular.
+   → Documentar el ajuste y el motivo.
+
+4. ¿Qué le contamos al resto del equipo? (5 min)
+   → Cada semana, una actualización de tres frases en el canal
+     del equipo. Sin tecnicismos.
+```
 
 ### Métricas del piloto (medición semanal)
 
-| Métrica | Objetivo |
-|---|---|
-| Tiempo de creación de artefactos por requisito | Reducción >50% en semana 8 |
-| Número de errores detectados por el validador | Debe bajar progresivamente (mide la curva de aprendizaje) |
-| Porcentaje de artefactos Jira aprobados sin ediciones | Debe superar el 80% en semana 8 |
-| Historias que llegan al sprint sin cambios de alcance | Indicador de negocio más importante |
+```
+Tiempo de creación de artefactos por requisito:
+  Antes: X minutos (medido en Fase 0)
+  Durante piloto: Y minutos (el analista cronometra)
+  Objetivo: reducción >50% en semana 8
+
+Número de errores detectados por el validador:
+  Semana 1: N errores por requisito (línea base del piloto)
+  Semana 8: M errores por requisito (debe bajar)
+  → Mide la curva de aprendizaje de la escritura estructurada
+
+Porcentaje de artefactos Jira aprobados sin ediciones:
+  Semana 1: X% (primer contacto con el output del pipeline)
+  Semana 8: Y% (debe superar el 80%)
+  → Mide la calidad del pipeline y la madurez de la plantilla
+
+Historias que llegan al sprint sin cambios de alcance:
+  Antes: X% (medido en Fase 0)
+  Durante piloto: Y% (medido en retrospectiva de sprint)
+  → El indicador de negocio más importante
+```
 
 ---
 
@@ -204,9 +222,23 @@ No incorporar a todos a la vez. Secuencia recomendada:
 
 Los usuarios de negocio **no reciben formación sobre el sistema**: reciben una versión ligeramente mejorada del proceso que ya conocen.
 
-| ANTES | AHORA |
-|---|---|
-| Usuario da el requisito → Analista toma notas en Word → Días después envía documento → Días después el usuario revisa → Nueva ronda de revisión | Usuario da el requisito → Analista guía con las preguntas de la plantilla → Al final de la reunión lee en voz alta los criterios de aceptación capturados → 1-2 horas después envía resumen estructurado |
+```
+ANTES:
+  Usuario: "Necesitamos poder gestionar las facturas mejor"
+  Analista: Toma notas en Word durante la reunión
+  [Días después] Analista envía documento Word para revisión
+  [Días después] Usuario revisa y pide cambios
+  [Días después] Segunda ronda de revisión
+
+AHORA:
+  Usuario: "Necesitamos poder gestionar las facturas mejor"
+  Analista: Guía la conversación con las preguntas de la plantilla
+  [Al final de la reunión] Analista lee en voz alta los criterios
+    de aceptación que ha capturado: "¿Es correcto que si introduces
+    un rango de más de 365 días el sistema te avise?"
+  Usuario: "Sí, eso es exactamente lo que queremos"
+  [1-2 horas después] Analista envía resumen estructurado para validación
+```
 
 El usuario de negocio percibe que la reunión es más productiva y que el analista hace mejores preguntas. **No sabe que detrás hay una plantilla YAML y un pipeline de IA.**
 
@@ -229,13 +261,32 @@ En esta fase el sistema funciona con mínima intervención manual. El foco pasa 
 
 ### Métricas de madurez del sistema
 
-| Métrica | Objetivo mes 7 | Objetivo mes 12 |
-|---|---|---|
-| Tasa de aprobación directa de artefactos | >80% | >90% |
-| Tasa de detección temprana de ambigüedad | >70% | >70% |
-| Tiempo de ciclo funcional | Reducción >60% vs línea base | — |
-| Bugs por ambigüedad funcional | — | Reducción >40% vs línea base |
-| Satisfacción del analista (encuesta trimestral) | — | >4/5 en las tres preguntas en mes 9 |
+```
+Tasa de aprobación directa de artefactos:
+  Porcentaje de JSONs aprobados sin ediciones por el analista
+  Objetivo mes 7: >80%
+  Objetivo mes 12: >90%
+
+Tasa de detección temprana de ambigüedad:
+  Porcentaje de requisitos donde el validador detecta al menos
+  un problema antes de que llegue al refinamiento
+  Objetivo: >70% de los requisitos con algún problema detectado
+  antes del pipeline, no después
+
+Tiempo de ciclo funcional:
+  Desde reunión de requisitos hasta historias en Jira
+  Objetivo mes 7: reducción >60% respecto a la línea base
+
+Bugs por ambigüedad funcional:
+  Bugs en producción cuya causa raíz es un requisito mal definido
+  Objetivo mes 12: reducción >40% respecto a la línea base
+
+Satisfacción del analista (encuesta trimestral):
+  "¿El sistema reduce tu carga de trabajo en tareas repetitivas?"
+  "¿El output del pipeline representa bien la intención del requisito?"
+  "¿Recomendarías este proceso a otro analista?"
+  Escala 1-5. Objetivo: >4 en las tres preguntas en mes 9
+```
 
 ---
 
