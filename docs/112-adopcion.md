@@ -124,6 +124,33 @@ Dos días después de la demo, sesión de manos a la obra solo con los analistas
 | 01:20 – 01:40 | Puesta en común: sorpresas, fricciones, propuestas de mejora |
 | 01:40 – 02:00 | Configuración personal y acuerdo de revisión semanal (30 min/semana el primer mes) |
 
+```
+00:00 - 00:20  Revisión rápida del pipeline
+               El champion explica los puntos 4, 5 y 6 con sus palabras
+               Objetivo: que el equipo se lo oiga explicar a un igual, no al responsable
+
+00:20 - 00:50  Ejercicio individual
+               Cada analista toma un requisito real de su proyecto actual
+               Lo rellena en la plantilla YAML con ayuda del facilitador
+               Lo pasa por el validador (punto 6)
+               Ve los errores que detecta y los corrige
+
+00:50 - 01:20  Ejercicio en parejas
+               Una pareja ejecuta el pipeline completo sobre el requisito del ejercicio anterior
+               La otra pareja revisa el output y lo aprueba o rechaza con argumentos
+               Rotar roles
+
+01:20 - 01:40  Puesta en común
+               ¿Qué os ha sorprendido positivamente?
+               ¿Qué no funciona como esperabais?
+               ¿Qué cambiaríais de la plantilla para vuestro contexto?
+
+01:40 - 02:00  Configuración personal
+               Cada analista configura su acceso a la herramienta
+               El champion queda como punto de contacto para dudas
+               Se acuerda la cadencia de revisión: una sesión semanal de 30 min
+               durante el primer mes
+```
 ---
 
 ## Fase 2 — Piloto asistido (meses 2-3)
