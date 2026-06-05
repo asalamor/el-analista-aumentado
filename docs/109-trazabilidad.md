@@ -38,6 +38,8 @@ REQUISITO (REQ-023)
                                               └── implementa ◄── COMMIT (abc123)
 ```
 
+(Modelo de datos de la trazabilidad)[assets/grafo_trazabilidad_modelo_datos.png]
+
 ### Modelo de datos: el grafo de trazabilidad en base de datos
 
 El grafo se implementa con dos tablas: nodos y aristas. Esta estructura permite recorrer la trazabilidad en cualquier dirección sin rediseñar el esquema cuando aparece un nuevo tipo de artefacto.
