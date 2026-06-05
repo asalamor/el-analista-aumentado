@@ -130,6 +130,11 @@ La regla de gobierno principal es:
 - *Plugin de Confluence o extensión del navegador* — integración nativa sin salir de Confluence
 - *Notificaciones y bandeja de entrada del analista* — alertas sin ruido excesivo
 
+### Gaps de integración HPQC
+
+- *[Integración técnica con HP Quality Center / ALM](01-integracion-hpqc-alm.md)* — Por qué HPQC/ALM requiere un tratamiento específico
+- *[Gobierno del ciclo de vida de pruebas en ALM](02-gobierno-ciclo-vida-pruebas-alm.md)* — Qué es y por qué es diferente del gobierno del pipeline
+
 ### Gaps de casos de uso avanzados
 
 - *[Análisis funcional de migraciones](gaps/07-advanced/analisis-funcional-migraciones.md)* — equivalencia con sistema legado
@@ -167,7 +172,7 @@ La regla de gobierno principal es:
 - *[13. Plan de adopción](book/13-adopcion.md)* — Implantación por fases, resistencias, demostraciones, formación y métricas de adopción.
 - *[14. Gobierno del modelo](book/14-gobierno.md)* — Observabilidad, gestión de prompts, calidad del repositorio, gobierno y madurez del sistema.
 - *[15.Medición del impacto y ROI](book/15-medicion-impacto-roi.md)* — Los números convencen a la lógica; las palabras del equipo, a la intuición.
-- Conclusión
+- *[Conclusión](book/conclusion.md)*
 
 ---
 
