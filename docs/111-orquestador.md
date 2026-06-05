@@ -1610,3 +1610,9 @@ jobs:
 ---
 
 Con el script orquestador completo, el pipeline end-to-end está totalmente cerrado. Un único comando transforma un YAML de requisito en todos los artefactos del proyecto, con gestión de errores, reanudación automática, aprobación humana y registro de trazabilidad.
+
+---
+
+A continuación: [Punto 12 — Plan de formación y adopción.](./112-adopcion.md)
+
+---
