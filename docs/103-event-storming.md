@@ -340,3 +340,9 @@ Con estos cinco entregables, el analista tiene todo lo necesario para completar 
 ---
 
 *Con esto, los tres puntos de la base conceptual del modelo están completos: la plantilla de requisito AI-ready, el glosario estructurado y la guía de Event Storming para analistas. La base sobre la que se sustenta todo el pipeline técnico está íntegramente documentada.*
+
+---
+
+A continuación: [Punto 4 — Prompts de generación de artefactos Jira.](./104-prompts-jira.md)
+
+---
