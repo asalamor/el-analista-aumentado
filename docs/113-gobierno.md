@@ -1219,6 +1219,5 @@ El gobierno no se implanta de golpe. Evoluciona en paralelo con las fases de ado
 
 ---
 
-> Con el gobierno del modelo completamente definido, los doce puntos cubren desde la captura de requisitos hasta el gobierno del sistema en producción, pasando por la arquitectura técnica completa del pipeline.
->
-> El siguiente paso natural es el **script orquestador** que une en un único comando ejecutable todos los pipelines, o bien un **resumen ejecutivo del modelo completo** para presentarlo a la dirección.
+> Con el gobierno del modelo completamente definido, se cubre desde la captura de requisitos hasta el gobierno del sistema en producción, pasando por la arquitectura técnica completa del pipeline.
+
