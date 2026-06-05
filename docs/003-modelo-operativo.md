@@ -425,3 +425,9 @@ El sistema actualiza el nodo correspondiente en el grafo de trazabilidad.
 | Run | Instancia de ejecución del pipeline sobre un requisito específico |
 | Trazabilidad | Capacidad de navegar desde cualquier artefacto hasta su origen |
 | Vector store | Base de datos optimizada para búsqueda por similitud semántica |
+
+---
+
+A continuación: [Punto 1 — Taller de plantillas.](./101-taller-de-plantillas.md)
+
+---
