@@ -426,3 +426,9 @@ El modelo propuesto es incremental por diseño. No requiere reemplazar ninguna h
 | Detección de ambigüedades | En refinamiento o en bugs | Antes del pipeline |
 | Consistencia terminológica | Variable por analista | Garantizada por el glosario |
 | Impacto de cambios | Detectado tarde (o no detectado) | Automático e inmediato |
+
+---
+
+A continuación: [Orden lógico de implementación del modelo operativo.](./002-orden-logico-implementacion.md)
+
+---
