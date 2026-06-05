@@ -215,13 +215,13 @@ Con el caso de éxito documentado del piloto, la expansión es mucho más sencil
 
 No incorporar a todos a la vez. Secuencia recomendada:
 
-**Semana 1 del mes 4**. El champion presenta el caso de éxito del piloto al resto de analistas. Treinta minutos, sin presentación formal. Solo números reales y anécdotas concretas. "Antes tardaba dos horas en crear los issues de Jira para un requisito complejo. Ahora tardo veinte minutos en revisar lo que genera el sistema."
+- **Semana 1 del mes 4**. El champion presenta el caso de éxito del piloto al resto de analistas. Treinta minutos, sin presentación formal. Solo números reales y anécdotas concretas. "Antes tardaba dos horas en crear los issues de Jira para un requisito complejo. Ahora tardo veinte minutos en revisar lo que genera el sistema."
 
-**Semanas 2-3**. Cada analista del equipo tiene una sesión individual de 90 minutos con el champion. No con el facilitador técnico: con el champion, un igual. Esta sesión replica el ejercicio práctico de la Fase 1 pero con los datos del proyecto específico de cada analista.
+- **Semanas 2-3**. Cada analista del equipo tiene una sesión individual de 90 minutos con el champion. No con el facilitador técnico: con el champion, un igual. Esta sesión replica el ejercicio práctico de la Fase 1 pero con los datos del proyecto específico de cada analista.
 
-**Semanas 4-6**. Cada analista usa el sistema en un requisito real de su proyecto actual, con el champion disponible por Slack para preguntas. No hay presión de velocidad ni de perfección.
+- **Semanas 4-6**. Cada analista usa el sistema en un requisito real de su proyecto actual, con el champion disponible por Slack para preguntas. No hay presión de velocidad ni de perfección.
 
-**Mes 5-6**. El sistema es el flujo estándar para todos los analistas. Las métricas se miden a nivel de equipo, no solo del piloto.
+- **Mes 5-6**. El sistema es el flujo estándar para todos los analistas. Las métricas se miden a nivel de equipo, no solo del piloto.
 
 
 ### Incorporación de los usuarios de negocio
@@ -252,9 +252,9 @@ El usuario de negocio percibe que la reunión es más productiva y que el analis
 
 ### Incorporación del equipo técnico y QA
 
-El equipo técnico recibe una sesión específica de 60 minutos centrada en dos cosas: cómo leer los artefactos generados para entender el contexto funcional completo, y cómo usar la matriz de trazabilidad para navegar desde un bug hasta el requisito que lo originó.
+- El equipo técnico recibe una sesión específica de 60 minutos centrada en dos cosas: cómo leer los artefactos generados para entender el contexto funcional completo, y cómo usar la matriz de trazabilidad para navegar desde un bug hasta el requisito que lo originó.
 
-El equipo de QA recibe una sesión de 90 minutos centrada en cómo revisar los test cases generados, qué criterios usar para aprobarlos o rechazarlos, y cómo integrar los scripts Gherkin generados con su framework de automatización.
+- El equipo de QA recibe una sesión de 90 minutos centrada en cómo revisar los test cases generados, qué criterios usar para aprobarlos o rechazarlos, y cómo integrar los scripts Gherkin generados con su framework de automatización.
 
 ---
 
