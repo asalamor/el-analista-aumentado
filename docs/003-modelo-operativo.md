@@ -17,8 +17,9 @@ para la transformación del análisis funcional mediante Inteligencia Artificial
 8. [Detección de impacto de cambios](#8-detección-de-impacto-de-cambios)
 9. [Matriz de trazabilidad automática](#9-matriz-de-trazabilidad-automática)
 10. [Integración con Jira API](#10-integración-con-jira-api)
-11. [Plan de formación y adopción](#11-plan-de-formación-y-adopción)
-12. [Gobierno del modelo](#12-gobierno-del-modelo)
+11. [Script orquestador](#11-script-orquestador)
+12. [Plan de formación y adopción](#12-plan-de-formación-y-adopción)
+13. [Gobierno del modelo](#13-gobierno-del-modelo)
 
 ---
 
@@ -338,9 +339,36 @@ El sistema actualiza el nodo correspondiente en el grafo de trazabilidad.
 
 ---
 
-## 11. El script orquestador
+## 11. Script orquestador
 
-### Cuatro fases
+## Estructura del proyecto
+
+```
+pipeline-ai/
+├── orchestrator.py          ← punto de entrada principal
+├── config.py                ← configuración centralizada
+├── state.py                 ← gestión de estado de ejecución
+│
+├── steps/
+│   ├── s1_load.py           ← carga y parseo del YAML
+│   ├── s2_validate.py       ← validación de calidad (punto 6)
+│   ├── s3_rag_context.py    ← recuperación de contexto RAG (punto 7)
+│   ├── s4_generate.py       ← generación de artefactos (punto 4)
+│   ├── s5_test_cases.py     ← generación de test cases (punto 5)
+│   ├── s6_impact.py         ← análisis de impacto si es actualización (punto 8)
+│   ├── s7_traceability.py   ← registro en el grafo (punto 9)
+│   ├── s8_approval.py       ← cola de aprobación humana
+│   └── s9_push.py           ← push a Jira y Xray (punto 10)
+│
+├── prompts/
+│   └── v1.1/                ← prompts versionados
+│
+├── runs/                    ← archivos de estado por ejecución
+│   └── REQ-023_20250512.json
+│
+└── reports/                 ← informes generados
+    └── REQ-023_report.md
+```
 
 ---
 
