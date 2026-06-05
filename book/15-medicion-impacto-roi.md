@@ -40,6 +40,8 @@ Hay tres tipos de impacto que el pipeline produce y que se pueden medir:
 >
 > El argumento de ROI más sólido no es el que tiene los números más grandes. Es el que tiene los números más creíbles. Una estimación conservadora que el equipo directivo puede verificar vale más que una proyección optimista que nadie se cree.
 
+![Medición del impacto](./images/15_01_medicion_impacto.png)
+
 ---
 
 ## La línea base: medir antes de empezar
