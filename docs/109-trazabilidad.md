@@ -914,3 +914,9 @@ La matriz no es un artefacto estático que se genera una vez. Se actualiza en cu
 **Al actualizar issues en Jira.** Un webhook de Jira llama a `registrar_nodo` cuando cambia el estado de un issue, y a `registrar_arista` cuando se crea un commit con referencia al issue en el mensaje.
 
 **Al ejecutar test cases en Xray.** Un webhook registra el resultado de cada ejecución como un nodo de tipo `ejecucion_tc` con arista `produce` desde el test case, lo que permite que la columna `estado_tc` de la matriz refleje el resultado real más reciente.
+
+---
+
+A continuación: [Punto 10 — Integración técnica con Jira API.](./110-integracion-jira-api.md)
+
+---
