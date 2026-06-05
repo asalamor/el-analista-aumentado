@@ -493,3 +493,9 @@ Para saber si el glosario está cumpliendo su función, estas son las métricas 
 **Cobertura de entidades.** Porcentaje de entidades mencionadas en los requisitos que tienen sus estados y atributos documentados en el glosario. El objetivo es 100% para las entidades del dominio principal.
 
 **Frecuencia de actualización.** Número de cambios al glosario por sprint. Demasiados cambios (más de 5 por sprint) indican que el glosario se construyó demasiado deprisa sin validación real con el negocio. Ningún cambio durante varios sprints seguidos indica que probablemente hay términos nuevos que no se están recogiendo.
+
+---
+
+A continuación: [Punto 3 — Guía de Event Storming para analistas funcionales.](./103-event-storming.md)
+
+---
