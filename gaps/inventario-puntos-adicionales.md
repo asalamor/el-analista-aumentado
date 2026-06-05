@@ -56,13 +56,3 @@ Al completar el modelo operativo principal, se identificaron los siguientes punt
 - **Generación de documentación de usuario final** — manuales, release notes, ayuda en línea
 
 ---
-
-## Priorización de los puntos pendientes
-
-De todos los puntos identificados, los que más valor aportarían al modelo actual, en orden de prioridad:
-
-1. **Script orquestador** — cierra el ciclo completo
-2. **Interfaz de analista** — hace el sistema accesible sin código
-3. **Modelo de ROI para dirección** — justifica la inversión con números
-4. **Política de privacidad y datos** — desbloqueante para proyectos regulados
-5. **Integración con Azure DevOps** — amplía el alcance a organizaciones con ese stack
