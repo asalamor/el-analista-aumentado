@@ -1,4 +1,4 @@
-# Punto 12 — Gobierno del modelo
+# Punto 13 — Gobierno del modelo
 
 El gobierno del modelo es lo que separa un proyecto de IA que funciona durante tres meses de uno que sigue funcionando en tres años. Sin gobierno, el pipeline se degrada silenciosamente: los prompts quedan desactualizados cuando cambia el stack tecnológico, el glosario se fragmenta cuando rotan los analistas, y nadie detecta que la calidad del output ha bajado hasta que un bug importante llega a producción.
 
