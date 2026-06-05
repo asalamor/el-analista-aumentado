@@ -33,6 +33,8 @@ Fase 3  →  Expansión                 (meses 4-6)
 Fase 4  →  Autonomía supervisada     (mes 7 en adelante)
 ```
 
+![Arquitectura del plan de adopción](assets/plan_adopcion_fases.png)
+
 ---
 
 ## Fase 0 — Preparación silenciosa (semanas 1-2)
