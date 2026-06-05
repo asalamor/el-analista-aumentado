@@ -280,16 +280,16 @@ Requisito ──genera──► Historia ──genera──► Criterio AC
     │                    │                      │
     ▼                    ▼                      ▼
   Épica            Tarea técnica          Test Case
-                        │                      │
-                   implementa               verifica
-                        │                      │
-                        ▼                      ▼
-                   Issue Jira            Ejecución TC
-                        │
-                    implementa
-                        │
-                        ▼
-                     Commit
+                         │                      │
+                    implementa               verifica
+                         │                      │
+                         ▼                      ▼
+                    Issue Jira            Ejecución TC
+                         │
+                     implementa
+                         │
+                         ▼
+                      Commit
 ```
 
 ### Consultas disponibles
