@@ -866,3 +866,9 @@ El RAG enriquece cada componente del pipeline de forma concreta:
 **Generación de test cases** — recibe los flujos de error de requisitos similares ya documentados, lo que permite sugerir casos de prueba que el analista del nuevo requisito habría omitido porque no sabía que ya estaban resueltos en otro módulo.
 
 **Validación de calidad** — gana su capacidad más valiosa: la detección de contradicciones con requisitos existentes. Sin RAG, esa validación solo puede comprobar el requisito en sí mismo. Con RAG, comprueba el requisito contra todo el historial validado del proyecto.
+
+---
+
+A continuación: [Punto 8 — Detección de impacto de cambios.](./108-impacto-cambios.md)
+
+---
