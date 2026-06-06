@@ -94,7 +94,7 @@ La regla de gobierno principal es:
 - *[Requisitos de integración con sistemas externos](gaps/01-tech/02-req-integracion-sist-externos.md)* — flujo específico con contratos de API e incertidumbre
 - *[Pipeline de épicas desde cero](gaps/01-tech/03-pipeline-epicas-desde-cero.md)* — desde el mapa de Event Storming
 - *[Manejo de requisitos deprecados o divididos](gaps/01-tech/04-requisitos-deprecados-divididos.md)* — split y fusión de requisitos
-- *Gestión de versiones de un mismo requisito en sprints distintos* — implementación parcial
+- *[Gestión de versiones de un mismo requisito en sprints distintos](gaps/01-tech/05-requisitos-implementacion-parcial.md)* — implementación parcial
 
 ### Gaps en la capa de inteligencia
 
