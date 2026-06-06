@@ -98,7 +98,7 @@ La regla de gobierno principal es:
 
 ### Gaps en la capa de inteligencia
 
-- *Fine-tuning o few-shot learning con ejemplos propios* — usar artefactos aprobados históricos como referencia
+- *[Fine-tuning o few-shot learning con ejemplos propios](gaps/02-intelligence/01-few-shot-learning-artefactos-propios.md)* — usar artefactos aprobados históricos como referencia
 - *Detección automática de requisitos candidatos a épica nueva* — cuando no encajan en épicas existentes
 - *Análisis de cobertura de negocio* — cruzar requisitos con objetivos de negocio declarados
 
