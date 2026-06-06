@@ -127,7 +127,7 @@ La regla de gobierno principal es:
 ### Gaps de experiencia de usuario
 
 - *[Interfaz de analista](gaps/06-ux/01-interfaz-analista-pipeline.md)* — interfaz web accesible sin conocimientos técnicos
-- *Plugin de Confluence o extensión del navegador* — integración nativa sin salir de Confluence
+- *[Plugin de Confluence o extensión del navegador](gaps/06-ux/02-plugin-confluence-pipeline-ai.md)* — integración nativa sin salir de Confluence
 - *[Notificaciones y bandeja de entrada del analista](gaps/06-ux/03-notificaciones_bandeja_analista.md)* — alertas sin ruido excesivo
 
 ### Gaps de integración HPQC
