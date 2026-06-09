@@ -799,6 +799,7 @@ Este grafo completo permite responder en tiempo real a preguntas que en un proce
 
 La sincronización entre ALM y el grafo de trazabilidad se ejecuta en tres momentos distintos con propósitos distintos:
 
+{% raw %}
 ```python
 class OrquestadorSincronizacionALM:
     """
@@ -1190,6 +1191,7 @@ class OrquestadorSincronizacionALM:
                 return valores[0].get("value", "") if valores else ""
         return ""
 ```
+{% endraw %}
 
 ---
 
