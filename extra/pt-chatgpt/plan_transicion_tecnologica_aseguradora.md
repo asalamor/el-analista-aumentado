@@ -18,7 +18,7 @@ La transición no debe limitarse a “recibir documentación”. Debe garantizar
 
 ---
 
-# 2. Principios rectores de la transición
+## 2. Principios rectores de la transición
 
 Antes de entrar en fases, conviene fijar algunos principios.
 
@@ -35,9 +35,9 @@ Antes de entrar en fases, conviene fijar algunos principios.
 
 ---
 
-# 3. Fases del proceso de transición
+## 3. Fases del proceso de transición
 
-## Vista general
+### Vista general
 
 | Fase | Nombre | Duración orientativa | Objetivo principal |
 |---|---:|---:|---|
