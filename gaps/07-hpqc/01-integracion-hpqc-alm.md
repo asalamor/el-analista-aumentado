@@ -325,6 +325,7 @@ class GestorSesionALM:
 
 Antes de crear test cases, el conector debe verificar y crear si no existen las carpetas correspondientes en el Subject de ALM. Esta operación es idempotente: si la carpeta ya existe, la reutiliza.
 
+{% raw %}
 ```python
 import json
 
@@ -470,6 +471,7 @@ class GestorCarpetasALM:
                     return valores[0].get("value", "")
         return ""
 ```
+{% endraw %}
 
 ---
 
