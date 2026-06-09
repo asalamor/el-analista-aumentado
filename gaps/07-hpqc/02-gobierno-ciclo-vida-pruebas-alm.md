@@ -1447,6 +1447,7 @@ El gobierno del ciclo de vida de pruebas se apoya en tres reuniones con cadencia
 
 Igual que el repositorio de requisitos del pipeline necesita auditoría periódica (punto 12 del modelo), el repositorio de test cases en ALM necesita una limpieza trimestral para evitar la acumulación de TCs obsoletos, duplicados o huérfanos (sin requisito origen válido).
 
+{% raw %}
 ```python
 class AuditorRepositorioALM:
     """
@@ -1682,9 +1683,11 @@ class AuditorRepositorioALM:
                 return valores[0].get("value", "") if valores else ""
         return ""
 ```
+{% endraw %}
 
 ### Informe de auditoría en Markdown
 
+{% raw %}
 ```python
 def generar_informe_auditoria_markdown(resultado: dict) -> str:
     """Formatea el resultado de la auditoría en Markdown para Confluence."""
@@ -1736,6 +1739,7 @@ chr(10).join(
 *Referencia: Punto B — Gobierno del ciclo de vida de pruebas en ALM.*
 """
 ```
+{% endraw %}
 
 ---
 
