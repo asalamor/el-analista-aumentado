@@ -168,6 +168,7 @@ Esta estructura tiene una regla importante: **los Test Sets de sprint contienen 
 
 El pipeline puede generar automáticamente el esqueleto del Test Set de un sprint en ALM cuando el product owner cierra la planificación del sprint. Este es el proceso:
 
+{% raw %}
 ```python
 class GeneradorTestSetSprint:
     """
@@ -485,6 +486,7 @@ class GeneradorTestSetSprint:
                 return valores[0].get("value", "") if valores else ""
         return ""
 ```
+{% endraw %}
 
 ### Cadencia de creación de Test Sets
 
