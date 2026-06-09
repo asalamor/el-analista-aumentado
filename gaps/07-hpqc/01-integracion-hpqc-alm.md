@@ -663,6 +663,7 @@ class TransformadorALM:
 
 El conector principal orquesta las fases anteriores en el orden correcto: verificar idempotencia, crear o actualizar la carpeta, crear el test case y crear sus pasos. Se integra como el paso `s9b_push_alm` del orquestador del script principal.
 
+{% raw %}
 ```python
 from dataclasses import dataclass, field
 
@@ -903,6 +904,7 @@ class ConectorALM:
                     return valores[0].get("value", "")
         return ""
 ```
+{% endraw %}
 
 ---
 
