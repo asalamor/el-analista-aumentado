@@ -1,4 +1,4 @@
-# Capítulo. La psicología del traspaso: cómo conseguir colaboración real en una transición tecnológica
+# La psicología del traspaso: cómo conseguir colaboración real en una transición tecnológica
 
 ## Introducción: la transición no empieza en los sistemas, empieza en las personas
 
